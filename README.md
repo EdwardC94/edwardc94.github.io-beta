@@ -3,7 +3,7 @@ EdwardC94.github.io
 
 ###What are you going to find here?###
 
-This is a space I'm using to describe myself, express some ideas, but mainly, I'm using this space to learn how to create
+This is a space I'm using to describe myself, express some ideas, but mainly; I'm using this space to learn how to create
 responsive websites using the latest in technology.
 
 ###"What do you mean by 'the latest in technology'?" you ask###
