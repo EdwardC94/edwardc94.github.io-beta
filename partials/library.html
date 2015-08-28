@@ -1,0 +1,29 @@
+<div id="postsSection" class="row carousel slide" data-ride="carousel0" data-interval="false">
+  <div class="carousel-inner col-lg-12">
+    <div class="item row" ng-class="{'active': $first}" ng-repeat="x in posts track by $index">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2"><h1>{{x.title}}</h1></div>
+        </div>
+        <div class="row">
+          <p ng-repeat="paragraph in x.content track by $index" class="col-lg-8 col-lg-offset-2">{{paragraph}}</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-2"><h1><small>By {{x.author.name}}, created on: {{x.date}}</h1></small></div>
+          <div class="col-lg-8 col-lg-offset-2">
+            <h4><div class="tag" ng-repeat="tag in x.tags">#{{tag}}</div></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#postsSection" role="button" data-slide="prev" target="_self">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#postsSection" data-slide="next" target="_self">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+<div class="row">
+  <p><a href="https://commons.wikimedia.org/wiki/File:Sanzio_01.jpg#/media/File:Sanzio_01.jpg"><img alt="Sanzio 01.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sanzio_01.jpg/1200px-Sanzio_01.jpg"></a><br>"<a href="https://commons.wikimedia.org/wiki/File:Sanzio_01.jpg#/media/File:Sanzio_01.jpg">Sanzio 01</a>" by <a title="en:Raphael" class="extiw" href="//en.wikipedia.org/wiki/Raphael">Raphael</a> - Stitched together from <a class="external text" href="http://mv.vatican.va/3_EN/pages/x-Schede/SDRs/SDRs_03_02_020.html" rel="nofollow">vatican.va</a>. Licensed under Public Domain via <a href="https://commons.wikimedia.org/wiki/">Wikimedia Commons</a>.</p>
+</div>

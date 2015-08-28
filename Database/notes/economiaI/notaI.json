@@ -1,0 +1,30 @@
+[
+  {
+  "title" : "I. INTRODUCCIÓN",
+  "author" : {
+    "name" : "Eduardo Aguilar C",
+    "username" : "EdwardC94",
+    "age" : 21
+  },
+  "content" : [
+    "La economía es la ciencia que estudia cómo los agentes económicos satisfacen sus ilimitados deseos con recursos escasos y limitados. Debido a lo escases de los recursos, los agentes económicos se ven obligados a optar entre alternativas—i.e. qué recurso va a qué necesidad y en qué cantidad.",
+    "Su estudio nos ayuda a entender que si bien en la mayor parte de los casos, tiene amplia justificación utilizar el mecanismo de los mercados libres, con intercambios voluntarios entre los agentes económicos, en ciertos casos se requiere del uso de otros mecanismos, socialmente establecidos. El análisis económico nos ayuda a decidir cuándo no dejar a los mercados actuar libremente y sustituirlos"
+    ],
+  "date" : "08/25/2015",
+  "tags" : ["#escases"]
+  },
+  {
+  "title" : "II MEDIOS ESCASOS Y FINES MULTIPLES",
+  "author" : {
+    "name" : "Eduardo Aguilar C",
+    "username" : "EdwardC94",
+    "age" : 21
+  },
+  "content" : [
+    "Es conveniente agregar a la definición anterior una definición más amplia para entender a fondo esta ciencia y como se diferencia de las demás ciencias sociales",
+    "<dfn>\"La Economía es una ciencia social que estudia la asignación de medios o recursos limitados y escasos y de uso opcional, a fines múltiples y de importancia diversa, cuando el propósito es optimizar el resultado de la asignación\".</dfn>"
+    ],
+  "date" : "08/25/2015",
+  "tags" : ["#escases"]
+  }
+]

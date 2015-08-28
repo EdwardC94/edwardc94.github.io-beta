@@ -1,0 +1,80 @@
+.navbar {
+  margin-bottom: 0;
+}
+#iframe_container {
+  max-height: 550px;
+}
+.carousel-control.left, .carousel-control.right {
+    background: none;
+    color: goldenrod;
+}
+.navbar-brand, .navbar-brand:focus, .navbar-brand:hover {
+  color: goldenrod !important;
+}
+.post {
+  border-top: 2.5px black solid;
+}
+.post:hover {
+  box-shadow: 0 -5px 2.5px goldenrod;
+  border:0;
+  color: goldenrod;
+  font-weight: bold;
+}
+#home {
+  height: 600px;/*
+  background-image: url(http://lovelesssociety.com/wp-content/uploads/2015/03/cool_cat.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;*/
+}
+.tag {
+  background-color: lightblue;
+  color: white;
+  border-radius: 7.5%;
+  padding: 2px;
+  margin: 1px;
+  display: inline-block;
+}
+.navbar > .container-fluid {
+  background-color: rgba(15,16,30,66);
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+  background-image: linear-gradient(to bottom, goldenrod 0, rgba(15,16,30,66) 20%);
+  background-color: rgba(15,16,30,66);
+  color: white;
+  /*RGBA(15,16,30,66) AMAZING KIND OF BLACK COLOR*/
+}
+.the-classes {
+  display: flex;
+}
+.class-footer {
+  background-color: rgba(16,90,25,1);
+  text-align: center;
+  color: white;
+  font-family: 'Droid Sans', sans-serif;
+}
+.class-pic {
+  height: 15em;
+}
+  .class-pic > img {
+    height: 13em;
+    width: 13em;
+}
+.class-title{
+  height: 8em;
+  background-color: rgba(140,16,16,1);
+  border-bottom: .5em solid goldenrod;
+  color: ghostwhite;
+  font-family: 'Droid Sans' sans-serif;
+}
+  .class-title > h3 {
+    color: ghostwhite;
+    font-family: 'Droid Sans' sans-serif;
+  }
+.space-between {
+  height: 3em;
+}
+.a-class {
+  background-color: floralWhite;
+  margin-top: 3em;
+}

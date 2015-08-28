@@ -1,0 +1,29 @@
+[
+  {
+  "title" : "Friendship, you are probably doing it wrong",
+  "author" : {
+    "name" : "Eduardo Aguilar C",
+    "username" : "EdwardC94",
+    "age" : 21
+  },
+  "content" : [
+    "Family has remained the cornerstone of human development for ages and will continue as such for the years to come. And yet it's not nearly as important as friendship. Should we be asked to prove it, we would need just to break apart the main characteristics of this Institutions. First and foremost: Friends, unlike the members of a family, are individuals that, by making use of their free will, have decided to share their lives and complement each other; if you ask me, one of the most beautiful acts of humanity.",
+    "Moreover, although an argument can be made in regards of whether the members of a family too have decided to stay together; the situational background is not the same. On the one hand, you have two people who have nothing to lose but their mutual love if they decided to split up. On the other hand you have the members of a family whom, if presented the same option, would need to deal with the bigger consequences of not staying together. It is well known that people who come from functional families are socially and overall better accepted than those who are not. "],
+  "date" : "02/08/2015",
+  "tags" : ["friendship", "life", "family"]
+  },
+  {
+  "title" : "So I went ahead and added you on facebook.",
+  "author" : {
+    "name" : "Eduardo Aguilar C",
+    "username" : "EdwardC94",
+    "age" : 21
+  },
+  "content" : [
+    "Most people would agree that when it comes to relationships, the sane way of thinking follows one simple rule: love who loves you back. No it is not just the title of a song by My Chemical Romance, it is also a good way of putting in simple words something a bit more complex. Let me explain.",
+    "Last week, a friend of mine and I went to Guilt, the best night club ever, looking for some drinks to quench our thirst, mouths to kiss our lips and, why not, a boyfriend. What did we found, our reality no less.", 
+    "For the first three hours we were not able to catch anyone's attention; we were, nevertheless, not prepared to admit that we were ugly, so we followed Calvin Harris advice and blamed it on the night but continued dancing. After some more drinks and cigarrettes, very dissapointed, we were ready to go back home defeated and prepared to live a life without love; when suddenly, a girl whose name was Anna started flirting with my friend Melisa and, as the proverbial phoenix, our hope was reborn "],
+  "date" : "25/04/2015",
+  "tags" : ["love", "friendship", "nightclubs", "life"]
+  }
+]

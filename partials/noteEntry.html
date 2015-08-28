@@ -1,0 +1,26 @@
+<div id="postsSection" class="row carousel slide" data-ride="carousel0" data-interval="false">
+  <div class="carousel-inner col-lg-12">
+    <div class="item row" ng-class="{'active': $first}" ng-repeat="page in bookPages track by $index">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2"><h1>{{page.title}}</h1></div>
+        </div>
+        <div class="row">
+          <p ng-repeat="paragraph in page.content track by $index" class="col-lg-8 col-lg-offset-2" ng-bind-html="paragraph"></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-2"><h1><small>By {{page.author.name}}, created on: {{page.date}}</h1></small></div>
+          <div class="col-lg-8 col-lg-offset-2">
+            <h4><div class="tag" ng-repeat="tag in page.tags">#{{tag}}</div></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#postsSection" role="button" data-slide="prev" target="_self">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#postsSection" data-slide="next" target="_self">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
