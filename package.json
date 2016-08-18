@@ -1,0 +1,19 @@
+{
+  "name": "edwardc94.github.io",
+  "version": "1.0.0",
+  "description": "My Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwardC94/edwardc94.github.io.git"
+  },
+  "author": "Eduardo Aguilar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EdwardC94/edwardc94.github.io/issues"
+  },
+  "homepage": "https://github.com/EdwardC94/edwardc94.github.io#readme"
+}
