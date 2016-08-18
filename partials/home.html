@@ -1,8 +1,8 @@
 <div class="container-fluid m-b-2">
     <div id="my-banner" class="row">
         <div class="col-xs-12">
-            <img class="img-fluid img-circle m-x-auto m-y-2" src="https://www.instagram.com/p/BE-tQc7HIm-/media/?size=m" alt="Me!">
-            <h1 class="display-1 text-xs-center m-y-2"><span>¡Hola!</span></h1>
+            <img class="img-fluid img-circle m-x-auto" src="https://www.instagram.com/p/BE-tQc7HIm-/media/?size=m" alt="Me!">
+            <h1 class="display-1 text-xs-center"><span>¡Hola!</span></h1>
         </div>
     </div>
 </div>
@@ -11,11 +11,13 @@
         <div class="col-xs-12 col-sm-10 offset-sm-1">
             <h3 class="m-b-2">¡Bienvenido a mi website! <span class="text-muted">Aquí es donde publico todo lo que desarrollo, mi actividad en diversos websites y, próximamente, un blog donde compartiré mi opinión con el mundo de cualquier tema que me pase por la cabeza.</span></h3>
 
-            <div class="card-columns">
-                <div class="card">
+            <div class="card-columns m-y-2">
+                <div class="card card-project">
+                    <div class="card-header">                        
+                        <h4 class="card-title">Calculadora</h4>
+                    </div>
                     <img class="card-img-top img-fluid img-thumbnail" src="images/calc.png" alt="Calculator UI">
                     <div class="card-block">
-                        <h4 class="card-title">Calculadora</h4>
                         <p class="card-text">Esta es una calculadora que programé por completo en <code>java</code>. Originalmente el profesor nos había pedido una calculadora básica, pero me gustó tanto el reto de agregarle cada vez más funcionalidad, que terminé creando una calculadora científica</p>
                         <p>Esta calculadora tiene la capacidad de hacer cálculos complejos; sin embargo, su única falla es que no puede hacer cálculos como el seno del seno de un número.</p>
                     </div>
@@ -58,15 +60,16 @@
                 <div class="card">
                     <img class="card-img" src="..." alt="Card image">
                 </div>
-                <div class="card card-block text-xs-right">
-                    <blockquote class="card-blockquote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>
-                        <small class="text-muted">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
-                        </small>
-                    </footer>
-                    </blockquote>
+                <div class="card card-project">
+                    <div class="card-header">                        
+                        <h4 class="card-title">Sudoku</h4>
+                    </div>
+                    <img class="card-img-top img-fluid img-thumbnail" src="images/sudoku.png" alt="Sudoku UI">
+                    <div class="card-block">
+                        <p class="card-text">Este es un programa que a través de razonamientos lógicos puede resolver una amplia variedad de Sudokus. Este lo desarrollé por completo en <code>java</code>. Aunque la asignación original era hacerlo con un algoritmo de fuerza bruta, creí que sería más interesante solucionarlo como un humano: con lógica.</p>
+                        <p>Las técnicas que utilicé para este proyecto fueron: <i>Naked Singles, Hidden Sigles, </i> y <i>Hidden Doubles.</i></p>
+                    </div>
+                    <div class="card-footer">El código se puede encontrar en <a href="https://github.com/EdwardC94/SudokuDef/tree/master/src/sudokudef">GitHub</a>.</div>
                 </div>
                 <div class="card card-block">
                     <h4 class="card-title">Card title</h4>
@@ -79,21 +82,33 @@
     </div>
 </div>
 <style>
+    /*Importing the font for #my-banner*/
     @import 'https://fonts.googleapis.com/css?family=Ewert';
+    /*All the style for #my-banner*/
     #my-banner {
         background : url(https://upload.wikimedia.org/wikipedia/commons/4/42/Mexico_City_Skyline.jpg);
         background-size : cover;
         background-attachment : fixed;
         height : 100vh;
     }
-    #my-banner img {
-        border : white solid 0.5rem;
-    }
-    #my-banner h1 > span {
-            color : white;
-            font-family : 'Ewert';
-            background-color: rgba(0, 0, 0, 0.48);
-            padding: 1rem;
-            border: white solid 0.5rem;
+        #my-banner img {
+            border : white solid 0.5rem;
+            margin-bottom : 5rem;
         }
+        #my-banner h1 > span {
+                color : white;
+                font-family : 'Ewert';
+                background-color: rgba(0, 0, 0, 0.48);
+                padding: 1rem;
+                border: white solid 0.5rem;
+        }
+    /*The style for all the cards*/
+    .card-project > .card-header {
+        background-color : orangered;
+        color : white;
+    }
+    .card-project > .card-footer {
+        background-color : black;
+        color : white;
+    }
 </style>
