@@ -1,4 +1,4 @@
-(function (){
+/*(function (){
   var services = angular.module('MyWebsiteServices', ['ngResource']);
   services.
   factory('Posts', ['$resource',
@@ -19,4 +19,4 @@
         getInfo: {method: 'GET', params: {par1: '', par2: '', par3: ''}, isArray: true}
       });
   }])
-})();
+})();*/

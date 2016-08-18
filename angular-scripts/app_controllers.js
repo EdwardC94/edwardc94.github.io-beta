@@ -1,5 +1,5 @@
 (function () {
     angular.module('MyWebsiteCtrls', []).
-    controller('HomeCtrl', ['$scope', 'data', function ($scope) {
+    controller('HomeCtrl', ['$scope', function ($scope) {
     }])
 })();
