@@ -2,9 +2,7 @@
     <div id="my-banner" class="row">
         <div class="col-xs-12">
             <img class="img-fluid img-circle m-x-auto" src="https://www.instagram.com/p/BE-tQc7HIm-/media/?size=m" alt="Me!">
-            <div class="jumbotron">
-                <h1 class="display-3 text-xs-center">¡Bienvenido!</h1>
-            </div>
+            <h1 class="display-3 text-xs-center">¡Bienvenido!</h1>
         </div>
     </div>
 </div>
@@ -83,10 +81,14 @@
         background-attachment : fixed;
         height : 100vh;
     }
-    .jumbotron {
-        background-image: linear-gradient(to top,#4f3e34 0,#1c2f3d 100%);
+    #my-banner img {
+        border : white solid 0.5rem;
     }
-        .jumbotron > h1, .jumbotron > p {
-            color : white;        
+    #my-banner h1 > span {
+            color : white;
+            font-family : 'Ewert';
+            background-color: rgba(0, 0, 0, 0.48);
+            padding: 1rem;
+            border: white solid 0.5rem;
         }
 </style>
