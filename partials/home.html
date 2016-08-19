@@ -6,12 +6,12 @@
         </div>
     </div>
 </div>
-<div class="container-fluid m-y-2"></div>
+<div id="content-area" class="container-fluid"></div>
     <div class="row">
         <div class="col-xs-12 col-sm-10 offset-sm-1">
-            <h3 class="m-b-2">¡Bienvenido a mi website! <span class="text-muted">Aquí es donde publico todo lo que desarrollo, mi actividad en diversos websites y, próximamente, un blog donde compartiré mi opinión con el mundo de cualquier tema que me pase por la cabeza.</span></h3>
+            <h3>¡Bienvenido a mi website! <span class="text-muted">Aquí es donde publico todo lo que desarrollo, mi actividad en diversos websites y, próximamente, un blog donde compartiré mi opinión con el mundo de cualquier tema que me pase por la cabeza.</span></h3>
 
-            <div class="card-columns m-y-2">
+            <div class="card-columns">
                 <div class="card card-project">
                     <div class="card-header text-xs-center">                        
                         <h4 class="card-title">Calculadora</h4>
@@ -59,7 +59,11 @@
                 </div>
                 <div class="card">
                     <div class="card-header text-xs-center">
-                        <h4 class="card-title">LinkedIn</h4>
+                        <h1 id="logo-linkedin" class="card-title" style="color: black;">Linked<span style="color: white;
+    background-color: #287bbc;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+">in</span></h1>
                     </div>
                     <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
                     <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/edwardc94" data-format="inline" data-related="false"></script>
@@ -98,21 +102,34 @@
         #my-banner img {
             border : white solid 0.5rem;
             margin-bottom : 5rem;
+            margin-top : 1rem;
         }
         #my-banner h1 > span {
-                color : white;
-                font-family : 'Ewert';
-                background-color: rgba(0, 0, 0, 0.48);
-                padding: 1rem;
-                border: white solid 0.5rem;
+            color : white;
+            font-family : 'Ewert';
+            background-color: rgba(0, 0, 0, 0.48);
+            padding: 1rem;
+            border: white solid 0.5rem;
         }
     /*The style for all the cards*/
     .card-project > .card-header {
-        background-color : orangered;
+        background : linear-gradient(141deg, #EF6C00 0%, #F57C00 51%, #FB8C00 75%);
         color : white;
     }
     .card-project > .card-footer {
         background-color : black;
         color : white;
+    }
+    #logo-linkedin {
+        color : black;
+    }
+        #logo-linkedin > span {
+            color : white;
+            background-color : #287bbc;
+            padding : 0 0.5rem;
+            border-radius : 0.25rem;
+        }
+    #content-area {
+        padding-top : 4em;
     }
 </style>
