@@ -17,6 +17,20 @@
                 }]
             }*/
         }).
+        when('/blog/:entry', {
+            templateUrl : 'partials/blog_entry.html',
+            controller : 'BlogEntryCtrl',
+            resolve : {
+                data : ['getEntry', '$q', function (getEntry, $q) {
+                    var deferred = $q.defer();
+                    var success = function (result) {
+                        deferred.resolve(result);
+                    };
+                    getEntry.getEntry({ title : $route.current.params.entry });
+                    return deferred.promise;
+                }]
+            }
+        }).
         otherwise("/home")
     }])    
 })();
