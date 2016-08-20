@@ -2,9 +2,9 @@
     angular.module('MyWebsiteCtrls', ['ngRoute']).
     controller('HomeCtrl', ['$scope', function ($scope) {
     }]).
-    controller('BlogEntryCtrl', ['$scope', 'data', '$route', '$routeParams', function($scope, $route, $routeParams, data) {
+    controller('BlogEntryCtrl', ['$scope', 'data', '$routeParams', function($scope, $routeParams, data) {
         $scope.entry = data;
-        console.log('$route : ' + $route + '\n $routeParams : ' + $routeParams);
-        $scope.contentUrl = 'database/blog/entries/' + $route.current.params.title + '.html';
+        console.log('$routeParams : ' + $routeParams);
+        $scope.contentUrl = 'database/blog/entries/' + $routeParams.title + '.html';
     }])
 })();
