@@ -26,7 +26,7 @@
                     var success = function (result) {
                         deferred.resolve(result);
                     };
-                    getEntry.getEntry({ title : $route.current.params.entry });
+                    getEntry.getEntry({ title : $route.current.params.entry }, success, success);
                     return deferred.promise;
                 }]
             }
