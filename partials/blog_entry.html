@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-xs-12">
             <img class="img-fluid" data-ng-src="{{entry.img.url}}" alt="{{entry.img.alt}}">
-            <h1 class="display-1 text-xs-center">{{entry.title}}</h1>
+            <h1 class="display-3">{{entry.title}}</h1>
         </div>
         <div class="col-md-8">
             <div data-ng-include="contentUrl"></div>            
@@ -10,3 +10,9 @@
         <div class="col-md-4"></div>
     </div>
 </div>
+<style>
+    #entry-title {
+        margin-top : 2rem;
+        margin-bottom : 3rem;
+    }
+</style>
