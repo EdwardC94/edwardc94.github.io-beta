@@ -21,7 +21,7 @@
             templateUrl : 'partials/blog_entry.html',
             controller : 'BlogEntryCtrl',
             resolve : {
-                data : ['getEntry', '$q', function (getEntry, $q) {
+                data : ['getEntry', '$q', '$route', function (getEntry, $q, $route) {
                     var deferred = $q.defer();
                     var success = function (result) {
                         deferred.resolve(result);
