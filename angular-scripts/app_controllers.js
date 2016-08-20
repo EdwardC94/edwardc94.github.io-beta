@@ -4,7 +4,6 @@
     }]).
     controller('BlogEntryCtrl', ['$scope', 'data', '$route',  '$routeParams', function($scope, data, $route, $routeParams) {
         $scope.entry = data;
-        console.log('$routeParams : ' + $routeParams + '\n$routeParams.title : '+$routeParams.title);
-        $scope.contentUrl = 'database/blog/entries/' + $routeParams.title + '.html';
+        $scope.contentUrl = 'database/blog/entries/' + $routeParams.entry + '.html';
     }])
 })();
