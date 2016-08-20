@@ -1,1 +1,10 @@
-<div data-ng-include="contentUrl"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <img class="img-fluid" data-ng-src="{{entry.img.url}}" alt="{{entry.img.alt}}">
+        </div>
+        <div class="col-xs-10 offset-sm-1">
+            <div data-ng-include="contentUrl"></div>            
+        </div>
+    </div>
+</div>

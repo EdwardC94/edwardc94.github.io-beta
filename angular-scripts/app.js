@@ -5,17 +5,7 @@
         $routeProvider.
         when('/home', {
             templateUrl : 'partials/home.html',
-            controller : 'HomeCtrl'/*,
-            resolve : {
-                data : ['provider', $q, function (provider, $q) {
-                    var deferred = $q.defer();
-                    var success = function (result) {
-                        deferred.resolve(result);
-                    };
-                    provider.getInfo({ name : 'info'}, success, success);
-                    return deferred.promise;
-                }]
-            }*/
+            controller : 'HomeCtrl'
         }).
         when('/blog/:entry', {
             templateUrl : 'partials/blog_entry.html',
