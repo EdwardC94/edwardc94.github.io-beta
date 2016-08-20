@@ -2,17 +2,25 @@
     <div class="row">
         <div class="col-xs-12">
             <img class="img-fluid" data-ng-src="{{entry.img.url}}" alt="{{entry.img.alt}}">
-            <h1 class="display-3">{{entry.title}}</h1>
+            <h1 class="entry-title display-3">{{entry.title}}</h1>
         </div>
         <div class="col-md-8">
             <div data-ng-include="contentUrl"></div>            
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h3>Related Content</h3>
+            <iframe class="embed-responsive" width="560" height="315" src="https://www.youtube.com/embed/qMLZivnMW_8" frameborder="0" allowfullscreen></iframe>
+            <p class="small">This video shows the moment when a lady harassed a boy for wearing dreadlocks, something that she considered disrespectful toward her culture. In this isolated event, we can see how this lady is accusing this boy of cultural appropriation without knowing if the boy knows about her culture. It is neither clear if she actually knows enough about her culture herself.</p>
+
+        </div>
     </div>
 </div>
 <style>
-    #entry-title {
+    .entry-title {
         margin-top : 2rem;
-        margin-bottom : 3rem;
+        margin-bottom : 5rem;
+    }
+    .rel-con {
+        background-color : #f1f1f1;
     }
 </style>
