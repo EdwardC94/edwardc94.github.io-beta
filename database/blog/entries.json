@@ -4,5 +4,11 @@
 	"url" : "database/blog/entries/it_is_mine_and_you_cannot_have_it.html",
 	"date": "08/20/2016",
 	"tags": ["racism", "culture appropriation", "black culture"]
+	},
+	{
+	"title" : "Suicide Squad",
+	"url" : "database/blog/entries/suicide_squad.html",
+	"date" : "08/23/2016",
+	"tags" : ["movies", "DCComics", "review"]
 	}
 ]
