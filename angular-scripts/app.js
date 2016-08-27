@@ -7,6 +7,9 @@
             templateUrl : 'partials/home.html',
             controller : 'HomeCtrl'
         }).
+        when('/blog', {
+            templateUrl : 'partials/blog.html'
+        }).
         when('/blog/:entry', {
             templateUrl : 'partials/blog_entry.html',
             controller : 'BlogEntryCtrl',
