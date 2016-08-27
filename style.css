@@ -1,1 +1,15 @@
+/*Style for directives*/
 
+/*Style for imho-banner*/
+imho-banner .jumbotron {
+    background: url(&quot;https://upload.wikimedia.org/wikipedia/commons/f/fe/20091007_Graffiti_Shanghai_7373.jpg&quot;);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #010504;
+}
+imho-banner h1 {
+    color : white;
+}
+
+/*Style for directives*/
