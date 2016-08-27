@@ -6,7 +6,7 @@
 
 /*Style for imho-banner*/
 imho-banner .jumbotron {
-    background: url(&quot;https://upload.wikimedia.org/wikipedia/commons/f/fe/20091007_Graffiti_Shanghai_7373.jpg&quot;);
+    background: url("https://upload.wikimedia.org/wikipedia/commons/f/fe/20091007_Graffiti_Shanghai_7373.jpg");
     background-size: 75%;
     background-repeat: no-repeat;
     background-position: right;
