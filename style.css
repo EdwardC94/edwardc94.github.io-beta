@@ -12,7 +12,7 @@ imho-banner .jumbotron, imho-banner .jumbotron-fluid {
     background-position: right;
     background-color: #010504;
 }
-imho-banner h1 {
+imho-banner h1, imho-banner h2, imho-banner h3 {
     color : white;
     font-family : 'Monoton', cursive;
 }
