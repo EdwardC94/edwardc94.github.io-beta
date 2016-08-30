@@ -1,11 +1,11 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-3 thumbnail-image">
-            <img class="img-fluid img-thumbnail" ng-src="{{thumbInfo.img.src}}" alt="{{thumbInfo.img.alt}}">
-        </div>
-        <div class="col-sm-9 thumbnail-content">
-            <a data-ng-href="{{thumbInfo.url}}"><h3>{{thumbInfo.title}}</h3></a>
-            <p>{{thumbInfo.description}}</p>
-        </div>
-    </div>
+<div class="media">
+  <div class="media-left media-middle">
+    <a data-ng-href="{{thumbInfo.url}}">
+      <img class="media-object" ng-src="{{thumbInfo.img.src}}" alt="{{thumbInfo.img.alt}}">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{thumbInfo.title}}</h4>
+    <p{{thumbInfo.description}}</p>
+  </div>
 </div>
