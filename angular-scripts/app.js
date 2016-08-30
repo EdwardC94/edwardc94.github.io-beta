@@ -8,7 +8,18 @@
             controller : 'HomeCtrl'
         }).
         when('/blog', {
-            templateUrl : 'partials/blog.html'
+            templateUrl : 'partials/blog.html',
+            controller : 'IMHOCtrl',
+            resolve : {
+                data : ['getEntries', '$q', function (getEntries, $q) {
+                    var deferred = $q.defer();
+                    var success = function (result) {
+                        deferred.resolve(result);
+                    };
+                    getEntry.getEntry({}, success, success);
+                    return deferred.promise;
+                }]
+            }
         }).
         when('/blog/:entry', {
             templateUrl : 'partials/blog_entry.html',
