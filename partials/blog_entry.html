@@ -1,22 +1,27 @@
+<imho-banner></imho-banner>
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
             <img class="img-fluid" data-ng-src="{{entry.img.url}}" alt="{{entry.img.alt}}">
             <h1 class="entry-title display-4">{{entry.title}}</h1>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 entry-content">
             <div data-ng-include="contentUrl"></div>            
         </div>
-        <div class="col-lg-4 rel-con">
+        <div class="col-lg-4">
         </div>
     </div>
 </div>
 <style>
     .entry-title {
         margin-top : 2rem;
-        margin-bottom : 5rem;
+        margin-bottom : 3rem;
     }
-    .rel-con {
-        background-color : #f1f1f1;
+        .entry-content h2 {
+            margin-bottom : 1rem;
+            margin-top : 2rem;
+        }
+    imho-banner .jumbotron{
+        padding : 0 2rem;
     }
 </style>
