@@ -7,6 +7,6 @@
         $scope.contentUrl = 'database/blog/entries/' + $routeParams.entry + '.html';
     }]).
     controller('IMHOCtrl', ['$scope', 'data', function($scope, data) {
-        $scope.thumbInfo = data;
+        $scope.blogInfo = data;
     }])
 })();

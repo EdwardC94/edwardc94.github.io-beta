@@ -9,7 +9,7 @@
         return {
             templateUrl : 'partials/imho-thumbnail.html',
             scope : {
-                thumbInfo : '=data-info'
+                thumbInfo : '=info'
             }
         }
     })

@@ -1,2 +1,4 @@
 <imho-banner></imho-banner>
-<imho-thumbnail data-ng-repeat="thumb in thumbInfo track by $index"></imho-thumbnail>
+<div data-ng-repeat="thumb in blogInfo track by $index">
+    <imho-thumbnail info="thumb"></imho-thumbnail>
+</div>
