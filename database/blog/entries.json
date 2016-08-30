@@ -2,7 +2,7 @@
 	{
 	"title" : "It is mine and you cannot have it",
 	"description" : "A short essay on my understanding of cultural appropriation. It is about this an that and many other things",
-	"url" : "it_is_mine_and_you_cannot_have_it",
+	"url" : "/blog/it_is_mine_and_you_cannot_have_it",
 	"img" : {
 		"src" : "https://upload.wikimedia.org/wikipedia/commons/7/76/Altar_d%C3%ADa_de_muertos_(expl%C3%ADcito).jpg",
 		"alt" : "Ofrenda"
@@ -13,7 +13,7 @@
 	{
 	"title" : "Suicide Squad",
 	"description" : "A short essay on my understanding of cultural appropriation. It is about this an that and many other things",
-	"url" : "suicide_squad",
+	"url" : "/blog/suicide_squad",
 	"img" : {
 		"src" : "https://i.ytimg.com/vi/5AwUdTIbA8I/maxresdefault.jpg",
 		"alt" : "Imagen de Harley Quinn"
