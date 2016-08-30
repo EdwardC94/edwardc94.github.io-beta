@@ -1,4 +1,4 @@
-<div class="container-fluid" ng-click="thumbInfo.url">
+<a class="container-fluid" data-ng-href="{{thumbInfo.url}}">
     <div class="row">
         <div class="col-sm-3 thumbnail-image">
             <img class="img-fluid img-thumbnail" ng-src="{{thumbInfo.img.src}}" alt="{{thumbInfo.img.alt}}">
@@ -8,4 +8,4 @@
             <p>{{thumbInfo.description}}</p>
         </div>
     </div>
-</div>
+</a>
