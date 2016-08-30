@@ -16,7 +16,7 @@
                     var success = function (result) {
                         deferred.resolve(result);
                     };
-                    getEntry.getEntry({}, success, success);
+                    getEntries.getEntries({}, success, success);
                     return deferred.promise;
                 }]
             }
