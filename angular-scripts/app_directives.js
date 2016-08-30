@@ -4,5 +4,13 @@
         return {
             templateUrl : 'partials/imho-banner.html'
         }
+    }).
+    directive("imhoThumbnail", function(){
+        return {
+            templateUrl : 'partials/imho-thumbnail.html',
+            scope : {
+                t-info : '=data-info'
+            }
+        }
     })
 })();
