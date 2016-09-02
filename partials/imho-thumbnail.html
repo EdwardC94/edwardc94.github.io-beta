@@ -1,3 +1,4 @@
+<!--
 <div class="media">
   <div class="media-left media-middle">
     <a data-ng-href="{{thumbInfo.url}}">
@@ -8,4 +9,11 @@
     <h4 class="media-heading">{{thumbInfo.title}}</h4>
     <p{{thumbInfo.description}}</p>
   </div>
+</div>
+-->
+
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <img ng-src="{{thumbInfo.img.src}}" alt="{{thumbInfo.img.alt}}">
+    <h4><a data-ng-href="{{thumbInfo.url}}">{{thumbInfo.title}}</a></h4>
+    <p{{thumbInfo.description}}</p>
 </div>
