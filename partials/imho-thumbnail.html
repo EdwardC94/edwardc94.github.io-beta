@@ -10,7 +10,7 @@
 		<p{{thumbInfo.description}}</p>
 	</div>
 </div>
--->
+
 
 <img class="img-fluid" ng-src="{{thumbInfo.img.src}}" alt="{{thumbInfo.img.alt}}">
 <h4><a data-ng-href="{{thumbInfo.url}}">{{thumbInfo.title}}</a></h4>
@@ -25,7 +25,22 @@
 		<p class="card-text">{{thumbInfo.description}}</p>
 	</div>
 </div>
+-->
+
+
+<div ng-style="background : url('{{thumbInfo.img.src}}')" alt="{{thumbInfo.img.alt}}"></div>
+<h4><a data-ng-href="{{thumbInfo.url}}">{{thumbInfo.title}}</a></h4>
+<p>{{thumbInfo.description}}</p>
 
 <style>
-
+	imho-thumbnail > div {
+		width : 100%;
+		height : auto;
+	}
+	imho-thumbnail > h4, imho-thumbnail p {
+		text-align : center;
+	}
+	imho-thumbnail a {
+		color : black;
+	}
 </style>
