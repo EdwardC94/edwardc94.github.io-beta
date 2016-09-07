@@ -1,6 +1,9 @@
 <imho-banner></imho-banner>
 <div class="container-fluid">
     <div class="row">
-        <imho-thumbnail class="col-sm-6 col-md-4" data-ng-repeat="thumb in blogInfo track by $index" info="thumb"></imho-thumbnail>
+        <div class="col-sm-6 col-md-4">
+            <imho-thumbnail data-ng-repeat="thumb in blogInfo track by $index" info="thumb"></imho-thumbnail>
+        </div>
+        
     </div>
 </div>
