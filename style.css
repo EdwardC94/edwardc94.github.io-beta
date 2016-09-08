@@ -28,8 +28,9 @@ imho-banner h1, imho-banner h2, imho-banner h3 {
     text-align : center;
     padding-top : 15px;
     -webkit-animation: cool-effect 5s infinite;
-    animation: cool-effect 5s infinite;
-    font-size: 45px;
+    animation: cool-effect 2s infinite;
+    font-size: 50px;
+    font-weight: 600;
 }
 .home-card-container {
     height : 100vh
@@ -70,7 +71,7 @@ imho-banner h1, imho-banner h2, imho-banner h3 {
     text-shadow : 2px 2px 10px greenyellow;
 }
 #projects > h1 > a:hover {
-    text-shadow : 2px 2px 10px blue;
+    text-shadow : 2px 2px 10px #00e2ff;
 }
 @-webkit-keyframes cool-effect {
     0% {text-shadow :  1px 1px 1px #ff5722;}
@@ -112,7 +113,7 @@ imho-banner h1, imho-banner h2, imho-banner h3 {
         text-shadow : 2px 2px 10px greenyellow;
     }
     #projects > h1 > a {
-        text-shadow : 2px 2px 10px blue;
+        text-shadow : 2px 2px 10px #00e2ff;
     }
     #my-name {
         padding-bottom : 15px;
