@@ -13,7 +13,7 @@ imho-banner .jumbotron, imho-banner .jumbotron-fluid {
     background-color: #010504;
     margin : 0 -15px !important;
     padding : 0 15px !important;
-    border-radius : none;
+    border-radius : 0;
 }
 imho-banner h1, imho-banner h2, imho-banner h3 {
     color : white;
