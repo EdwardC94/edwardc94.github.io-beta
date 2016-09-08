@@ -11,6 +11,8 @@ imho-banner .jumbotron, imho-banner .jumbotron-fluid {
     background-repeat: no-repeat;
     background-position: right;
     background-color: #010504;
+    margin : 0 -15px;
+    padding : 0 15px;
 }
 imho-banner h1, imho-banner h2, imho-banner h3 {
     color : white;
