@@ -1,33 +1,3 @@
-<!--
-<div class="media">
-	<div class="media-left media-middle">
-		<a data-ng-href="{{thumbInfo.url}}">
-			<img class="media-object" ng-src="{{thumbInfo.img.src}}" alt="{{thumbInfo.img.alt}}">
-		</a>
-	</div>
-	<div class="media-body">
-		<h4 class="media-heading">{{thumbInfo.title}}</h4>
-		<p{{thumbInfo.description}}</p>
-	</div>
-</div>
-
-
-<img class="img-fluid" ng-src="{{thumbInfo.img.src}}" alt="{{thumbInfo.img.alt}}">
-<h4><a data-ng-href="{{thumbInfo.url}}">{{thumbInfo.title}}</a></h4>
-<p>{{thumbInfo.description}}</p>
-
-
-
-<div class="card card-inverse text-center">
-	<img class="img-fluid card-img-top" ng-src="http://i.giphy.com/I37q1XjGvAtjy.gif" alt="{{thumbInfo.img.alt}}" style="height: 33.33vh;">
-	<div class="card-img-overlay" style="background-color: rgba(103, 58, 183, 0.21);">
-		<h4 class="card-title"><a data-ng-href="{{thumbInfo.url}}">{{thumbInfo.title}}</a></h4>
-		<p class="card-text">{{thumbInfo.description}}</p>
-	</div>
-</div>
--->
-
-
 <img ng-src="{{thumbInfo.img.src}}" alt="{{thumbInfo.img.alt}}">
 <h4><a data-ng-href="{{thumbInfo.url}}">{{thumbInfo.title}}</a></h4>
 <p>{{thumbInfo.description}}</p>
@@ -35,12 +5,14 @@
 <style>
 	imho-thumbnail > img {
 		width : 100%;
-		height : 300px;
+		height : 175px;
 	}
 	imho-thumbnail > h4, imho-thumbnail p {
 		text-align : center;
+		margin-top : 1rem;
 	}
 	imho-thumbnail a {
 		color : black;
+		text-decoration-color : 
 	}
 </style>
