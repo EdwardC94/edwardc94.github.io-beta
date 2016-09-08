@@ -28,14 +28,14 @@
 -->
 
 
-<div ng-style="background : url('{{thumbInfo.img.src}}')" alt="{{thumbInfo.img.alt}}"></div>
+<img ng-src="{{thumbInfo.img.src}}" alt="{{thumbInfo.img.alt}}">
 <h4><a data-ng-href="{{thumbInfo.url}}">{{thumbInfo.title}}</a></h4>
 <p>{{thumbInfo.description}}</p>
 
 <style>
-	imho-thumbnail > div {
+	imho-thumbnail > img {
 		width : 100%;
-		height : auto;
+		min-height : 33.33vh;
 	}
 	imho-thumbnail > h4, imho-thumbnail p {
 		text-align : center;
