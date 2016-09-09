@@ -1,2 +1,2 @@
-# edwardc94.github.io
-My website created by myself from scratch with angularjs 1 and Bootstrap 4
+# My Website
+A website I created for myself from scratch with AngularJs and Bootstrap 4.
