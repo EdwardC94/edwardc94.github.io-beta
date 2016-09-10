@@ -18,7 +18,9 @@
 -->
 <div class="container">
     <div class="row" data-ng-style="">
-        <div class="col-xs-12 cont-title"></div>
+        <div class="col-xs-12 cont-title">
+            <h3>{{posts.length}}</h3>
+        </div>
         <div class="col-xs-12">
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-lg-4 cont-body" data-ng-style="{'background-image': 'url({{posts[0].img.src}})'}">
@@ -34,11 +36,6 @@
         </div>
     </div>
 </div>
-<script>
-    (function() {
-        console.log("Check" + posts.length);
-    })();
-</script>
 <style>
 imho-thumbnail > .container {
     background-color: white;
