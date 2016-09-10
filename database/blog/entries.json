@@ -9,16 +9,12 @@
 		{
 			"categoryID" : 1,
 			"name" : "Opinion",
-			"style" : {				
-				"border-color": "aqua"				
-			} 
+			"color": "aqua"
 		},
 		{
 			"categoryID" : 2,
 			"name" : "Movies",
-			"style" : {				
-				"border-color": "chartreuse"				
-			} 
+			"color": "chartreuse"
 		}
 	],
 	"Post" : [
