@@ -8,6 +8,15 @@
     }]).
     controller('IMHOCtrl', ['$scope', 'data', function($scope, data) {
         $scope.theData = data;
+        $scope.where_category = function (category) {
+            var res = [];
+            for (var i = 0; i < $scope.theData.Posts.length; i++){
+                if ($scope.theData[i].category == category)
+                    res.push($scope.theData[i]);
+            }
+            return res;
+        };
+
         var max = data.length - 2 
         $scope.dataIndex = 0
         $scope.move = function (direction) {
