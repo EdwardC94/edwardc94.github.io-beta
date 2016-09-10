@@ -14,6 +14,7 @@
                 if ($scope.theData.Post[i].categoryID_FK == category)
                     res.push($scope.theData.Post[i]);
             }
+            console.log(res.length)
             return res;
         };
 
