@@ -2,6 +2,10 @@
 @import 'https://fonts.googleapis.com/css?family=Monoton|Sacramento';
 /*Font-family imports*/
 
+body > div {
+    background-color : #fafafa;
+}
+
 /*Style for directives*/
 
 /*Style for imho-banner*/
