@@ -9,7 +9,7 @@
         return {
             templateUrl : 'partials/imho-thumbnail.html',
             scope : {
-                posts : '='/*,
+                posts : '=dataPosts'/*,
                 category : '=dataCategory',
                 author : '=dataAuthor'*/
             }
