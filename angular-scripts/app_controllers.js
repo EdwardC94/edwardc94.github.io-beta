@@ -22,6 +22,7 @@
             for (var i = 0; i < theData.Category.length; i++) {
                 res.push(whereCategory(theData.Category[i]));
             }
+            return res;
         };
         $scope.postsFiltered = postByCat;
         /*
