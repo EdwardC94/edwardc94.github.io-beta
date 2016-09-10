@@ -14,7 +14,6 @@
                 if ($scope.theData.Post[i].categoryID_FK == category)
                     res.push($scope.theData.Post[i]);
             }
-            console.log(res.length)
             return res;
         };
         var postByCat = function () {
@@ -22,7 +21,6 @@
             for (var i = 0; i < $scope.theData.Category.length; i++) {
                 res.push(whereCategory($scope.theData.Category[i].categoryID));
             }
-            console.log(res);
             return res;
         };
         $scope.postsFiltered = postByCat();
