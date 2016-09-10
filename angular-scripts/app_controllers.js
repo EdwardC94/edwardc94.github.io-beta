@@ -20,7 +20,7 @@
         var postByCat = function () {
             var res = [];
             for (var i = 0; i < $scope.theData.Category.length; i++) {
-                res.push(whereCategory($scope.theData.Category[i]));
+                res.push(whereCategory($scope.theData.Category[i].categoryID));
             }
             console.log(res);
             return res;
