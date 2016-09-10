@@ -10,9 +10,9 @@
         $scope.theData = data;
         $scope.where_category = function (category) {
             var res = [];
-            for (var i = 0; i < $scope.theData.Posts.length; i++){
-                if ($scope.theData[i].category == category)
-                    res.push($scope.theData[i]);
+            for (var i = 0; i < $scope.theData.Post.length; i++){
+                if ($scope.theData.Post[i].categoryID_FK == category)
+                    res.push($scope.theData.Post[i]);
             }
             return res;
         };

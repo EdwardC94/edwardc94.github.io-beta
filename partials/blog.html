@@ -1,4 +1,4 @@
 <imho-banner></imho-banner>
-<imho-thumbnail data-ng-repeat="category in theData.Category track by category.categoryID"  info="where_Category(category.categoryID)"></imho-thumbnail>
+<imho-thumbnail data-ng-repeat="category in theData.Category track by category.categoryID"  data-info="where_Category(category.categoryID)" data-author="theData.Author" data-category="category"></imho-thumbnail>
 <!--<imho-thumbnail class="col-sm-6 col-md-4" data-ng-repeat="thumb in blogInfo track by $index" info="thumb"></imho-thumbnail>-->
 </div>

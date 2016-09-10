@@ -9,7 +9,9 @@
         return {
             templateUrl : 'partials/imho-thumbnail.html',
             scope : {
-                thumbInfo : '=info'
+                posts : '=dataPosts',
+                category : '=dataCategory',
+                author : '=dataAuthor'
             }
         }
     })
