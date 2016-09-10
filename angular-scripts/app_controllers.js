@@ -19,8 +19,8 @@
         };
         var postByCat = function () {
             var res = [];
-            for (var i = 0; i < theData.Category.length; i++) {
-                res.push(whereCategory(theData.Category[i]));
+            for (var i = 0; i < $scope.theData.Category.length; i++) {
+                res.push(whereCategory($scope.theData.Category[i]));
             }
             return res;
         };
