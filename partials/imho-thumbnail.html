@@ -1,7 +1,7 @@
 <div class="container">
-    <div class="row" data-ng-style="{border-color : {{category.color}}}">
+    <div class="row" data-ng-style="{'border-color' : '{{category.color}}'}">
         <div class="col-xs-12 cont-title">
-            <h3 data-ng-style="{color : {{category.color}}}">{{category.name}}</h3>
+            <h2 data-ng-style="{'color' : '{{category.color}}'}">{{category.name}}</h2>
         </div>
         <div class="col-xs-12">
             <div class="row">
@@ -59,9 +59,10 @@ imho-thumbnail > .container {
             font-size: 50px;
             font-family: 'Sacramento';
         }
-.cont-title {
-    font-align : center;
-    color : 
+.cont-title > h2 {
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-size : 60px;
 }
 </style>
 
