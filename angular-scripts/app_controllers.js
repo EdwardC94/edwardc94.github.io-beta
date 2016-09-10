@@ -24,7 +24,7 @@
             }
             return res;
         };
-        $scope.postsFiltered = postByCat;
+        $scope.postsFiltered = postByCat();
         /*
         var max = data.length - 2 
         $scope.dataIndex = 0
