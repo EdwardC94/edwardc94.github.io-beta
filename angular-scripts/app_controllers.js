@@ -8,7 +8,7 @@
     }]).
     controller('IMHOCtrl', ['$scope', 'data', function($scope, data) {
         $scope.theData = data;
-        $scope.where_category = function (category) {
+        function whereCategory (category) {
             var res = [];
             for (var i = 0; i < $scope.theData.Post.length; i++){
                 if ($scope.theData.Post[i].categoryID_FK == category)
@@ -17,7 +17,14 @@
             console.log(res.length)
             return res;
         };
-
+        var postByCat = function () {
+            var res = [];
+            for (var i = 0; i < theData.Category.length; i++) {
+                res.push(whereCategory(theData.Category[i]));
+            }
+        };
+        $scope.postsFiltered = postByCat;
+        /*
         var max = data.length - 2 
         $scope.dataIndex = 0
         $scope.move = function (direction) {
@@ -29,6 +36,6 @@
                     $scope.dataIndex++;
             }
         }
-        $scope.blogInfo = [ $scope.theData[$scope.dataIndex], $scope.theData[$scope.dataIndex+1], $scope.theData[$scope.dataIndex+2] ];
+        $scope.blogInfo = [ $scope.theData[$scope.dataIndex], $scope.theData[$scope.dataIndex+1], $scope.theData[$scope.dataIndex+2] ];*/
     }])
 })();
