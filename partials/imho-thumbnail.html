@@ -12,6 +12,7 @@
         </div>
         <div class="col-xs-12 cont-footer">
             <h4 data-ng-style="{'color' : '{{category.color}}'}">
+                <span class="cont-nav" data-ng-hide="index > 0"></span>
                 <span class="cont-nav" data-ng-click="index = index - 1" data-ng-hide="index == 0">&lt;</span>
                 <span class="cont-length" >{{index + 1}}
                     <span class="hidden-sm-down hidden-lg-up"> - {{index + 2}}</span>
@@ -76,7 +77,7 @@ imho-thumbnail > .container {
     }
 .cont-nav, .cont-length {
     display : inline-block;
-    width : 33.33%;
+    width : 33%;
 }
 </style>
 
