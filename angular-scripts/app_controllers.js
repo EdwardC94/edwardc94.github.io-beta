@@ -1,9 +1,9 @@
 (function () {
     function whereCategory (categoryString, postArray) {
         var res = [];
-        for (var i = 0; i < dataArray.length; i++){
-            if (dataArray[i].categoryID_FK == category)
-                res.push(dataArray.Post[i]);
+        for (var i = 0; i < postArray.length; i++){
+            if (postArray[i].categoryID_FK == category)
+                res.push(postArray.Post[i]);
         }
         return res.reverse();
     };
