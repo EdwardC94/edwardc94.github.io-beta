@@ -14,14 +14,14 @@
                 if ($scope.theData.Post[i].categoryID_FK == category)
                     res.push($scope.theData.Post[i]);
             }
-            return res;
+            return res.reverse();
         };
         var postByCat = function () {
             var res = [];
             for (var i = 0; i < $scope.theData.Category.length; i++) {
                 res.push(whereCategory($scope.theData.Category[i].categoryID));
             }
-            return res.reverse();
+            return res;
         };
         $scope.postsFiltered = postByCat();
         /*
