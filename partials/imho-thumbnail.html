@@ -12,10 +12,12 @@
         </div>
         <div class="col-xs-12 cont-footer">
             <h4 data-ng-style="{'color' : '{{category.color}}'}">
-                <span class="cont-nav" data-ng-click="index = index - 1">&lt;</span>{{index}}
-                <span class="cont-length hide-sm-down hide-lg-up"> - 2</span>
-                <span class="cont nav hide-md-down"> - 3</span> of {{posts.length}}
-                <span data-ng-click="index = index + 1">&gt;</span></h4>
+                <span class="cont-nav" data-ng-click="index = index - 1">&lt;</span>
+                <span class="cont-length" >{{index}}
+                    <span class="hidden-sm-down hidden-lg-up"> - 2</span>
+                    <span class="hidden-md-down"> - 3</span> of {{posts.length}}
+                </span>
+                <span class="cont nav" data-ng-click="index = index + 1">&gt;</span></h4>
         </div>
     </div>
 </div>
