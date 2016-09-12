@@ -11,7 +11,11 @@
             </div>
         </div>
         <div class="col-xs-12 cont-footer">
-            <h4 data-ng-style="{'color' : '{{category.color}}'}"><span data-ng-click="index = index - 1">&lt;</span>{{index}}<span class="hide-sm-down hide-lg-up"> - 2<span class="hide-md-down"> - 3</span> of {{posts.length}}</span><span data-ng-click="index = index + 1">&gt;</span></h4>
+            <h4 data-ng-style="{'color' : '{{category.color}}'}">
+                <span class="cont-nav" data-ng-click="index = index - 1">&lt;</span>{{index}}
+                <span class="cont-length hide-sm-down hide-lg-up"> - 2</span>
+                <span class="cont nav hide-md-down"> - 3</span> of {{posts.length}}
+                <span data-ng-click="index = index + 1">&gt;</span></h4>
         </div>
     </div>
 </div>
@@ -59,9 +63,16 @@ imho-thumbnail > .container {
             color : white;
             font-family : 'Sacramento';
         }
-.cont-header > h2, .cont-header > h4 {
-    text-align : center;
-    font-family : 'Monoton', cursive;
+.cont-footer {
+    margin-top : 1rem;
+}
+    .cont-header > h2, .cont-footer > h4 {
+        text-align : center;
+        font-family : 'Monoton', cursive;
+    }
+.cont-nav, cont-length {
+    display : inline-block;
+    width : 33.33
 }
 </style>
 
