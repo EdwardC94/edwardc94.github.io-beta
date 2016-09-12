@@ -21,16 +21,16 @@
                 }]
             }
         }).
-        when('/blog/:entry', {
+        when('/blog/:category/:entry', {
             templateUrl : 'partials/blog_entry.html',
             controller : 'BlogEntryCtrl',
             resolve : {
-                data : ['getEntry', '$q', '$route', function (getEntry, $q, $route) {
+                data : ['getEntries', '$q', function (getEntries, $q) {
                     var deferred = $q.defer();
                     var success = function (result) {
                         deferred.resolve(result);
                     };
-                    getEntry.getEntry({ title : $route.current.params.entry }, success, success);
+                    getEntries.getEntries({}, success, success);
                     return deferred.promise;
                 }]
             }

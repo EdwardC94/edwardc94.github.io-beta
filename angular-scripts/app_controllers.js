@@ -1,13 +1,30 @@
 (function () {
+    function whereCategory (categoryString, postArray) {
+        var res = [];
+        for (var i = 0; i < dataArray.length; i++){
+            if (dataArray[i].categoryID_FK == category)
+                res.push(dataArray.Post[i]);
+        }
+        return res.reverse();
+    };
     angular.module('MyWebsiteCtrls', ['ngRoute']).
     controller('HomeCtrl', ['$scope', function ($scope) {
     }]).
     controller('BlogEntryCtrl', ['$scope', 'data', '$route',  '$routeParams', function($scope, data, $route, $routeParams) {
-        $scope.entry = data;
-        $scope.contentUrl = 'database/blog/entries/' + $routeParams.entry + '.html';
+        $scope.theData = data;
+        $scope.contentUrl = 'partials/blog/' + $routeParams.category + '/' + $routeParams.entry + '.html';
     }]).
     controller('IMHOCtrl', ['$scope', 'data', function($scope, data) {
         $scope.theData = data;
+        var postArray = $scope.theData.Post;
+        var categoryArray = $scope.theData.Category;
+        var postByCat = function () {
+            var res = [];
+            for (var i = 0; i < categoryArray.length; i++) {
+                res.push(whereCategory(categoryArray[i], postArray));                
+            }
+        }
+        /*
         function whereCategory (category) {
             var res = [];
             for (var i = 0; i < $scope.theData.Post.length; i++){
@@ -22,7 +39,7 @@
                 res.push(whereCategory($scope.theData.Category[i].categoryID));
             }
             return res;
-        };
+        };*/
         $scope.postsFiltered = postByCat();
         /*
         var max = data.length - 2 

@@ -24,6 +24,58 @@ imho-banner h1, imho-banner h2, imho-banner h3 {
     font-family : 'Monoton', cursive;
 }
 
+/*Style for imho-thumbnail*/
+imho-thumbnail > .container {
+    background-color : white;
+    margin-bottom : 2rem;
+    margin-top : 2rem;
+    padding-bottom : 1rem;
+    padding-top : 1rem;
+    border: 1px solid #f3f1f1;
+}
+    imho-thumbnail > .container > .row {
+    background-color : black;
+    padding-top : 15px;
+    padding-bottom : 15px;
+    margin : 0;
+    border : 0;
+    border-top : 10px;
+    border-bottom : 10px;
+    border-style : double;
+    }
+.cont-header {
+    font-family : 'Monoton', cursive;
+    text-align : center;
+}
+.cont-body {
+    height : 33vh;
+    background-color : aquamarine;
+    background-clip : content-box;
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-position : center;
+    display : flex;    
+    justify-content : center;
+    align-items : center;
+}
+    .cont-body > h2 {
+        background-color : rgba(0,0,0,0.75);
+        padding : 10px;
+        width : 95%;
+        text-align : center;
+    }
+        .cont-body > h2 > a {
+            color : white;
+            font-family : 'Sacramento';
+        }
+.cont-footer {
+    margin-top : 1rem;    
+    text-align : center;
+}
+.cont-nav {
+    cursor : pointer;
+}
+
 /*Style for directives*/
 
 /*Style for Home Page*/
