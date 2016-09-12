@@ -4,7 +4,7 @@
         console.log(postArray);
         for (var i = 0; i < postArray.length; i++){
             if (postArray[i].categoryID_FK == categoryString)
-                res.push(postArray.Post[i]);
+                res.push(postArray[i]);
         }
         return res.reverse();
     };
