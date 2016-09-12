@@ -19,8 +19,8 @@
                     <h4>Entries: {{posts.length}}</h4>
                 </div>
                 <div class="col-xs-2">
-                    <h4><span class="cont-nav hidden-md-down" data-ng-click="index = index + 1" data-ng-hide="(index == posts.length - 3 || posts.length < 4)">&gt;</span>
-                    <span class="cont-nav hidden-sm-down hidden-lg-up" data-ng-click="index = index + 1" data-ng-hide="(index == posts.length - 2 || posts.length < 3)">&gt;</span>
+                    <h4><span class="cont-nav hidden-md-down" data-ng-click="index = index + 1" data-ng-hide="(index == posts.length - 3 || posts.length < 4)">&#9193;</span>
+                    <span class="cont-nav hidden-sm-down hidden-lg-up" data-ng-click="index = index + 1" data-ng-hide="(index == posts.length - 2 || posts.length < 3)">&#9193;</span>
                     <span class="cont-nav hidden-md-up" data-ng-click="index = index + 1" data-ng-hide="index == posts.length - 1">	&#9193;</span></h4>  
                 </div>
             </div>
@@ -48,6 +48,7 @@ imho-thumbnail > .container {
     }
 .cont-header {
     font-family : 'Monoton', cursive;
+    text-align : center;
 }
 .cont-body {
     height : 33vh;
