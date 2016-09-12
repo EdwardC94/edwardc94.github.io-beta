@@ -14,15 +14,10 @@
             <h4 data-ng-style="{'color' : '{{category.color}}'}">
                 <span class="cont-nav" data-ng-hide="index > 0"></span>
                 <span class="cont-nav" data-ng-click="index = index - 1" data-ng-hide="index == 0">&lt;</span>
-                <span class="cont-length" >{{index + 1}}
-                    <span data-ng-hide="posts.length > index + 2" class="hidden-sm-down hidden-lg-up"> - {{index + 2}}</span>
-                    <span data-ng-hide="posts.length > index + 2" class="hidden-md-down"> - {{index + 2}}</span>
-                    <span data-ng-hide="posts.length > index + 3" class="hidden-md-down"> - {{index + 3}}</span> of {{posts.length}}
-                </span>
                 <span class="cont-nav hidden-md-down" data-ng-click="index = index + 1" data-ng-hide="index == posts.length - 3">&gt;</span>
                 <span class="cont-nav hidden-sm-down hidden-lg-up" data-ng-click="index = index + 1" data-ng-hide="index == posts.length - 2">&gt;</span>
                 <span class="cont-nav hidden-md-up" data-ng-click="index = index + 1" data-ng-hide="index == posts.length - 1">&gt;</span>              
-                </h4>
+            </h4>
         </div>
     </div>
 </div>
@@ -75,11 +70,11 @@ imho-thumbnail > .container {
 }
     .cont-header > h2, .cont-footer > h4 {
         font-family : 'Monoton', cursive;
+        text-align : center;
     }
-.cont-nav, .cont-length {
-    text-align: center;
+.cont-nav {
     display : inline-block;
-    width : 33%;
+    width : 45%;
 }
 </style>
 
