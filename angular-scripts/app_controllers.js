@@ -33,7 +33,7 @@
         var postByCat = function () {
             var res = [];
             for (var i = 0; i < categoryArray.length; i++) {
-                res.push(whereCategory(categoryArray[i].categoryID, postArray));                
+                res.push(whereCategoryID(categoryArray[i].categoryID, postArray));                
             }
             return res;
         }
