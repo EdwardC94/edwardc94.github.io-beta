@@ -23,6 +23,7 @@
             for (var i = 0; i < categoryArray.length; i++) {
                 res.push(whereCategory(categoryArray[i], postArray));                
             }
+            return res;
         }
         /*
         function whereCategory (category) {
