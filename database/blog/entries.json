@@ -43,6 +43,71 @@
 			"tags" : ["movies", "DCComics", "review"],
 			"categoryID_FK" : 2, 
 			"authorID_FK" : 1
+		},
+		{
+			"entryID" : 3,
+			"title" : "Suicide Squad",
+			"url" : "#/blog/suicide_squad",
+			"img" : {
+				"src" : "http://i.giphy.com/I37q1XjGvAtjy.gif",
+				"alt" : "Imagen de Harley Quinn"
+			},
+			"date" : "08/23/2016",
+			"tags" : ["movies", "DCComics", "review"],
+			"categoryID_FK" : 2, 
+			"authorID_FK" : 1
+		},
+		{
+			"entryID" : 4,
+			"title" : "Suicide Squad",
+			"url" : "#/blog/suicide_squad",
+			"img" : {
+				"src" : "http://i.giphy.com/I37q1XjGvAtjy.gif",
+				"alt" : "Imagen de Harley Quinn"
+			},
+			"date" : "08/23/2016",
+			"tags" : ["movies", "DCComics", "review"],
+			"categoryID_FK" : 2, 
+			"authorID_FK" : 1
+		},
+		{
+			"entryID" : 5,
+			"title" : "Suicide Squad",
+			"url" : "#/blog/suicide_squad",
+			"img" : {
+				"src" : "http://i.giphy.com/I37q1XjGvAtjy.gif",
+				"alt" : "Imagen de Harley Quinn"
+			},
+			"date" : "08/23/2016",
+			"tags" : ["movies", "DCComics", "review"],
+			"categoryID_FK" : 2, 
+			"authorID_FK" : 1
+		},
+		{
+			"entryID" : 6,
+			"title" : "Suicide Squad",
+			"url" : "#/blog/suicide_squad",
+			"img" : {
+				"src" : "http://i.giphy.com/I37q1XjGvAtjy.gif",
+				"alt" : "Imagen de Harley Quinn"
+			},
+			"date" : "08/23/2016",
+			"tags" : ["movies", "DCComics", "review"],
+			"categoryID_FK" : 2, 
+			"authorID_FK" : 1
+		},
+		{
+			"entryID" : 2,
+			"title" : "Suicide Squad",
+			"url" : "#/blog/suicide_squad",
+			"img" : {
+				"src" : "http://i.giphy.com/I37q1XjGvAtjy.gif",
+				"alt" : "Imagen de Harley Quinn"
+			},
+			"date" : "08/23/2016",
+			"tags" : ["movies", "DCComics", "review"],
+			"categoryID_FK" : 2, 
+			"authorID_FK" : 1
 		}
 	]
 }
