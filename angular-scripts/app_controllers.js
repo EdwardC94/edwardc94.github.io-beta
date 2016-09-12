@@ -21,7 +21,7 @@
         var postByCat = function () {
             var res = [];
             for (var i = 0; i < categoryArray.length; i++) {
-                res.push(whereCategory(categoryArray[i], postArray));                
+                res.push(whereCategory(categoryArray[i].categoryID, postArray));                
             }
             return res;
         }
