@@ -2,7 +2,7 @@
     function whereCategory (categoryString, postArray) {
         var res = [];
         for (var i = 0; i < postArray.length; i++){
-            if (postArray[i].categoryID_FK == category)
+            if (postArray[i].categoryID_FK == categoryString)
                 res.push(postArray.Post[i]);
         }
         return res.reverse();
