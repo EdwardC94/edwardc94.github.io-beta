@@ -62,7 +62,7 @@
         var theData = data;
         var isValid =  where("url", $routeParams.entry, theData.Post, false);
         if(isValid) { 
-            $scope.entry = isValid;
+            $scope.post = isValid;
             $scope.category = where("categoryID", isValid.categoryID_FK, theData.Category, false);
             $scope.author = where("authorID", isValid.authorID_FK, theData.Category, false);
             $scope.postsFiltered = where("categoryID_FK", isValid.categoryID_FK, theData.Post, true);

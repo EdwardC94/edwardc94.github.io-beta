@@ -1,37 +1,58 @@
 <imho-banner></imho-banner>
-<div class="container-fluid blog-post" data-ng-style="{'background-image': 'url({{post.img_src}})'}">
-    <div class="row">
-        <div class="col-xs-12" >
-            <div  class="entry-title">
-                <h2>{{entry.title}}</h2>
+<div class="post-container" data-ng-style="{'background-image': 'url({{post.img_src}})'}">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 entry-title" >
+                <h2>{{post.title}}</h2>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">    
-        <div class="col-lg-8 entry-content">
-            <div data-ng-include="contentUrl"></div>            
-        </div>
-        <div class="col-lg-4">
+    <div class="container entry-content">
+        <div class="row">    
+            <div class="col-lg-8">
+                <div data-ng-include="contentUrl"></div>            
+            </div>
+            <div class="col-lg-4">
+            </div>
         </div>
     </div>
-</div>
-<imho-thumbnail data-posts="postsFiltered" data-author="theData.Author" data-category="category"></imho-thumbnail>
+    <imho-thumbnail data-posts="postsFiltered" data-author="theData.Author" data-category="category"></imho-thumbnail>
+<div>
 <style>
-    .entry-title {
-        display : flex;
+.post-container {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.entry-title {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 50vh;
+}
+    .entry-title > h1 {
+        background-color: rgba(0,0,0,0.75);
+        color: white;
+        margin-left: -15px;
+        padding: 2rem 15px;
+        font-family: 'Monoton';
     }
-    .entry-title > h2 {
-        background-color : rgba(0,0,0,0.75);
-        color : white;
-    }
-    .entry-content h2 {
-        margin-bottom : 1rem;
-        margin-top : 2rem;
-    }
-    imho-banner .jumbotron{
-        padding : 0 2rem;
-    }
+.entry-content {
+    background-color: white;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border: 1px solid #f3f1f1;
+}
+.entry-content h2 {
+    margin-bottom : 1rem;
+    margin-top : 2rem;
+}
+imho-banner .jumbotron{
+    padding : 0 2rem;
+}
 </style>
