@@ -44,7 +44,7 @@ imho-banner h1, imho-banner h2, imho-banner h3 {
     padding-top : 1rem;
     border: 1px solid #e7e7e7;
 }
-imho.thumbnail > .container {
+imho-thumbnail > .container {
     margin-top: 2rem;
     margin-bottom: 2rem;
 
