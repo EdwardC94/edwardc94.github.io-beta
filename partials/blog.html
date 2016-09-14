@@ -1,2 +1,3 @@
-<imho-banner data-tab_img_blog="tab_img_blog" data-tab_img_about="tab_img_about" data-tab_img_projects="tab_img_projects"></imho-banner>
+<imho-banner data-tabBlog="tab_img_blog" data-tabAbout="tab_img_about" data-tabProjects="tab_img_projects"></imho-banner>
+<h1>{{tab_img_blog}}<h1>
 <imho-thumbnail data-ng-repeat="category in categories track by category.categoryID"  data-posts="postsFiltered[category.categoryID-1]" data-category="category"></imho-thumbnail>
