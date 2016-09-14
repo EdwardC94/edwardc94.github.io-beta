@@ -21,6 +21,7 @@
                 res.reverse;
             }
         }else{
+            var i = 0;
             switch (property) {
                 var i = 0;
                 case "title":
