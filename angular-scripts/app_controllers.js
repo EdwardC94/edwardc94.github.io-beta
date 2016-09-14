@@ -74,6 +74,6 @@
     controller('IMHOCtrl', ['$scope', 'data', function($scope, data) {
         var theData = data
         $scope.categories = theData.Category;
-        $scope.postsFiltered = groupByCategoryID_FK();
+        $scope.postsFiltered = groupByCategoryID_FK($scope.categories, theData.Post);
     }])
 })();
