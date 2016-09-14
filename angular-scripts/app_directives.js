@@ -4,9 +4,9 @@
         return {
             templateUrl : 'partials/imho-banner.html',
             scope : {
-                tabBlog : '=',
-                tabAbout : '=',
-                tabProjects : '='                
+                blog : '=',
+                about : '=',
+                projects : '='                
             }
         }
     }).
