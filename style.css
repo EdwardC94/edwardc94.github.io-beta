@@ -3,7 +3,7 @@
 /*Font-family imports*/
 
 html, body, body > div {
-    background-color : #fafafa;
+    background-color : #f1f1f1;
 }
 
 /*Style for directives*/
@@ -25,13 +25,13 @@ imho-banner h1, imho-banner h2, imho-banner h3 {
 }
 
 /*Style for imho-thumbnail*/
-imho-thumbnail > .container {
+.card-look {
     background-color : white;
     margin-bottom : 2rem;
     margin-top : 2rem;
     padding-bottom : 1rem;
     padding-top : 1rem;
-    border: 1px solid #f3f1f1;
+    border: 1px solid #e7e7e7;
 }
     imho-thumbnail > .container > .row {
     background-color : black;
