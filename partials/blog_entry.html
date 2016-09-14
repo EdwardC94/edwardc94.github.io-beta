@@ -1,4 +1,4 @@
-<imho-banner tab_img_blog="tab_img_blog" tab_img_about="tab_img_about" tab_img_projects="tab_img_projects"></imho-banner>
+<imho-banner data-tab_img_blog="tab_img_blog" data-tab_img_about="tab_img_about" data-tab_img_projects="tab_img_projects"></imho-banner>
 <div class="post-container" data-ng-style="{'background-image': 'url({{post.img_src}})'}">
     <div class="container-fluid">
         <div class="row">
@@ -24,7 +24,7 @@
     height: 80vh;
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover
+    background-size: cover;
     background-attachment: fixed;
 }
 .entry-title {
@@ -41,10 +41,4 @@
         font-family: 'Monoton';
         border : 10px double rgba(0,0,0,0.9);
     }
-imho-banner .jumbotron{
-    padding : 0 2rem;
-}
-.active-blog {
-
-}
 </style>
