@@ -15,6 +15,11 @@
 			"categoryID" : 2,
 			"name" : "Movies",
 			"color": "chartreuse"
+		},
+		{
+			"categoryID" : 3,
+			"name" : "Series",
+			"color": "deeppink"
 		}
 	],
 	"Post" : [
@@ -36,6 +41,16 @@
 			"date" : "08/23/2016",
 			"post_tags" : ["movies", "DCComics", "review"],
 			"categoryID_FK" : 2, 
+			"authorID_FK" : 1
+		},
+		{
+			"postID" : 3,
+			"title" : "Tokyo Ghoul",
+			"url" : "tokyo_ghoul",
+			"img_src" : "http://otakukart.com/animeblog/wp-content/uploads/2016/04/545909.jpg",
+			"date" : "09/14/2016",
+			"post_tags" : ["anime", "gore", "review", "japan"],
+			"categoryID_FK" : 3, 
 			"authorID_FK" : 1
 		}
 	]
