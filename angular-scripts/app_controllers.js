@@ -33,11 +33,28 @@
                         i++;
                     }
                     break;
+                case "categoryID":
+                    while (i < data.length && data[i].categoryID !== value){
+                        i++;
+                    }
+                    break;
+                case "authorID":
+                    while (i < data.length && data[i].authorID !== value){
+                        i++;
+                    }
+                    break;
             };
             res = (i < data.length) ? data[i] : false;
         }
         return res;
     }
+    function postByCat () {
+            var res = [];
+            for (var i = 0; i < $scope.categories.length; i++) {
+                res.push(wherePropAndValue("categoryID_FK", $scope.categories[i].categoryID, theData.Post, true));                
+            }
+            return res;
+        }
     function whereCategoryID (categoryID, postArray) {
         var res = [];
         for (var i = 0; i < postArray.length; i++){
@@ -58,58 +75,21 @@
     controller('HomeCtrl', ['$scope', function ($scope) {
     }]).
     controller('BlogEntryCtrl', ['$scope', 'data', '$route',  '$routeParams', function($scope, data, $route, $routeParams) {
-        $scope.theData = data;
-        var postArray = $scope.theData.Post;
-        var categoryArray = $scope.theData.Category;
-        var isValid =  wherePropAndValue("url", $routeParams.entry, postArray, false);
+        var theData = data;
+        var isValid =  wherePropAndValue("url", $routeParams.entry, theData.Post, false);
         if(isValid) { 
             $scope.entry = isValid;
-            $scope.postsFiltered = wherePropAndValue("categoryID_FK", isValid.categoryID_FK, postArray, true);
+            $scope.category = wherePropAndValue("categoryID", isValid.categoryID_FK, theData.Category, false);
+            $scope.author = wherePropAndValue("authorID", isValid.authorID_FK, theData.Category, false);
+            $scope.postsFiltered = wherePropAndValue("categoryID_FK", isValid.categoryID_FK, theData.Post, true);
             $scope.contentUrl = 'partials/blog/' + $routeParams.category + '/' + $routeParams.entry + '.html';
         }else{
             $scope.contentUrl = 'partials/404.html';
         }
     }]).
     controller('IMHOCtrl', ['$scope', 'data', function($scope, data) {
-        $scope.theData = data;
-        var postArray = $scope.theData.Post;
-        var categoryArray = $scope.theData.Category;
-        var postByCat = function () {
-            var res = [];
-            for (var i = 0; i < categoryArray.length; i++) {
-                res.push(wherePropAndValue("categoryID_FK", categoryArray[i].categoryID, postArray, true));                
-            }
-            return res;
-        }
-        /*
-        function whereCategory (category) {
-            var res = [];
-            for (var i = 0; i < $scope.theData.Post.length; i++){
-                if ($scope.theData.Post[i].categoryID_FK == category)
-                    res.push($scope.theData.Post[i]);
-            }
-            return res.reverse();
-        };
-        var postByCat = function () {
-            var res = [];
-            for (var i = 0; i < $scope.theData.Category.length; i++) {
-                res.push(whereCategory($scope.theData.Category[i].categoryID));
-            }
-            return res;
-        };*/
+        var theData = data
+        $scope.categories = theData.Category;
         $scope.postsFiltered = postByCat();
-        /*
-        var max = data.length - 2 
-        $scope.dataIndex = 0
-        $scope.move = function (direction) {
-            if (direction == "left") {
-                if($scope.dataIndex > 0)
-                    $scope.dataIndex--;
-            } else if (direction == "right") {
-                if($scope.dataIndex < max)
-                    $scope.dataIndex++;
-            }
-        }
-        $scope.blogInfo = [ $scope.theData[$scope.dataIndex], $scope.theData[$scope.dataIndex+1], $scope.theData[$scope.dataIndex+2] ];*/
     }])
 })();
