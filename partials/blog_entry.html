@@ -1,9 +1,9 @@
-<imho-banner></imho-banner>
+<imho-banner tab_img_blog="tab_img_blog" tab_img_about="tab_img_about" tab_img_projects="tab_img_projects"></imho-banner>
 <div class="post-container" data-ng-style="{'background-image': 'url({{post.img_src}})'}">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 entry-title" >
-                <h1>{{post.title}}</h1>
+                <h1 data-ng-style="{'border-color': '{{category.color}}'}">{{post.title}}</h1>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
     height: 80vh;
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 100%;
+    background-size: cover
     background-attachment: fixed;
 }
 .entry-title {
@@ -34,13 +34,17 @@
     height: 50vh;
 }
     .entry-title > h1 {
-        background-color: rgba(0,0,0,0.75);
+        background-color: rgba(0,0,0,0.9);
         color: white;
         margin-left: -15px;
         padding: 2rem 15px;
         font-family: 'Monoton';
+        border : 10px double rgba(0,0,0,0.9);
     }
 imho-banner .jumbotron{
     padding : 0 2rem;
+}
+.active-blog {
+
 }
 </style>

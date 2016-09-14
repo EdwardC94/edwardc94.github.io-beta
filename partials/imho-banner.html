@@ -1,10 +1,27 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="jumbotron">
-                <h1 class="display-4 hidden-xs-down">In My Honest Opinion</h1>
-                <h3 class="hidden-sm-up">IMHO</h3>
-            </div>
-        </div>
-    </div>
+<div style="border-bottom: 3px solid aqua;">
+    <h3>
+      <span data-ng-style="{'background-image': 'url({{tab_img_blog.active}})'}" class="imho-banner-tab blog-tab"><a>Blog</a></span>
+      <span data-ng-style="{'background-image': 'url({{tab_img_about.active}})'}" class="imho-banner-tab about-tab"><a>About</a></span>
+      <span data-ng-style="{'background-image': 'url({{tab_img_projects.active}})'}" class="imho-banner-tab projects-tab"><a>Projects</a></span>
+    </h3>
 </div>
+<style>
+imho-banner > div >h3 {
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Sacramento';
+    display: flex;
+    justify-content: center
+}
+.imho-banner-tab {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 3px black;
+    display: flex;
+}
+imho-banner > div >h3 > span > a {
+    padding: 0.5rem 2rem;
+}
+</style>

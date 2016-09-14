@@ -70,10 +70,16 @@
         }else{
             $scope.contentUrl = 'partials/404.html';
         }
+        $scope.tab_img_blog = { active : "http://i.giphy.com/9Dt0TrhMAxjrO.gif", hover : "http://i.giphy.com/9Dt0TrhMAxjrO.gif"};
+        $scope.tab_img_about = { active : "", hover : "http://i.giphy.com/jtgMr19M4GfJK.gif"};
+        $scope.tab_img_projects = { active : "", hover : "http://i.giphy.com/2YRO3kKSpFeA8.gif"};
     }]).
     controller('IMHOCtrl', ['$scope', 'data', function($scope, data) {
         var theData = data
         $scope.categories = theData.Category;
         $scope.postsFiltered = groupByCategoryID_FK($scope.categories, theData.Post);
+        $scope.tab_img_blog = { active : "http://i.giphy.com/9Dt0TrhMAxjrO.gif", hover : "http://i.giphy.com/9Dt0TrhMAxjrO.gif"};
+        $scope.tab_img_about = { active : "", hover : "http://i.giphy.com/jtgMr19M4GfJK.gif"};
+        $scope.tab_img_projects = { active : "", hover : "http://i.giphy.com/2YRO3kKSpFeA8.gif"};
     }])
 })();
