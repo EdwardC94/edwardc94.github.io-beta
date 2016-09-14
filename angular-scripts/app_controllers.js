@@ -1,7 +1,45 @@
 (function () {
+    function wherePropAndValue(property, value, data, isArray) {
+        var res;
+        if(isArray) {
+            res = [];
+            switch (property) {
+                case "categoryID_FK":
+                    for (var i = 0; i < data.length; i++){
+                        if (data[i].categoryID_FK == value)
+                            res.push(data[i]);
+                    }
+                    break;
+                case "authorID_FK":
+                    for (var i = 0; i < data.length; i++){
+                        if (data[i].authorID_FK == value)
+                            res.push(data[i]);
+                    }
+                    break;
+            }
+            if(res.length > 0 ){
+                res.reverse;
+            }
+        }else{
+            switch (property) {
+                var i = 0;
+                case "title":
+                    while (i < data.length && data[i].title !== value){
+                        i++;
+                    }
+                    break;
+                case "url":
+                    while (i < data.length && data[i].url !== value){
+                        i++;
+                    }
+                    break;
+            };
+            res = (i < data.length) ? data[i] : false;
+        }
+        return res;
+    }
     function whereCategoryID (categoryID, postArray) {
         var res = [];
-        console.log(postArray);
         for (var i = 0; i < postArray.length; i++){
             if (postArray[i].categoryID_FK == categoryID)
                 res.push(postArray[i]);
@@ -23,8 +61,14 @@
         $scope.theData = data;
         var postArray = $scope.theData.Post;
         var categoryArray = $scope.theData.Category;
-        $scope.catInfo = whereCategoryID(getCategoryIDbyCategoryName($routeParams.category, categoryArray), postArray);
-        $scope.contentUrl = 'partials/blog/' + $routeParams.category + '/' + $routeParams.entry + '.html';
+        var isValid =  wherePropAndValue("url", $routeParams.entry, postArray, false);
+        if(isValid) { 
+            $scope.entry = isValid;
+            $scope.postsFiltered = wherePropAndValue("categoryID_FK", isValid.categoryID_FK, postArray, true);
+            $scope.contentUrl = 'partials/blog/' + $routeParams.category + '/' + $routeParams.entry + '.html';
+        }else{
+            $scope.contentUrl = 'partials/404.html';
+        }
     }]).
     controller('IMHOCtrl', ['$scope', 'data', function($scope, data) {
         $scope.theData = data;
@@ -33,7 +77,7 @@
         var postByCat = function () {
             var res = [];
             for (var i = 0; i < categoryArray.length; i++) {
-                res.push(whereCategoryID(categoryArray[i].categoryID, postArray));                
+                res.push(wherePropAndValue("categoryID_FK", categoryArray[i].categoryID, postArray, true));                
             }
             return res;
         }
