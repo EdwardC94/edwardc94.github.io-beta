@@ -2,7 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Monoton|Sacramento';
 /*Font-family imports*/
 
-body > div {
+html, body, body > div {
     background-color : #fafafa;
 }
 
