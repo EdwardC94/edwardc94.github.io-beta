@@ -53,7 +53,7 @@
         for (var i = 0; i < categories.length; i++){
             res.push(where("categoryID_FK", categories[i].categoryID, posts, true));   
         }
-        return res.reverse();
+        return res;
     };
     angular.module('MyWebsiteCtrls', ['ngRoute']).
     controller('HomeCtrl', ['$scope', function ($scope) {
