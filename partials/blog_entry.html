@@ -1,11 +1,16 @@
 <imho-banner></imho-banner>
-<imho-thumbnail data-posts="postsFiltered" data-author="theData.Author" data-category="category"></imho-thumbnail>
-<div class="container">
+<div class="container-fluid blog-post" data-ng-style="{'background-image': 'url({{post.img_src}})'}">
     <div class="row">
-        <div class="col-xs-12">
-            <img class="img-fluid" data-ng-src="{{entry.img.url}}" alt="{{entry.img.alt}}">
-            <h1 class="entry-title display-4">{{entry.title}}</h1>
+        <div class="col-xs-12" >
+            <div  class="entry-title">
+                <h2>{{entry.title}}</h2>
+            </div>
         </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">    
         <div class="col-lg-8 entry-content">
             <div data-ng-include="contentUrl"></div>            
         </div>
@@ -13,15 +18,19 @@
         </div>
     </div>
 </div>
+<imho-thumbnail data-posts="postsFiltered" data-author="theData.Author" data-category="category"></imho-thumbnail>
 <style>
     .entry-title {
-        margin-top : 2rem;
-        margin-bottom : 3rem;
+        display : flex;
     }
-        .entry-content h2 {
-            margin-bottom : 1rem;
-            margin-top : 2rem;
-        }
+    .entry-title > h2 {
+        background-color : rgba(0,0,0,0.75);
+        color : white;
+    }
+    .entry-content h2 {
+        margin-bottom : 1rem;
+        margin-top : 2rem;
+    }
     imho-banner .jumbotron{
         padding : 0 2rem;
     }
