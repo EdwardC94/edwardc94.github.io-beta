@@ -1,5 +1,5 @@
 (function () {
-    function wherePropAndValue(property, value, data, isArray) {
+    function where (property, value, data, isArray) {
         var res;
         if(isArray) {
             res = [];
@@ -48,40 +48,24 @@
         }
         return res;
     }
-    function postByCat () {
-            var res = [];
-            for (var i = 0; i < $scope.categories.length; i++) {
-                res.push(wherePropAndValue("categoryID_FK", $scope.categories[i].categoryID, theData.Post, true));                
-            }
-            return res;
-        }
-    function whereCategoryID (categoryID, postArray) {
+    function groupByCategoryID_FK (categories, posts) {
         var res = [];
-        for (var i = 0; i < postArray.length; i++){
-            if (postArray[i].categoryID_FK == categoryID)
-                res.push(postArray[i]);
+        for (var i = 0; i < categories.length; i++){
+            res.push(where("categoryID_FK", categories[i].categoryID, posts, true));   
         }
         return res.reverse();
-    };
-    function getCategoryIDbyCategoryName (categoryName, categoryArray) {
-        var res;
-        for (var i = 0; i < categoryArray.length; i++){
-            if (categoryArray[i].name == categoryName)
-                res = categoryArray[i].categoryID;
-        }
-        return res;
     };
     angular.module('MyWebsiteCtrls', ['ngRoute']).
     controller('HomeCtrl', ['$scope', function ($scope) {
     }]).
     controller('BlogEntryCtrl', ['$scope', 'data', '$route',  '$routeParams', function($scope, data, $route, $routeParams) {
         var theData = data;
-        var isValid =  wherePropAndValue("url", $routeParams.entry, theData.Post, false);
+        var isValid =  where("url", $routeParams.entry, theData.Post, false);
         if(isValid) { 
             $scope.entry = isValid;
-            $scope.category = wherePropAndValue("categoryID", isValid.categoryID_FK, theData.Category, false);
-            $scope.author = wherePropAndValue("authorID", isValid.authorID_FK, theData.Category, false);
-            $scope.postsFiltered = wherePropAndValue("categoryID_FK", isValid.categoryID_FK, theData.Post, true);
+            $scope.category = where("categoryID", isValid.categoryID_FK, theData.Category, false);
+            $scope.author = where("authorID", isValid.authorID_FK, theData.Category, false);
+            $scope.postsFiltered = where("categoryID_FK", isValid.categoryID_FK, theData.Post, true);
             $scope.contentUrl = 'partials/blog/' + $routeParams.category + '/' + $routeParams.entry + '.html';
         }else{
             $scope.contentUrl = 'partials/404.html';
@@ -90,6 +74,6 @@
     controller('IMHOCtrl', ['$scope', 'data', function($scope, data) {
         var theData = data
         $scope.categories = theData.Category;
-        $scope.postsFiltered = postByCat();
+        $scope.postsFiltered = groupByCategoryID_FK();
     }])
 })();

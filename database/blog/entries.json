@@ -19,28 +19,22 @@
 	],
 	"Post" : [
 		{
-			"entryID" : 1,
+			"postID" : 1,
 			"title" : "It is mine and you cannot have it",
 			"url" : "it_is_mine_and_you_cannot_have_it",
-			"img" : {
-				"src" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Calavera_en_ofrenda_with_Cempasuchil_flowers.JPG/640px-Calavera_en_ofrenda_with_Cempasuchil_flowers.JPG",
-				"alt" : "Ofrenda"
-			},
+			"img_src" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Calavera_en_ofrenda_with_Cempasuchil_flowers.JPG/640px-Calavera_en_ofrenda_with_Cempasuchil_flowers.JPG",
 			"date": "08/20/2016",
-			"tags": ["racism", "culture appropriation", "black culture"],
+			"post_tags": ["racism", "culture appropriation", "black culture"],
 			"categoryID_FK" : 1, 
 			"authorID_FK" : 1
 		},
 		{
-			"entryID" : 2,
+			"postID" : 2,
 			"title" : "Suicide Squad",
 			"url" : "suicide_squad",
-			"img" : {
-				"src" : "http://i.giphy.com/I37q1XjGvAtjy.gif",
-				"alt" : "Imagen de Harley Quinn"
-			},
+			"img_src" : "http://i.giphy.com/I37q1XjGvAtjy.gif",
 			"date" : "08/23/2016",
-			"tags" : ["movies", "DCComics", "review"],
+			"post_tags" : ["movies", "DCComics", "review"],
 			"categoryID_FK" : 2, 
 			"authorID_FK" : 1
 		}
