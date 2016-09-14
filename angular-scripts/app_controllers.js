@@ -23,7 +23,6 @@
         }else{
             var i = 0;
             switch (property) {
-                var i = 0;
                 case "title":
                     while (i < data.length && data[i].title !== value){
                         i++;
