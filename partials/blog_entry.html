@@ -1,4 +1,5 @@
 <imho-banner data-tab_img_blog="tab_img_blog" data-tab_img_about="tab_img_about" data-tab_img_projects="tab_img_projects"></imho-banner>
+<h1>{{tab_img_blog.active}}</h1>
 <div class="post-container" data-ng-style="{'background-image': 'url({{post.img_src}})'}">
     <div class="container-fluid">
         <div class="row">
@@ -40,5 +41,6 @@
         padding: 2rem 15px;
         font-family: 'Monoton';
         border : 10px double rgba(0,0,0,0.9);
+        border-left : none
     }
 </style>
