@@ -9,9 +9,7 @@
         return {
             templateUrl : 'partials/imho-thumbnail.html',
             scope : {
-                posts : '=',
-                category : '=',
-                author : '='
+                posts : '='
             }
         }
     })
