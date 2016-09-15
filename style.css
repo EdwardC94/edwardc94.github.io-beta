@@ -64,7 +64,7 @@ imho-thumbnail > .container {
     text-align : center;
 }
 .cont-body {
-    height : 33vh;
+    height : 100%;
     background-color : aquamarine;
     background-clip : content-box;
     background-size : cover;
@@ -73,6 +73,10 @@ imho-thumbnail > .container {
     display : flex;    
     justify-content : center;
     align-items : center;
+}
+.cont-series {
+    overflow: hidden;
+    height: 33vh;
 }
     .cont-body > h2 {
         background-color : rgba(0,0,0,0.75);
