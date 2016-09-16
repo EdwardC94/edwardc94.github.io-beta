@@ -37,6 +37,7 @@ imho-banner[data-active="projects"] > div > h3 > span:nth-child(3), imho-banner 
 imho-banner > div > h3 > span > a {
     padding: 0.5rem 2rem;
     background-color: rgba(0, 0, 0, 0.62);
+    color : white !important; 
 }
 
 /*Style for imho-thumbnail*/
