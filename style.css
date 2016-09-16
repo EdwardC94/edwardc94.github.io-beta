@@ -70,8 +70,10 @@ This Styles are no longer necessary*/
         padding : 0.5rem 0;
     }
         .cont-header > h2 > span {
+            background-color : black;
             padding: 0 0.5rem;
-            color: black;
+            border-left : 10px solid;
+            border-right : 10px solid;
         }
 .cont-body {
     height : 100%;
