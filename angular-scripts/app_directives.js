@@ -2,12 +2,7 @@
     angular.module("MyWebsiteDirectives", []).
     directive("imhoBanner", function(){
         return {
-            templateUrl : 'partials/imho-banner.html',
-            scope : {
-                blog : '=',
-                about : '=',
-                projects : '='                
-            }
+            templateUrl : 'partials/imho-banner.html'
         }
     }).
     directive("imhoThumbnail", function(){

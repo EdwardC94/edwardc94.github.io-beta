@@ -8,7 +8,9 @@ html, body, body > div {
 
 /*Style for directives*/
 
-imho-banner > div >h3 {
+/*Style for imho-banner*/
+
+imho-banner > div > h3 {
     margin-bottom: 0;
     background-color: black;
     color: white;
@@ -16,23 +18,25 @@ imho-banner > div >h3 {
     display: flex;
     justify-content: center
 }
-.imho-banner-tab {
+imho-banner > div > h3 > span {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     text-shadow: 1px 1px 3px black;
     display: flex;
 }
-imho-banner > div >h3 > span > a {
+imho-banner[data-active="blog"] > div > h3 > span::nth-child(1), imho-banner > div > h3 > span::nth-child(1)::hover {
+    background-image : url("http://i.giphy.com/jtgMr19M4GfJK.gif"); 
+}
+imho-banner[data-active="about"] > div > h3 > span::nth-child(2), imho-banner > div > h3 > span::nth-child(2)::hover{    
+    background-image : url("http://i.giphy.com/9Dt0TrhMAxjrO.gif"); 
+}
+imho-banner[data-active="projects"] > div > h3 > span::nth-child(3), imho-banner > div > h3 > span::nth-child(3)::hover{    
+    background-image : url("http://i.giphy.com/2YRO3kKSpFeA8.gif"); 
+}
+imho-banner > div > h3 > span > a {
     padding: 0.5rem 2rem;
     background-color: rgba(0, 0, 0, 0.62);
-}
-
-/*Style for imho-banner*/
-
-imho-banner h1, imho-banner h2, imho-banner h3 {
-    color : white;
-    font-family : 'Monoton', cursive;
 }
 
 /*Style for imho-thumbnail*/
@@ -74,6 +78,7 @@ This Styles are no longer necessary*/
             padding: 0 0.5rem;
             border-left : 10px solid;
             border-right : 10px solid;
+            color : white; 
         }
 .cont-body {
     height : 100%;
