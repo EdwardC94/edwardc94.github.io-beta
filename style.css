@@ -49,6 +49,7 @@ imho-thumbnail > .container {
     margin-bottom: 2rem;
 
 }
+/*This Styles are no longer necessary
     imho-thumbnail > .container > .row {
     background-color : black;
     padding-top : 15px;
@@ -59,10 +60,19 @@ imho-thumbnail > .container {
     border-bottom : 10px;
     border-style : double;
     }
+This Styles are no longer necessary*/
 .cont-header {
     font-family : 'Monoton', cursive;
     text-align : center;
 }
+    .cont-header > h2 {
+        margin-bottom : 0;
+        padding : 0.5rem 0;
+    }
+        .cont-header > h2 > span {
+            padding: 0 0.5rem;
+            color: black;
+        }
 .cont-body {
     height : 100%;
     background-color : aquamarine;
@@ -74,12 +84,8 @@ imho-thumbnail > .container {
     justify-content : center;
     align-items : center;
 }
-.cont-series {
-    overflow: hidden;
-    height: 33vh;
-}
     .cont-body > h2 {
-        background-color : rgba(0,0,0,0.75);
+        background-color : rgba(0,0,0,0.9);
         padding : 10px;
         width : 95%;
         text-align : center;
@@ -88,6 +94,14 @@ imho-thumbnail > .container {
             color : white;
             font-family : 'Sacramento';
         }
+
+.cont-series {
+    margin-top : 1rem;
+}
+    .cont-series > .row {
+        overflow: hidden;
+        height: 33vh;
+    }
 .cont-footer {
     margin-top : 1rem;    
     text-align : center;
