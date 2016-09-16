@@ -25,13 +25,13 @@ imho-banner > div > h3 > span {
     text-shadow: 1px 1px 3px black;
     display: flex;
 }
-imho-banner[data-active="blog"] > div > h3 > span:nth-child(1), imho-banner > div > h3 > span::nth-child(1):hover {
+imho-banner[data-active="blog"] > div > h3 > span:nth-child(1), imho-banner > div > h3 > span:nth-child(1):hover {
     background-image : url("http://i.giphy.com/jtgMr19M4GfJK.gif"); 
 }
-imho-banner[data-active="about"] > div > h3 > span:nth-child(2), imho-banner > div > h3 > span::nth-child(2):hover{    
+imho-banner[data-active="about"] > div > h3 > span:nth-child(2), imho-banner > div > h3 > span:nth-child(2):hover{    
     background-image : url("http://i.giphy.com/9Dt0TrhMAxjrO.gif"); 
 }
-imho-banner[data-active="projects"] > div > h3 > span:nth-child(3), imho-banner > div > h3 > span::nth-child(3):hover{    
+imho-banner[data-active="projects"] > div > h3 > span:nth-child(3), imho-banner > div > h3 > span:nth-child(3):hover{    
     background-image : url("http://i.giphy.com/2YRO3kKSpFeA8.gif"); 
 }
 imho-banner > div > h3 > span > a {
