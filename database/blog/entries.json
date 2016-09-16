@@ -47,50 +47,10 @@
 			"postID" : 3,
 			"title" : "Tokyo Ghoul",
 			"url" : "tokyo_ghoul",
-			"img_src" : "http://otakukart.com/animeblog/wp-content/uploads/2016/04/545909.jpg",
+			"img_src" : "http://pre13.deviantart.net/6637/th/pre/f/2015/284/b/6/tokyo_ghoul___who_is_that_inside_of_me__wallpaper_by_windyechoes-d9cszfh.jpg",
 			"date" : "09/14/2016",
 			"post_tags" : ["anime", "gore", "review", "japan"],
 			"categoryID_FK" : 3, 
-			"authorID_FK" : 1
-		},
-		{
-			"postID" : 4,
-			"title" : "Suicide Squad",
-			"url" : "suicide_squad",
-			"img_src" : "http://i.giphy.com/I37q1XjGvAtjy.gif",
-			"date" : "08/23/2016",
-			"post_tags" : ["movies", "DCComics", "review"],
-			"categoryID_FK" : 1, 
-			"authorID_FK" : 1
-		},
-		{
-			"postID" : 5,
-			"title" : "Tokyo Ghoul",
-			"url" : "tokyo_ghoul",
-			"img_src" : "http://otakukart.com/animeblog/wp-content/uploads/2016/04/545909.jpg",
-			"date" : "09/14/2016",
-			"post_tags" : ["anime", "gore", "review", "japan"],
-			"categoryID_FK" : 1, 
-			"authorID_FK" : 1
-		},
-		{
-			"postID" : 6,
-			"title" : "Suicide Squad",
-			"url" : "suicide_squad",
-			"img_src" : "http://i.giphy.com/I37q1XjGvAtjy.gif",
-			"date" : "08/23/2016",
-			"post_tags" : ["movies", "DCComics", "review"],
-			"categoryID_FK" : 1, 
-			"authorID_FK" : 1
-		},
-		{
-			"postID" : 7,
-			"title" : "Tokyo Ghoul",
-			"url" : "tokyo_ghoul",
-			"img_src" : "http://otakukart.com/animeblog/wp-content/uploads/2016/04/545909.jpg",
-			"date" : "09/14/2016",
-			"post_tags" : ["anime", "gore", "review", "japan"],
-			"categoryID_FK" : 1, 
 			"authorID_FK" : 1
 		}
 	]
