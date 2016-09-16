@@ -3,19 +3,19 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 entry-title" >
-                <h1 data-ng-style="{'border-color': '{{category.color}}'}">{{post.title}}</h1>
+                <h1 data-ng-style="{'border-color': '{{category.color}}', 'text-shadow' : '1px 1px 10px {{category.color}}'}">{{post.title}}</h1>
             </div>
         </div>
     </div>
 
     <div class="container card-look">
         <div class="row">    
-            <div class="col-lg-8">
+            <div class="col-xs-12 col-lg-8">
                 <div data-ng-include="contentUrl"></div>            
             </div>
-            <div class="col-lg-4">
+            <div class="col-xs-12 col-lg-4">
             </div>
         </div>
     </div>
-    <imho-thumbnail data-posts="postsFiltered" data-author="theData.Author" data-category="category"></imho-thumbnail>
+    <imho-thumbnail data-posts="postsFiltered" data-author="author" data-category="category"></imho-thumbnail>
 <div>

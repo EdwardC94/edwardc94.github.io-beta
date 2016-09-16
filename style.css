@@ -54,18 +54,6 @@ imho-thumbnail > .container {
     margin-bottom: 2rem;
 
 }
-/*This Styles are no longer necessary
-    imho-thumbnail > .container > .row {
-    background-color : black;
-    padding-top : 15px;
-    padding-bottom : 15px;
-    margin : 0-15px;
-    border : 0;
-    border-top : 10px;
-    border-bottom : 10px;
-    border-style : double;
-    }
-This Styles are no longer necessary*/
 .cont-header {
     font-family : 'Monoton', cursive;
     text-align : center;
@@ -114,9 +102,9 @@ This Styles are no longer necessary*/
     margin-top : 1rem;    
     text-align : center;
 }
-.cont-nav {
-    cursor : pointer;
-}
+    .cont-footer span {
+        cursor : pointer;
+    }
 
 /*Style for directives*/
 
