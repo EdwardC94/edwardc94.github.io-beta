@@ -69,6 +69,12 @@ imho-thumbnail > .container {
             border-right : 10px solid;
             color : white; 
         }
+            .cont-header > h2 > span > button, .cont-header > h2 > span > button[disabled="disabled"] {
+                background-color: black;
+                border: 0;
+                color: white;
+                text-shadow: 1px 1px 10px aqua; 
+            }
 .cont-body {
     height : 100%;
     background-color : aquamarine;
@@ -97,13 +103,6 @@ imho-thumbnail > .container {
     .cont-series > .row {
         overflow: hidden;
         height: 33vh;
-    }
-.cont-footer {
-    margin-top : 1rem;    
-    text-align : center;
-}
-    .cont-footer span {
-        cursor : pointer;
     }
 
 /*Style for directives*/
