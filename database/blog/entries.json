@@ -19,7 +19,7 @@
 		{
 			"categoryID" : 3,
 			"name" : "Series",
-			"color": "deeppink"
+			"color": "#FFEB3B"
 		}
 	],
 	"Post" : [
