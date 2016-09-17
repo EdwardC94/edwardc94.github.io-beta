@@ -20,6 +20,11 @@
 			"categoryID" : 3,
 			"name" : "Series",
 			"color": "#FFEB3B"
+		}, 
+		{
+		    "categoryID" : 3,
+			"name" : "Series",
+			"color": "salmon"
 		}
 	],
 	"Post" : [
@@ -53,6 +58,17 @@
 			"date" : "09/14/2016",
 			"description" : "An anime that made me think about the importance of self-acceptance, and about dwelling with one's own demons to be able to survive",
 			"post_tags" : ["anime", "gore", "review", "japan"],
+			"categoryID_FK" : 3, 
+			"authorID_FK" : 1
+		},
+		{
+			"postID" : 4,
+			"title" : "Meet Milo",
+			"url" : "meet_milo",
+			"img_src" : "",
+			"date" : "09/17/2016",
+			"description" : "What is love? How does it feel like to be kissed? Where can I find someone to love me, and when will I find them? ",
+			"post_tags" : ["love", "novel", "questionsAboutLove", "Milo"],
 			"categoryID_FK" : 3, 
 			"authorID_FK" : 1
 		}
