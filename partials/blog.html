@@ -1,6 +1,6 @@
 <imho-banner data-active="blog"></imho-banner>
 <div class="jumbotron" data-ng-style="{'background-image' : 'url({{latestPost.post.img_src}})'}">
-  <h1><span data-ng-style="{'border-color' : '{{latestPost.category.color}}'}"><a data-ng-href="#/blog/{{latestPost.category.name.toLowerCase()}}/{{latestPost.post.url}}">{{latestPost.post.title}}</a></span></h4>
-  <h4>{{latestPost.post.description}}</h4>
+  <h1><span data-ng-style="{'border-color' : '{{latestPost.category.color}}'}"><a data-ng-href="#/blog/{{latestPost.category.name.toLowerCase()}}/{{latestPost.post.url}}" data-ng-style="{'text-shadow' : '1px 1px 10px {{latestPost.category.color}}'}">{{latestPost.post.title}}</a></span></h4>
+  <h4 data-ng-style="{'border-color' : '{{latestPost.category.color}}'}">{{latestPost.post.description}}</h4>
 </div>
 <imho-thumbnail data-ng-repeat="category in categories track by category.categoryID"  data-posts="postsFiltered[category.categoryID-1]" data-category="category"></imho-thumbnail>
