@@ -73,7 +73,6 @@
     }]).
     controller('IMHOCtrl', ['$scope', 'data', function($scope, data) {
         var theData = data;
-        console.log(theData);
         var last = theData.Post[theData.Post.length-1];
         $scope.latestPost = { post : last, category : where("categoryID", last.categoryID_FK, theData.Category, false) };
         $scope.categories = theData.Category;
