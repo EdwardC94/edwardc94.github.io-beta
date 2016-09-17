@@ -22,8 +22,8 @@
 			"color": "#FFEB3B"
 		}, 
 		{
-		    "categoryID" : 3,
-			"name" : "Series",
+		    "categoryID" : 4,
+			"name" : "Milo",
 			"color": "salmon"
 		}
 	],
@@ -69,7 +69,7 @@
 			"date" : "09/17/2016",
 			"description" : "What is love? How does it feel like to be kissed? Where can I find someone to love me, and when will I find them? ",
 			"post_tags" : ["love", "novel", "questionsAboutLove", "Milo"],
-			"categoryID_FK" : 3, 
+			"categoryID_FK" : 4, 
 			"authorID_FK" : 1
 		}
 	]
