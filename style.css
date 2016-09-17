@@ -73,8 +73,8 @@ imho-thumbnail > .container {
         .jumbotron > h1 > span {
             font-family : 'Monoton';
         }
-            .jumbotron > h1 > span {
-                color : white;
+            .jumbotron > h1 > span > a {
+                color : white !important;
             }
             .cont-header > h2 > span > button, .cont-header > h2 > span > button[disabled="disabled"] {
                 background-color: black;
