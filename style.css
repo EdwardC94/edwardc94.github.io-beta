@@ -73,6 +73,9 @@ imho-thumbnail > .container {
         .jumbotron > h1 > span {
             font-family : 'Monoton';
         }
+            .jumbotron > h1 > span {
+                color : white;
+            }
             .cont-header > h2 > span > button, .cont-header > h2 > span > button[disabled="disabled"] {
                 background-color: black;
                 border: 0;
@@ -82,12 +85,12 @@ imho-thumbnail > .container {
                 text-shadow: 1px 1px 10px aqua; 
             }
 .cont-body, .jumbotron {
-    background-clip : content-box;
     background-size : cover;
     background-repeat : no-repeat;
     background-position : center;
 }
 .cont-body{
+    background-clip : content-box;
     height : 100%;
     background-color : aquamarine;
     display : flex;    
