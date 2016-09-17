@@ -62,13 +62,16 @@ imho-thumbnail > .container {
         margin-bottom : 0;
         padding : 0.5rem 0;
     }
-        .cont-header > h2 > span {
+        .cont-header > h2 > span, .jumbotron > h1 > span, .jumbotron > h4 {
             background-color : black;
             padding: 0 0.5rem;
             margin: 0 0.5rem;
             border-left : 5px solid;
             border-right : 5px solid;
             color : white; 
+        }
+        .jumbotron > h1 > span {
+            font-family : 'Monoton';
         }
             .cont-header > h2 > span > button, .cont-header > h2 > span > button[disabled="disabled"] {
                 background-color: black;
@@ -78,16 +81,26 @@ imho-thumbnail > .container {
                 color: white;
                 text-shadow: 1px 1px 10px aqua; 
             }
-.cont-body {
-    height : 100%;
-    background-color : aquamarine;
+.cont-body, .jumbotron {
     background-clip : content-box;
     background-size : cover;
     background-repeat : no-repeat;
     background-position : center;
+}
+.cont-body{
+    height : 100%;
+    background-color : aquamarine;
     display : flex;    
     justify-content : center;
     align-items : center;
+}
+.jumbotron {
+    height : 50vh;
+    background-attachment: fixed;
+}
+.jumbotron > h4 {
+    width : 85%;
+    background-color : rgba(0,0,0,.75);
 }
     .cont-body > h2 {
         background-color : rgba(0,0,0,0.9);
