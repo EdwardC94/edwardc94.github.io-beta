@@ -63,11 +63,11 @@
 		},
 		{
 			"postID" : 4,
-			"title" : "Meet Milo",
+			"title" : "Curious",
 			"url" : "meet_milo",
-			"img_src" : "",
+			"img_src" : "http://i.giphy.com/K0w9s4JZYjwfm.gif",
 			"date" : "09/17/2016",
-			"description" : "What is love? How does it feel like to be kissed? Where can I find someone to love me, and when will I find them? ",
+			"description" : "Chick flick of the 90's are the epitome of what anybody would dream of their love life to be. But, why exactly?",
 			"post_tags" : ["love", "novel", "questionsAboutLove", "Milo"],
 			"categoryID_FK" : 4, 
 			"authorID_FK" : 1

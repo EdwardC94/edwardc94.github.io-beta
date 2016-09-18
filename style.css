@@ -98,12 +98,13 @@ imho-thumbnail > .container {
     align-items : center;
 }
 .jumbotron {
-    height : 50vh;
+    height : 60vh;
     background-attachment: fixed;
 }
 .jumbotron > h4 {
     width : 85%;
     background-color : rgba(0,0,0,.75);
+    margin-top: 1rem;
 }
     .cont-body > h2 {
         background-color : rgba(0,0,0,0.9);
