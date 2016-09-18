@@ -1,5 +1,5 @@
 /*Font-family imports*/
-@import 'https://fonts.googleapis.com/css?family=Monoton|Sacramento';
+@import 'https://fonts.googleapis.com/css?family=Monoton|Sacramento|Source+Sans+Pro';
 /*Font-family imports*/
 
 html, body, body > div {
@@ -252,6 +252,14 @@ imho-thumbnail > .container {
         font-family: 'Monoton';
         border : 10px double rgba(0,0,0,0.9);
         border-left : none
+    }
+.blog-content {
+    font-family: 'Source Sans Pro';
+    font-size: 1.25rem;
+}
+    .blog-content > h1 {
+        margin-bottom: 2rem;
+        font-weight: 600;
     }
 
 /* Style for blog entry*/
