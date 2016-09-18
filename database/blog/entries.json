@@ -63,11 +63,11 @@
 		},
 		{
 			"postID" : 4,
-			"title" : "Curious",
-			"url" : "meet_milo",
+			"title" : "Romance",
+			"url" : "romance",
 			"img_src" : "http://i.giphy.com/K0w9s4JZYjwfm.gif",
 			"date" : "09/17/2016",
-			"description" : "Chick flick of the 90's are the epitome of what anybody would dream of their love life to be. But, why exactly?",
+			"description" : "Chick flick of the 90's are the epitome of what anybody would dream of their love life to be. Surprise, I am no exception",
 			"post_tags" : ["love", "novel", "questionsAboutLove", "Milo"],
 			"categoryID_FK" : 4, 
 			"authorID_FK" : 1
