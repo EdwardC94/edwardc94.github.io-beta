@@ -22,6 +22,8 @@
     align-items: center;
     background-position : center !important;
     background-repeat : no-repeat !important;
+    width : 33.33%;
+    float : left;
 }
 .wrapper-home > div:nth-child(1) {
     background : url("http://i.giphy.com/jtgMr19M4GfJK.gif");
@@ -70,7 +72,7 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .wrapper-home > div {
-        height : 13rem !important;
+        height : 33.33% !important;
         margin-bottom : 1.25rem;
     }
     .wrapper-home > h1 {
