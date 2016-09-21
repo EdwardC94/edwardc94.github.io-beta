@@ -7,7 +7,7 @@
     width : 100%;
 }
 
-/*Style for Home Page*/
+/*Style for Home Page BEGINNING*/
 .wrapper-home > h2 {
     font : 500 2rem 'Sacramento';
     text-align : center;
@@ -51,6 +51,7 @@
     .wrapper-home > div:nth-of-type(3) > h1 > a {
         text-shadow : 2px 2px 10px #00e2ff;
     }
+/*Style for Home Page END*/
 @keyframes cool-effect {
     0% {text-shadow :  1px 1px 1px #ff5722;}
     10% {text-shadow :  1px 1px 1px #f44336;}
@@ -64,6 +65,33 @@
     90% {text-shadow :  1px 1px 1px #ffeb3b;}
     100% {text-shadow: 1px 1px 1px #ffc107;}
 }
+/*Style for Blog_entry BEGINNING*/
+
+div.wrapper-blogEntry > article {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    background-color : #f1f1f1;
+}
+div.wrapper > article > header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 10rem;
+}
+    div.wrapper > article > header > h1 {
+        background-color: rgba(0,0,0,0.9);
+        color: white;
+        margin-left: -15px;
+        padding: 2rem 15px;
+        font-family: 'Monoton';
+        border : 10px double rgba(0,0,0,0.9);
+        border-left : none
+    }
+div.wrapper > article > section {
+    width : 100%;
+}
+/*Style for Blog_entry END*/
 /*Media Queries */
 /* Small devices (landscape phones, 544px and up)*/
 @media (min-width: 544px) { 
@@ -77,24 +105,35 @@
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-.wrapper-home > div {
-    height: 100% !important;
-    width : 33.33%;
-    float : left;
+/*HOME BEGINNING*/
+    .wrapper-home > div {
+        height: 100% !important;
+        width : 33.33%;
+        float : left;
+    }
+        .wrapper-home > div:nth-of-type(1) > h1 > a:hover {
+            text-shadow : 2px 2px 10px greenyellow;
+        }
+        .wrapper-home > div:nth-of-type(2) > h1 > a:hover {
+            text-shadow : 2px 2px 10px orange;
+        }
+        .wrapper-home > div:nth-of-type(3) > h1 > a:hover {
+            text-shadow : 2px 2px 10px #00e2ff;
+        }
+        .wrapper-home > div > h1 > a {
+            text-shadow : none;
+        }
+/*HOME END*/
+/*BLOG_ENTRY BEGINNING*/
+
+    
+
+/*BLOG_ENTRY END*/
+    .wrapper-blogEntry > article {
+        background-size: cover;
+    }
 }
-    .wrapper-home > div:nth-of-type(1) > h1 > a:hover {
-        text-shadow : 2px 2px 10px greenyellow;
-    }
-    .wrapper-home > div:nth-of-type(2) > h1 > a:hover {
-        text-shadow : 2px 2px 10px orange;
-    }
-    .wrapper-home > div:nth-of-type(3) > h1 > a:hover {
-        text-shadow : 2px 2px 10px #00e2ff;
-    }
-    .wrapper-home > div > h1 > a {
-        text-shadow : none;
-    }
-}
+
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { ... }
