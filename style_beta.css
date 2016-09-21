@@ -9,7 +9,7 @@
 
 /*Style for Home Page*/
 .wrapper-home > h2 {
-    font : 500 3.125rem 'Sacramento';
+    font : 500 'Sacramento';
     text-align : center;
     animation: cool-effect 2s infinite;
     color : white;
