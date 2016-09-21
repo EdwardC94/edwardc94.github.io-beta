@@ -8,11 +8,12 @@
 }
 
 /*Style for Home Page*/
-.wrapper-home > h1 {
-    font : 600 3.125rem 'Sacramento';
+.wrapper-home > h2 {
+    font : 500 3.125rem 'Sacramento';
     text-align : center;
-    padding : 1rem 0;
     animation: cool-effect 2s infinite;
+    color : white;
+    background-color : black;
 }
 
 .wrapper-home > div {
@@ -23,7 +24,7 @@
     background-repeat : no-repeat !important;
     height : 33.33% !important;
     width : 100%;
-    margin-bottom : 1.25rem;
+    border: 0.5rem solid white;
 }
 .wrapper-home > div:nth-of-type(1) {
     background : url("http://i.giphy.com/jtgMr19M4GfJK.gif");
