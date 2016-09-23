@@ -1,8 +1,8 @@
 (function () {
     angular.module("MyWebsiteDirectives", []).
-    directive("imhoBanner", function(){
+    directive("navigator", function(){
         return {
-            templateUrl : 'partials/imho-banner.html'
+            templateUrl : 'partials/navigator.html'
         }
     }).
     directive("imhoThumbnail", function(){
