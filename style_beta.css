@@ -92,6 +92,41 @@ div.wrapper > article > section {
     width : 100%;
 }
 /*Style for Blog_entry END*/
+
+/*Style for directives*/
+
+/*Stlye for navigator*/
+
+navigator > div > h3 {
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Sacramento';
+    display: flex;
+    justify-content: center
+}
+navigator > div > h3 > span {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 3px black;
+    display: flex;
+}
+navigator[data-active="blog"] > div > h3 > span:nth-child(1), navigator > div > h3 > span:nth-child(1):hover {
+    background-image : url("http://i.giphy.com/jtgMr19M4GfJK.gif"); 
+}
+navigator[data-active="about"] > div > h3 > span:nth-child(2), navigator > div > h3 > span:nth-child(2):hover{    
+    background-image : url("http://i.giphy.com/9Dt0TrhMAxjrO.gif"); 
+}
+navigator[data-active="projects"] > div > h3 > span:nth-child(3), navigator > div > h3 > span:nth-child(3):hover{    
+    background-image : url("http://i.giphy.com/2YRO3kKSpFeA8.gif"); 
+}
+navigator > div > h3 > span > a {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.62);
+    color : white !important; 
+}
+
 /*Media Queries */
 /* Small devices (landscape phones, 544px and up)*/
 @media (min-width: 544px) { 
