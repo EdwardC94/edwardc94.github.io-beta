@@ -67,19 +67,19 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
 }
 /*Style for Blog_entry BEGINNING*/
 
-div.wrapper-blogEntry > article {
+article[data-wrapper="blog_entry"] > article {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
     background-color : #f1f1f1;
 }
-div.wrapper > article > header {
+article[data-wrapper="blog_entry"] > article > header {
     display: flex;
     align-items: center;
     align-content: center;
     height: 10rem;
 }
-    div.wrapper > article > header > h1 {
+    article[data-wrapper="blog_entry"] > header > h1 {
         background-color: rgba(0,0,0,0.9);
         color: white;
         margin-left: -15px;
@@ -88,7 +88,7 @@ div.wrapper > article > header {
         border : 10px double rgba(0,0,0,0.9);
         border-left : none
     }
-div.wrapper > article > section {
+article[data-wrapper="blog_entry"] > section {
     width : 100%;
 }
 /*Style for Blog_entry END*/
@@ -164,7 +164,7 @@ navigator > div > h3 > span > a {
     
 
 /*BLOG_ENTRY END*/
-    .wrapper-blogEntry > article {
+    article[data-wrapper="blog_entry"] {
         background-size: cover;
     }
 }
