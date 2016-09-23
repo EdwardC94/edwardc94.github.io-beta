@@ -2,7 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Monoton|Sacramento|Source+Sans+Pro';
 /*Font-family imports*/
 
-div[data-wrapper="main"] {
+div[data-wrapper] {
     height : 40rem;
     width : 100%;
 }
@@ -141,21 +141,21 @@ navigator > div > h3 > span > a {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 /*HOME BEGINNING*/
-    .wrapper-home > div {
+    div[data-wrapper="home"] > div {
         height: 100% !important;
         width : 33.33%;
         float : left;
     }
-        .wrapper-home > div:nth-of-type(1) > h1 > a:hover {
+        div[data-wrapper="home"] > div:nth-of-type(1) > h1 > a:hover {
             text-shadow : 2px 2px 10px greenyellow;
         }
-        .wrapper-home > div:nth-of-type(2) > h1 > a:hover {
+        div[data-wrapper="home"] > div:nth-of-type(2) > h1 > a:hover {
             text-shadow : 2px 2px 10px orange;
         }
-        .wrapper-home > div:nth-of-type(3) > h1 > a:hover {
+        div[data-wrapper="home"] > div:nth-of-type(3) > h1 > a:hover {
             text-shadow : 2px 2px 10px #00e2ff;
         }
-        .wrapper-home > div > h1 > a {
+        div[data-wrapper="home"] > div > h1 > a {
             text-shadow : none;
         }
 /*HOME END*/
