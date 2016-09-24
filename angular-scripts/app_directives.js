@@ -7,7 +7,7 @@
     }).
     directive("postGallery", function(){
         return {
-            templateUrl : 'partials/imho-thumbnail.html',
+            templateUrl : 'partials/post-gallery.html',
             scope : {
                 posts : '=',
                 category : "="
