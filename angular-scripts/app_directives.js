@@ -5,7 +5,7 @@
             templateUrl : 'partials/navigator.html'
         }
     }).
-    directive("imhoThumbnail", function(){
+    directive("postGallery", function(){
         return {
             templateUrl : 'partials/imho-thumbnail.html',
             scope : {
