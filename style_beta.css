@@ -2,6 +2,10 @@
 @import 'https://fonts.googleapis.com/css?family=Monoton|Sacramento|Source+Sans+Pro';
 /*Font-family imports*/
 
+div[ng-view] {
+    min-width : 22rem;
+} 
+
 div[data-wrapper] {
     height : 40rem;
     width : 100%;
