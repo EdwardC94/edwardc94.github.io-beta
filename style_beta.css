@@ -67,7 +67,7 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
 }
 /*Style for Blog_entry BEGINNING*/
 
-div[data-wrapper="blog_entry"] > article {
+div[data-wrapper="blog_entry"] {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -79,7 +79,7 @@ div[data-wrapper="blog_entry"] > article > header {
     align-content: center;
     height: 10rem;
 }
-    div[data-wrapper="blog_entry"] > article > header > p {
+    div[data-wrapper="blog_entry"] > article > header > h1 {
         background-color: rgba(0,0,0,0.9);
         color: white;
         margin-left: -15px;
