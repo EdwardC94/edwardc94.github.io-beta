@@ -87,8 +87,7 @@ div[data-wrapper="blog_entry"] > article > header {
         padding: 0.5rem 0.25rem;
         font-family: 'Monoton';
         border : 0.65rem double rgba(0,0,0,0.9);
-        border-left : none
-        font-size : 2rem;
+        border-left : none;
     }
 div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
     background-color : white;
