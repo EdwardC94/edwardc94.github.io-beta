@@ -90,8 +90,8 @@ div[data-wrapper="blog_entry"] > article > header {
         border-left : none
         font-size : 2rem;
     }
-div[data-wrapper="blog_entry"] > article > section {
-    width : 100%;
+div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
+    background-color : white;
 }
 /*Style for Blog_entry END*/
 
