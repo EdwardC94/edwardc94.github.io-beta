@@ -95,6 +95,7 @@ div[data-wrapper="blog_entry"] > article > header {
     }
 div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
     background-color : white;
+    font-family : 'Source Sans Pro';
 }
 /*Style for Blog_entry END*/
 
