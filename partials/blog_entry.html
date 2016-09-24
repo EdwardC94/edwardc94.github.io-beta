@@ -1,16 +1,19 @@
-<div data-wrapper="blog_entry">
-    <navigator data-active="blog"></navigator>
-    <article data-ng-style="{'background-image': 'url({{post.img_src}})'}">
+<navigator data-active="blog"></navigator>
+<div data-wrapper="blog_entry" data-ng-style="{'background-image': 'url({{post.img_src}})'}">
+    <article>
         <header  data-ng-style="{'border-color': '{{category.color}}'}">
             <h1 data-ng-style="{'border-color': '{{category.color}}', 'text-shadow' : '1px 1px 10px {{category.color}}'}">{{post.title}}
             </h1>
         </header>
-        <section data-ng-include="contentUrl"></section>
-        <aside>
-        </aside>
+        <div class="container">
+            <div class="row">
+                <section class="col-xs-12 col-lg-8" data-ng-include="contentUrl"></section>
+                <aside class="col-xs-12 col-lg-4"></aside>
+            </div>
+        </div>
     </article>
-    <imho-thumbnail data-posts="postsFiltered" data-author="author" data-category="category"></imho-thumbnail>
 </div>
+<imho-thumbnail data-posts="postsFiltered" data-author="author" data-category="category"></imho-thumbnail>
 <!--<div class="post-container" data-ng-style="{'background-image': 'url({{post.img_src}})'}">
     <div class="container-fluid">
         <div class="row">
