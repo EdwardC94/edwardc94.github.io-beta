@@ -184,7 +184,7 @@ post-gallery > div.container {
     .cont-header > h2 {
         margin-bottom : 0;
         padding : 0.5rem 0;
-        border-bottom: 0.0625rem solid rgb(0, 0, 0);
+        border-bottom: 0.0625rem solid #e1e1e1;
     }
         .cont-header span {
             padding: 0 0.5rem;
