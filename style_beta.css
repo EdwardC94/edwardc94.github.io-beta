@@ -96,11 +96,14 @@ div[data-wrapper="blog_entry"] > article > header {
         border-left : none;
         max-width : 98%;
     }
-div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
-    background-color : white;
-    font-family : 'Source Sans Pro';
-    border: 1px solid #e1e1e1;
-}
+    div[data-wrapper="blog_entry"] > article div.container {
+        margin-top : -5rem;
+    }
+    div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
+        background-color : white;
+        font-family : 'Source Sans Pro';
+        border: 1px solid #e1e1e1;  
+    }
 /*Style for Blog_entry END*/
 
 /*Style for directives*/
@@ -141,6 +144,9 @@ navigator > div > h3 > span > a {
 post-gallery > div.container {
     margin-top : 2rem;
     margin-bottom : 2rem;
+    padding : .5rem;
+    border : 1px solid #e1e1e1; 
+    background-color: white;
 }
 .cont-header {
     font-family : 'Monoton', cursive;
