@@ -9,7 +9,7 @@ div[data-ng-view] {
 
 /*Style for Home Page BEGINNING*/
 div[data-wrapper="home"] {
-    min-height : 40rem; 
+    height : 40rem; 
     background-color : white; 
 }
 div[data-wrapper="home"] > h2 {
