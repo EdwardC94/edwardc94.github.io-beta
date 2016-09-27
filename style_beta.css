@@ -4,11 +4,6 @@
 
 div[ng-view] {
     min-width : 22rem;
-} 
-
-div[data-wrapper] {
-    height : 40rem;
-    width : 100%;
 }
 
 /*Style for Home Page BEGINNING*/
@@ -78,12 +73,19 @@ div[data-wrapper="blog_entry"] {
     background-color : #f1f1f1;
     background-attachment : fixed;
 }
+div[data-wrapper="blog_entry"] > article {
+    background-color: #f1f1f1;
+    padding-bottom: 5rem;
+}
 div[data-wrapper="blog_entry"] > article > header {
     display: flex;
     align-items: center;
     align-content: center;
-    height: 25rem;
-    max-width : 98%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
 }
     div[data-wrapper="blog_entry"] > article > header > h1 {
         background-color: rgba(0,0,0,0.9);
@@ -92,10 +94,12 @@ div[data-wrapper="blog_entry"] > article > header {
         font-family: 'Monoton';
         border : 0.65rem double rgba(0,0,0,0.9);
         border-left : none;
+        max-width : 98%;
     }
 div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
     background-color : white;
     font-family : 'Source Sans Pro';
+    border: 1px solid #e1e1e1;
 }
 /*Style for Blog_entry END*/
 
@@ -249,14 +253,14 @@ div[data-wrapper="blog"] > h4 {
         font-size : 5rem;
     }
 /*BLOG_ENTRY END*/
-    div[data-wrapper="blog_entry"] > article {
-        background-size: cover;
-    }
+
 }
 
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+
+ }
 /*Media Queries */
 
 /*Style for Home Page*/
