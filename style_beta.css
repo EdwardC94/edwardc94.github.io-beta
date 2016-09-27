@@ -2,11 +2,16 @@
 @import 'https://fonts.googleapis.com/css?family=Monoton|Sacramento|Source+Sans+Pro';
 /*Font-family imports*/
 
-div[ng-view] {
+div[data-ng-view] {
     min-width : 22rem;
+    background-color: #f1f1f1;
 }
 
 /*Style for Home Page BEGINNING*/
+div[data-wrapper="home"] {
+    min-height : 40rem; 
+    background-color : white; 
+}
 div[data-wrapper="home"] > h2 {
     font : 500 2rem 'Sacramento';
     text-align : center;
@@ -147,6 +152,7 @@ post-gallery > div.container {
     padding : .5rem;
     border : 1px solid #e1e1e1; 
     background-color: white;
+    border-radius: .25rem;
 }
 .cont-header {
     font-family : 'Monoton', cursive;
