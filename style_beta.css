@@ -97,8 +97,8 @@ div[data-wrapper="blog_entry"] > article > header {
         border-left : none;
         max-width : 98%;
     }
-     div[data-wrapper="blog_entry"] div.container {
-         margin-top : 5rem; 
+     div[data-wrapper="blog_entry"] > article div.container {
+         margin-top : -5rem; 
      }
     div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
         background-color : white;
