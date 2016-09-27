@@ -78,10 +78,6 @@ div[data-wrapper="blog_entry"] {
     background-color : #f1f1f1;
     background-attachment : fixed;
 }
-div[data-wrapper="blog_entry"] > article {
-    background-color: #f1f1f1;
-    padding-bottom: 5rem;
-}
 div[data-wrapper="blog_entry"] > article > header {
     display: flex;
     align-items: center;
@@ -101,6 +97,9 @@ div[data-wrapper="blog_entry"] > article > header {
         border-left : none;
         max-width : 98%;
     }
+     div[data-wrapper="blog_entry"] div.container {
+         margin-top : 5rem; 
+     }
     div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
         background-color : white;
         font-family : 'Source Sans Pro';
@@ -188,16 +187,12 @@ post-gallery > div.container {
         border-bottom: 0.0625rem solid rgb(0, 0, 0);
     }
         .cont-header span {
-            border: 0.0625rem solid black;
-        }
-        .cont-header > h2 > span:nth-of-type(2) {
-            border: 0;
             padding: 0 0.5rem;
         }
-            .cont-header button, .cont-header button[disabled="disabled"] {
-                background-color: inherit;
-                border: none;
-                color : black; 
+            .cont-header button, .cont-header button[disabled="disabled"] {                
+                border: 0.0625rem solid black;
+                color: white;
+                text-shadow: 0.0625rem 0.0625rem .25rem black; 
             }
 .cont-body {
     background-size : cover;
