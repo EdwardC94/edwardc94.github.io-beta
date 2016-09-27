@@ -106,7 +106,35 @@ div[data-wrapper="blog_entry"] > article > header {
         font-family : 'Source Sans Pro';
         border: 1px solid #e1e1e1;  
     }
+    
 /*Style for Blog_entry END*/
+
+/*Style for BLOG BEGINNING*/
+div[data-wrapper="blog"] {
+    background-attachment: fixed;
+    background-position : center;
+    background-repeat : no-repeat;
+    background-size : cover;
+    height : 20rem !important;
+}
+div[data-wrapper="blog"] > h1 > span {
+    background-color : black;
+    font-family : 'Monoton';    
+}
+    div[data-wrapper="blog"] > h1 > span > a {
+        color : white !important;
+    }
+div[data-wrapper="blog"] > h4 {
+    background-color : rgba(0,0,0,.75);
+    margin-top: 1rem;
+    width : 85%;
+}
+div[data-wrapper="blog"] > h1 > span, div[data-wrapper="blog"] > h4 {
+    border-left : 0.25rem solid;
+    border-right : 0.25rem solid;
+    color : white; 
+}
+/*Style for BLOG END*/
 
 /*Style for directives*/
 
@@ -144,9 +172,9 @@ navigator > div > h3 > span > a {
 /*Style for Post Gallery*/
 
 post-gallery > div.container {
-    margin-top : .5rem;
+    margin-top : .25rem;
     padding : .5rem;
-    border : 1px solid #e1e1e1; 
+    border : .0625rem solid #d1d1d1; 
     background-color: white;
     border-radius: .25rem;
 }
@@ -157,28 +185,21 @@ post-gallery > div.container {
     .cont-header > h2 {
         margin-bottom : 0;
         padding : 0.5rem 0;
+        border-bottom: 0.0625rem solid rgb(0, 0, 0);
     }
-        .cont-header > h2 > span, div[data-wrapper="blog"] > h1 > span, div[data-wrapper="blog"] > h4 {
-            background-color : black;
-            border-left : 0.25rem solid;
-            border-right : 0.25rem solid;
-            color : white; 
+        .cont-header span {
+            border: 0.0625rem solid black;
         }
-        div[data-wrapper="blog"] > h1 > span {
-            font-family : 'Monoton';
+        .cont-header > h2 > span:nth-of-type(2) {
+            border: 0;
+            padding: 0 0.5rem;
         }
-            div[data-wrapper="blog"] > h1 > span > a {
-                color : white !important;
+            .cont-header button, .cont-header button[disabled="disabled"] {
+                background-color: inherit;
+                border: none;
+                color : black; 
             }
-            .cont-header > h2 > span > button, .cont-header > h2 > span > button[disabled="disabled"] {
-                background-color: black;
-                border: 0;
-            }
-            .cont-header > h2 > span > button, {
-                color: white;
-                text-shadow: 1px 1px 10px aqua; 
-            }
-.cont-body, div[data-wrapper="blog"] {
+.cont-body {
     background-size : cover;
     background-repeat : no-repeat;
     background-position : center;
@@ -186,19 +207,9 @@ post-gallery > div.container {
 .cont-body{
     background-clip : content-box;
     height : 100%;
-    background-color : aquamarine;
     display : flex;    
     justify-content : center;
     align-items : center;
-}
-div[data-wrapper="blog"] {
-    background-attachment: fixed;
-    height : 20rem !important;
-}
-div[data-wrapper="blog"] > h4 {
-    width : 85%;
-    background-color : rgba(0,0,0,.75);
-    margin-top: 1rem;
 }
     .cont-body > h2 {
         background-color : rgba(0,0,0,0.9);
