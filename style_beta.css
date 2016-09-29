@@ -114,25 +114,40 @@ div[data-wrapper="blog"] {
     background-position : center;
     background-repeat : no-repeat;
     background-size : cover;
-    height : 20rem !important;
 }
-div[data-wrapper="blog"] > h1 > span {
-    background-color : black;
-    font-family : 'Monoton';    
-}
-    div[data-wrapper="blog"] > h1 > span > a {
-        color : white !important;
-    }
-div[data-wrapper="blog"] > h4 {
-    background-color : rgba(0,0,0,.75);
-    margin-top: 1rem;
-    width : 85%;
-}
-div[data-wrapper="blog"] > h1 > span, div[data-wrapper="blog"] > h4 {
-    border-left : 0.25rem solid;
-    border-right : 0.25rem solid;
-    color : white; 
-}
+    div[data-wrapper="blog"] > div {
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+            div[data-wrapper="blog"] > div > div {
+                height: 30rem;
+                margin: 0 auto;
+                padding-top: 10rem;
+                width: 90%;
+            }
+        div[data-wrapper="blog"] a, div[data-wrapper="blog"] a:hover, div[data-wrapper="blog"] a:active, div[data-wrapper="blog"] a:focus {
+            color: black;
+            font-family: 'Source Sans Pro';
+            text-decoration : none;
+        }
+        div[data-wrapper="blog"] > div > div > a:nth-of-type(1) {
+            float: left;
+            font-size: 1.5rem;
+            margin-right: -1.25rem;
+            margin-top: 2rem;
+            text-orientation: upright;
+            writing-mode: vertical-rl;
+        }
+        div[data-wrapper="blog"] > div > div > a:nth-of-type(2) {
+            align-items: center;
+            background-color: rgba(242,242,242,0.8);
+            display: flex;
+            font-size: 2.5rem;
+            height: 100%;
+            justify-content: center;
+            margin-left: 2.5%;
+            padding: 2rem;
+            text-align: center;
+        }
 /*Style for BLOG END*/
 
 /*Style for directives*/

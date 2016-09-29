@@ -2,12 +2,16 @@
 <div data-wrapper="blog" class="ng-scope"  data-ng-style="{'background-image' : 'url({{latestPost.post.img_src}})'}">
     <div>
         <div>
-            <a data-ng-href="#/blog/{{latestPost.category.name.toLowerCase()}}">{{latestPost.category.name.toLowerCase()}}</a> 
+            <a data-ng-href="#/blog/{{latestPost.category.name.toLowerCase()}}" data-ng-style="{'background-color' : '{{latestPost.category.color}}'}">{{latestPost.category.name.toLowerCase()}}</a> 
             <a data-ng-href="#/blog/{{latestPost.category.name.toLowerCase()}}/{{latestPost.post.url}}">{{latestPost.post.title}}</a>
         </div>
     </div>
 </div>
 <post-gallery data-ng-repeat="category in categories track by category.categoryID"  data-posts="postsFiltered[category.categoryID-1]" data-category="category"></post-gallery>
+
+
+<!--
+
 <style>
     div[data-wrapper="blog"] > div {
         background-color: rgba(0, 0, 0, 0.15);
@@ -24,7 +28,6 @@
         text-decoration : none;
     }
         div[data-wrapper="blog"] > div > div > a:nth-of-type(1) {
-            background-color: yellow;
             float: left;
             font-size: 1.5rem;
             margin-right: -1.25rem;
@@ -70,7 +73,7 @@
 </style>
 
 
-<!--
+
 <navigator data-active="blog"></navigator>
 <div data-wrapper="blog" class="jumbotron" data-ng-style="{'background-image' : 'url({{latestPost.post.img_src}})'}">
     <h1><span data-ng-style="{'border-color' : '{{latestPost.category.color}}'}"><a data-ng-href="#/blog/{{latestPost.category.name.toLowerCase()}}/{{latestPost.post.url}}" data-ng-style="{'text-shadow' : '1px 1px 10px {{latestPost.category.color}}'}">{{latestPost.post.title}}</a></span></h1>
