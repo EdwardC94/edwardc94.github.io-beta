@@ -247,12 +247,24 @@ post-gallery > div.container {
     div[data-wrapper="blog_entry"] > article > header > h1 {
         font-size : 3rem;
     }
+    div[data-wrapper="blog"] > div > div > a:nth-of-type(2) {
+        font-size : 3.5rem;
+    }
+    div[data-wrapper="blog"] > div > div {
+        width: 80%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     div[data-wrapper="blog_entry"] > article > header > h1 {
         font-size : 4rem;
+    }
+    div[data-wrapper="blog"] > div > div > a:nth-of-type(2) {
+        font-size : 4.5rem;
+    }
+    div[data-wrapper="blog"] > div > div {
+        width: 70%;
     }
 }
 
@@ -282,6 +294,12 @@ post-gallery > div.container {
         font-size : 5rem;
     }
 /*BLOG_ENTRY END*/
+    div[data-wrapper="blog"] > div > div > a:nth-of-type(2) {
+        font-size : 5.5rem
+    }
+    div[data-wrapper="blog"] > div > div {
+        width: 60%;
+    }
 
 }
 
