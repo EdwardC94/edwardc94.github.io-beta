@@ -1,0 +1,28 @@
+{
+	"Author" : [
+		{
+			"authorID" : 1,
+			"name" : "Eduardo Aguilar"
+		}
+	],
+	"Category" : [
+		{
+			"categoryID" : 1,
+			"name" : "Money",
+			"color": "#e7ebca"
+		}
+	],
+	"Post" : [
+		{
+			"postID" : 1,
+			"title" : "Is negative always bad?",
+			"url" : "is_negative_always_bad",
+			"img_src" : "http://i.telegraph.co.uk/multimedia/archive/03023/eurozone_3023810b.jpg",
+			"date": "09/29/2016",
+			"description" : "There is a somewhat new trend in the world of investment that allows banks to give negative interest rates on deposits. There has been a lot of discussion in regard to whether this is good for the economy or not. In this post I will try to explain in to all those who are new to this concept.",
+			"post_tags": ["investment", "eurozone", "finance", "economics", "world"],
+			"categoryID_FK" : 1, 
+			"authorID_FK" : 1
+		}
+	]
+}
