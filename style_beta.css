@@ -4,13 +4,11 @@
 
 div[data-ng-view] {
     min-width : 22rem;
-    background-color : #f1f1f1;
 }
 
 /*Style for Home Page BEGINNING*/
 div[data-wrapper="home"] {
     height : 40rem; 
-    background-color : white; 
 }
 div[data-wrapper="home"] > h2 {
     font : 500 2rem 'Sacramento';
@@ -188,9 +186,9 @@ navigator > div > h3 > span > a {
 post-gallery > div.container {
     margin-top : .25rem;
     padding : .5rem;
-    border : .0625rem solid #d1d1d1; 
+    /*border : .0625rem solid #d1d1d1; 
     background-color: white;
-    border-radius: .25rem;
+    border-radius: .25rem;*/
 }
 .cont-header {
     font-family : 'Monoton', cursive;
