@@ -72,24 +72,24 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
 /*Style for Blog_entry BEGINNING*/
 
 .be-header > h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 1rem 0;
-    padding: 0.5rem 0.9375rem 1rem 0.9375rem;
+    font-size : 4rem;
+    font-weight : bold;
+    margin : 1rem 0;
+    padding : 0.5rem 0.9375rem 1rem 0.9375rem;
 }
 .be-header-image {
-    height: 22.5rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin-bottom: 1rem;
+    height : 22.5rem;
+    background-repeat : no-repeat;
+    background-position : center center;
+    background-size : cover;
+    margin: 1rem 0;
 }
     .be-header-image > h6 {
-        background-color: black;
-        padding: 0 0.5rem;
-        width: 60%;
-        color: #dffefe;
-        border-radius: 0 0 2rem 0;
+        background-color : black;
+        padding : 0.5rem;
+        width : 60%;
+        color : #dffefe;
+        border-radius : 0 0 2rem 0;
         min-width : 18rem; 
     }
     div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
