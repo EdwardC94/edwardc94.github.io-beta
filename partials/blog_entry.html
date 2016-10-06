@@ -1,5 +1,19 @@
 <navigator data-active="blog"></navigator>
 <div data-wrapper="blog_entry">
+    <article class="container">
+        <header class="row be-header">
+            <h1 class="col-xs-12" data-ng-style="{'background-color': '{{category.color}}'}">{{post.title}}</h1>
+            <div class="col-xs-12">by {{author.name}}</div>
+            <div class="col-xs-12"><small>{{post.date}}</small></div>
+            <div class="col-xs-12 be-header-image" data-ng-style="{'background-image': 'url({{post.img_src}})'}"><h6>{{post.img_descr}}</h6></div>
+        </header>
+        <div class="row be-content" data-ng-include="contentUrl">
+        </div>
+    </article>    
+    <post-gallery data-posts="postsFiltered" data-category="category"></post-gallery>
+</div>
+<!--
+<div data-wrapper="blog_entry">
     <article>
         <header data-ng-style="{'background-image': 'url({{post.img_src}})'}">
             <h1 data-ng-style="{'border-color': '{{category.color}}', 'text-shadow' : '1px 1px 10px {{category.color}}'}">{{post.title}}
@@ -8,29 +22,9 @@
         <div class="container">
             <div class="row">
                 <section class="col-xs-12 col-lg-8" data-ng-include="contentUrl"></section>
-                <aside class="col-xs-12 col-lg-4"></aside>
             </div>
         </div>
     </article>
     <post-gallery data-posts="postsFiltered" data-author="author" data-category="category"></post-gallery>
 </div>
-<!--<div class="post-container" data-ng-style="{'background-image': 'url({{post.img_src}})'}">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12 entry-title" >
-                <h1 data-ng-style="{'border-color': '{{category.color}}', 'text-shadow' : '1px 1px 10px {{category.color}}'}">{{post.title}}</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="container card-look">
-        <div class="row">    
-            <div class="col-xs-12 col-lg-8">
-                <div class="blog-content" data-ng-include="contentUrl"></div>            
-            </div>
-            <div class="col-xs-12 col-lg-4">
-            </div>
-        </div>
-    </div>
-    <imho-thumbnail data-posts="postsFiltered" data-author="author" data-category="category"></imho-thumbnail>
-<div>-->
+-->

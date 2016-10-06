@@ -9,7 +9,7 @@
 		{
 			"categoryID" : 1,
 			"name" : "Money",
-			"color": "#e7ebca"
+			"color": "cyan"
 		}
 	],
 	"Post" : [
@@ -18,6 +18,7 @@
 			"title" : "Is negative always bad?",
 			"url" : "is_negative_always_bad",
 			"img_src" : "https://upload.wikimedia.org/wikipedia/commons/e/e4/Euro-Symbol_von_Ottmar_H%C3%B6rl,_vor_dem_Geb%C3%A4ude_der_EZB_in_Frankfurt_am_Main.jpg",
+			"img_descr" : "The European Central Bank (ECB) is the central bank for the euro and administers monetary policy of the eurozone, which consists of 19 EU member states and is one of the largest currency areas in the world.",
 			"date": "09/29/2016",
 			"description" : "There is a somewhat new trend in the world of investment that allows banks to give negative interest rates on deposits. There has been a lot of discussion in regard to whether this is good for the economy or not. In this post I will try to explain in to all those who are new to this concept.",
 			"post_tags": ["investment", "eurozone", "finance", "economics", "world"],

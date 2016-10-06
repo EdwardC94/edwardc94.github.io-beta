@@ -1,9 +1,11 @@
+@charset "UTF-8";
 /*Font-family imports*/
 @import 'https://fonts.googleapis.com/css?family=Monoton|Sacramento|Source+Sans+Pro';
 /*Font-family imports*/
 
 div[data-ng-view] {
     min-width : 22rem;
+    color : black;
 }
 
 /*Style for Home Page BEGINNING*/
@@ -69,39 +71,27 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
 }
 /*Style for Blog_entry BEGINNING*/
 
-div[data-wrapper="blog_entry"] {
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    background-color : #f1f1f1;
-    background-attachment : fixed;
+.be-header > h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 1rem -0.9375rem;
+    padding: 0.5rem 0.9375rem 1rem 0.9375rem;
 }
-div[data-wrapper="blog_entry"] > article > header {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    height: 30rem;
+.be-header-image {
+    height: 22.5rem;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
+    margin-bottom: 1rem;
 }
-    div[data-wrapper="blog_entry"] > article > header > h1 {
-        background-color: rgba(0,0,0,0.9);
-        color: white;
-        padding: 0.5rem 0.25rem;
-        font-family: 'Monoton';
-        border : 0.65rem double rgba(0,0,0,0.9);
-        border-left : none;
-        max-width : 98%;
+    .be-header-image > h6 {
+        background-color: black;
+        padding: 0 0.5rem;
+        width: 60%;
+        color: #dffefe;
     }
-     div[data-wrapper="blog_entry"] > article div.container {
-         margin-top : -5rem; 
-     }
     div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
-        background-color : white;
         font-family : 'Source Sans Pro';
-        border: 1px solid #e1e1e1;  
     }
     
 /*Style for Blog_entry END*/
