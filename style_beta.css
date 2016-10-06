@@ -115,11 +115,12 @@ div[data-wrapper="blog"] {
 }
     div[data-wrapper="blog"] > div {
             background-color: rgba(0, 0, 0, 0.15);
+            height: 18rem;
         }
             div[data-wrapper="blog"] > div > div {
-                height: 30rem;
+                height: 98%;
                 margin: 0 auto;
-                padding-top: 10rem;
+                padding-top: 1%;
                 width: 90%;
             }
         div[data-wrapper="blog"] a, div[data-wrapper="blog"] a:hover, div[data-wrapper="blog"] a:active, div[data-wrapper="blog"] a:focus {
@@ -235,7 +236,7 @@ post-gallery > div.container {
 }
     .cont-series > .row {
         overflow: hidden;
-        height: 15rem;
+        height: 13.5rem;
     }
 
 
