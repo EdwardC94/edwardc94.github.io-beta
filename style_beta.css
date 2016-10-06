@@ -233,9 +233,6 @@ post-gallery > div.container {
 /*Media Queries */
 /* Small devices (landscape phones, 544px and up)*/
 @media (min-width: 544px) { 
-    div[data-wrapper="blog_entry"] > article > header > h1 {
-        font-size : 3rem;
-    }
     div[data-wrapper="blog"] > div > div > a:nth-of-type(2) {
         font-size : 3.5rem;
     }
@@ -246,9 +243,6 @@ post-gallery > div.container {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    div[data-wrapper="blog_entry"] > article > header > h1 {
-        font-size : 4rem;
-    }
     div[data-wrapper="blog"] > div > div > a:nth-of-type(2) {
         font-size : 4.5rem;
     }
@@ -278,18 +272,14 @@ post-gallery > div.container {
             text-shadow : none;
         }
 /*HOME END*/
-/*BLOG_ENTRY BEGINNING*/
-    div[data-wrapper="blog_entry"] > article > header > h1 {
-        font-size : 5rem;
-    }
-/*BLOG_ENTRY END*/
+/*BLOG BEGINNING*/
     div[data-wrapper="blog"] > div > div > a:nth-of-type(2) {
         font-size : 5.5rem
     }
     div[data-wrapper="blog"] > div > div {
         width: 60%;
     }
-
+/*BLOG END*/
 }
 
 
