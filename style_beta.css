@@ -72,7 +72,7 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
 /*Style for Blog_entry BEGINNING*/
 
 .be-header > h1 {
-    font-size : 4rem;
+    font-size : 3rem;
     font-weight : bold;
     margin : 1rem 0;
     padding : 0.5rem 0.9375rem 1rem 0.9375rem;
