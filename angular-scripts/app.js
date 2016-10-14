@@ -21,7 +21,18 @@
                 }]
             }
         }).when('/blog/:category', {
-            templateUrl : 'partials/blog_category.html'
+            templateUrl : 'partials/blog_category.html',
+            controller : 'CategoryController',
+            resolve : {
+                data : ['getEntries', '$q', function (getEntries, $q) {
+                    var deferred = $q.defer();
+                    var success = function (result) {
+                        deferred.resolve(result);
+                    };
+                    getEntries.getEntries({}, success, success);
+                    return deferred.promise;
+                }]
+            }
         }).
         when('/blog/:category/:entry', {
             templateUrl : 'partials/blog_entry.html',
