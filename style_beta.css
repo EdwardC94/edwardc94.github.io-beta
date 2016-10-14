@@ -143,7 +143,9 @@ div[data-wrapper="blog"] {
 /*Style for blog_category BEGINS*/
 .bc-header {
     height: 10rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;    
+    background-size: cover;
+    background-repeat: no-repeat;
 }
     .bc-header > div {
         background-color: rgba(0, 0, 0, 0.15);
