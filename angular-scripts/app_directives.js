@@ -18,7 +18,7 @@
         return {
             templateUrl : 'partials/directives/article-thumbnail.html',
             scope : {
-                posts : '=',
+                post : '=',
                 category : "="
             }
         }
