@@ -87,7 +87,8 @@
         var theData = data, cat = $routeParams.category;
         var isValid = where("cat_name", cat, theData.Category, false);
         if(isValid) {
-            
+            $scope.category = isValid;
+            $scope.posts = where("categoryID_FK", $scope.category.categoryID, theData.Post, true); 
         }
-    }
+    }]);
 })();
