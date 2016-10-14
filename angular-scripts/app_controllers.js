@@ -44,7 +44,7 @@
                     }
                     break;
                 case "cat_name":
-                    while (i < data.length && data[i].name !== value){
+                    while (i < data.length && data[i].name.toLowerCase() !== value){
                         i++;
                     }
                     break;
