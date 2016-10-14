@@ -43,11 +43,16 @@
                         i++;
                     }
                     break;
+                case "cat_name":
+                    while (i < data.length && data[i].name !== value){
+                        i++;
+                    }
+                    break;
             };
             res = (i < data.length) ? data[i] : false;
         }
         return res;
-    }
+    };
     function groupByCategoryID_FK (categories, posts) {
         var res = [];
         for (var i = 0; i < categories.length; i++){
@@ -77,5 +82,12 @@
         $scope.latestPost = { post : last, category : where("categoryID", last.categoryID_FK, theData.Category, false) };
         $scope.categories = theData.Category;
         $scope.postsFiltered = groupByCategoryID_FK($scope.categories, theData.Post);
-    }])
+    }]).
+    controller('CategoryController', ['$scope', 'data', function($scope, data) {
+        var theData = data, cat = $routeParams.category;
+        var isValid = where("cat_name", cat, theData.Category, false);
+        if(isValid) {
+            
+        }
+    }
 })();
