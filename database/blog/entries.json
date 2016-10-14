@@ -9,7 +9,8 @@
 		{
 			"categoryID" : 1,
 			"name" : "Money",
-			"color": "cyan"
+			"color": "cyan",
+			"image_src" : "http://img1.meristation.com/files/imagenes/general/pile-of-euro-notes.jpg"
 		}
 	],
 	"Post" : [

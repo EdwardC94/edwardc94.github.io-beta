@@ -140,7 +140,22 @@ div[data-wrapper="blog"] {
             text-align: center;
         }
 /*Style for BLOG END*/
-
+/*Style for blog_category BEGINS*/
+.bc-header {
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+    .bc-header > div {
+        background-color: rgba(0, 0, 0, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; 
+    }
+    .bc-header > h1 {
+        padding: .5rem 1rem;
+    }
+/*Style for blog_category ENDS*/
 /*Style for directives*/
 
 /*Stlye for navigator*/
@@ -230,7 +245,23 @@ post-gallery > div.container {
         overflow: hidden;
         height: 13.5rem;
     }
-
+/*Style for article-thumbnail*/
+.at-card {
+        align-items : flex-end;
+        background-clip : content-box;
+        background-size : cover;
+        display : flex;
+        height : 25rem;
+    }
+    .at-content {
+        background-color : rgba(0, 0, 0, 0.83);
+        color : white;
+        padding: 0.5rem;
+    }
+        .at-content > p {
+            color : #e2e2e2;
+            margin-bottom : 0
+        } 
 
 /*Media Queries */
 /* Small devices (landscape phones, 544px and up)*/

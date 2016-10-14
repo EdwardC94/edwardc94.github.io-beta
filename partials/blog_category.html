@@ -1,5 +1,9 @@
 <navigator data-active="blog"></navigator>
-<h1>{{category.name}}</h1>
+<header class="bc-header" ng-style="{'background-image' : 'url({{category.image_src}})'}">
+    <div>
+        <h1 ng-style="{'background-color' : '{{category.color}}'}">{{category.name}}</h1>
+    </div>
+</header>
 <div class="container">
     <div class="row">
         <article-thumbnail data-ng-repeat="post in posts" data-post="post" data-category="category"></article-thumbnail>
