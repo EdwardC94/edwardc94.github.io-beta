@@ -20,6 +20,8 @@
                     return deferred.promise;
                 }]
             }
+        }).when('/blog/:category', {
+            templateUrl : 'partials/blog_category.html'
         }).
         when('/blog/:category/:entry', {
             templateUrl : 'partials/blog_entry.html',
