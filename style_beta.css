@@ -152,7 +152,7 @@ div[data-wrapper="blog"] {
         align-items: center;
         height: 100%; 
     }
-    .bc-header > h1 {
+    .bc-header > div > h1 {
         padding: .5rem 1rem;
     }
 /*Style for blog_category ENDS*/
