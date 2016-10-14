@@ -84,13 +84,11 @@
         $scope.postsFiltered = groupByCategoryID_FK($scope.categories, theData.Post);
     }]).
     controller('CategoryController', ['$scope', 'data', '$routeParams', function($scope, data, $routeParams) {
-        var theData = data, cat = $routeParams.category;
+        var theData = data, cat = $routeParams.category;    
         var isValid = where("cat_name", cat, theData.Category, false);
-        console.log(isValid);
         if(isValid) {
             $scope.category = isValid;
             $scope.posts = where("categoryID_FK", $scope.category.categoryID, theData.Post, true); 
-            console.log($scope.posts);
         }
     }]);
 })();

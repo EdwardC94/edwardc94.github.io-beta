@@ -1,11 +1,8 @@
 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 at-content">
-    <img ng-src="{{post.img_src}}" alt="post.img_descr">
+    <img class="img-fluid" ng-src="{{post.img_src}}" alt="post.img_descr">
     <h5>{{post.title}}</h5>
-    <p>{{[post.description]}}</p>
+    <p>{{post.description}}</p>
 </div>
 
 <style>
-    .at-content {
-        height : 20rem;
-    }
 </style>
