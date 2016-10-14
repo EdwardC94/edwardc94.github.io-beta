@@ -83,7 +83,7 @@
         $scope.categories = theData.Category;
         $scope.postsFiltered = groupByCategoryID_FK($scope.categories, theData.Post);
     }]).
-    controller('CategoryController', ['$scope', 'data', function($scope, data) {
+    controller('CategoryController', ['$scope', 'data', '$routeParams', function($scope, data, $routeParams) {
         var theData = data, cat = $routeParams.category;
         var isValid = where("cat_name", cat, theData.Category, false);
         if(isValid) {
