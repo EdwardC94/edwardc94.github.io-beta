@@ -21,7 +21,7 @@
 			"img_src" : "http://blogs.ft.com/the-world/files/2014/11/New-story-of-MAS_ECB.jpg",
 			"img_descr" : "The European Central Bank (ECB) is the central bank for the euro and administers monetary policy of the eurozone, which consists of 19 EU member states and is one of the largest currency areas in the world.",
 			"date": "09/29/2016",
-			"description" : "The benefit someone gets of putting their savings in a bank account is getting an interest rate. Well, if you are a bank in the Euro Zone this interest is nearly naught or negative.",
+			"description" : "The benefit someone gets from putting their savings in a bank account is getting an interest. Well, if you are a bank in the Euro Zone, this interest is nearly naught or negative.",
 			"post_tags": ["investment", "eurozone", "finance", "economics", "world"],
 			"categoryID_FK" : 1, 
 			"authorID_FK" : 1
