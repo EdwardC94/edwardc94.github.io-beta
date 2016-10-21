@@ -263,10 +263,13 @@ post-gallery > div.container {
         color : white;
         padding: 0.5rem;
     }
+        .at-content > h5 {
+            font-family : 'Sacramento';
+        }  
         .at-content > p {
             color : #e2e2e2;
             margin-bottom : 0
-        } 
+        }
 
 /*Media Queries */
 /* Small devices (landscape phones, 544px and up)*/
