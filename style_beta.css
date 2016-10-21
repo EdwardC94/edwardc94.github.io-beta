@@ -248,6 +248,9 @@ post-gallery > div.container {
         height: 13.5rem;
     }
 /*Style for article-thumbnail*/
+ article-thumbnail > a:hover .at-content > h5 {
+     text-shadow: gold 1px 1px 10px;
+ }
 .at-card {
         align-items : flex-end;
         background-clip : content-box;
