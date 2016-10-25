@@ -248,7 +248,7 @@ post-gallery > div.container {
         height: 13.5rem;
     }
 /*Style for article-thumbnail*/
- article-thumbnail > a:hover .at-content > h5 {
+ article-thumbnail > a:hover .at-content > h2 {
      text-shadow: gold 1px 1px 10px;
  }
 .at-card {
@@ -263,7 +263,7 @@ post-gallery > div.container {
         color : white;
         padding: 0.5rem;
     }
-        .at-content > h5 {
+        .at-content > h2 {
             font-family : 'Sacramento';
         }  
         .at-content > p {
