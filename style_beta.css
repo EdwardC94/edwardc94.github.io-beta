@@ -87,10 +87,9 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
     .be-header-image > h6 {
         background-color : black;
         padding : 0.5rem;
-        width : 60%;
-        color : #dffefe;
-        border-radius : 0 0 2rem 0;
-        min-width : 18rem; 
+        width: 60%;
+        color: #ababab;
+        min-width : 18rem;
     }
     div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
         font-family : 'Source Sans Pro';
