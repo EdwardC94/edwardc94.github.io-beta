@@ -247,9 +247,6 @@ post-gallery > div.container {
         height: 13.5rem;
     }
 /*Style for article-thumbnail*/
- article-thumbnail > a:hover .at-content > h2 {
-     text-shadow: gold 1px 1px 10px;
- }
 .at-card {
         align-items : flex-end;
         background-clip : content-box;
@@ -261,14 +258,33 @@ post-gallery > div.container {
         background-color : rgba(0, 0, 0, 0.83);
         color : white;
         padding: 0.5rem;
+        width: 100%;
+        height : 5rem;
+        transition: height 0.5s, linear;
     }
         .at-content > h2 {
             font-family : 'Sacramento';
+            text-shadow : none;
+            transition : text-shadow 0.5s,  linear
         }  
         .at-content > p {
             color : #e2e2e2;
-            margin-bottom : 0
+            margin-bottom : 0;
+            visibility: hidden;
+            opacity: 0;
+            height : 0;
+            transition: visibility 0s, opacity 0.5s, linear;
         }
+        article-thumbnail > a:hover .at-content {
+            height : 25rem;
+        }
+            article-thumbnail > a:hover .at-content > h2 {
+                 text-shadow: gold 1px 1px 10px;
+            }
+            article-thumbnail > a:hover .at-content > p {
+                visibility: visible;
+                opacity: 1;
+            }
 
 /*Media Queries */
 /* Small devices (landscape phones, 544px and up)*/
