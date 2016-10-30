@@ -3,7 +3,7 @@
         <div class="col-xs-12 cont-header">
             <h2>
                 <button class="btn" data-ng-style="{'background-color' : '{{category.color}}'}" data-ng-disabled="index == 0" data-ng-click="index = index - 1">&#9194;</button>
-                <span>{{category.name}}</span>
+                <a data-ng-href="#/{{category.name.toLowerCase()}}"><span>{{category.name}}</span></a>
                 <button data-ng-style="{'background-color' : '{{category.color}}'}" class="btn hidden-sm-down hidden-lg-up" data-ng-click="index = index + 1" data-ng-disabled="(index == posts.length - 2 || posts.length < 3)">&#9193;</button>
                 <button data-ng-style="{'background-color' : '{{category.color}}'}" class="btn hidden-md-down" data-ng-click="index = index + 1" data-ng-disabled="(index == posts.length - 3 || posts.length < 4)">&#9193;</button>
                 <button data-ng-style="{'background-color' : '{{category.color}}'}" class="btn hidden-md-up" data-ng-click="index = index + 1" data-ng-disabled="index == posts.length - 1">&#9193;</button>
