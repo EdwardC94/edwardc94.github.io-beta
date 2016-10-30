@@ -202,6 +202,9 @@ post-gallery > div.container {
         padding : 0.5rem 0;
         border-bottom: 0.0625rem solid #e1e1e1;
     }
+        .cont-header a {
+            color : black;
+        }
         .cont-header span {
             padding: 0 0.5rem;
         }
