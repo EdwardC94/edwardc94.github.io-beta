@@ -72,25 +72,19 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
 /*Style for Blog_entry BEGINNING*/
 
 .be-header > h1 {
-    font-size : 3rem;
     font-weight : bold;
-    margin : 1rem 0;
-    padding : 0.5rem 0.9375rem 1rem 0.9375rem;
+    line-height : 4rem;
+}
+.be-header > h1 > span {
+    padding : 0 0.5rem 0.25rem 0.5rem;
 }
 .be-header-image {
-    height : 22.5rem;
+    height : 15rem;
     background-repeat : no-repeat;
     background-position : center center;
     background-size : cover;
-    margin: 1rem 0;
+    width : 100%;
 }
-    .be-header-image > h6 {
-        background-color : black;
-        padding : 0.5rem;
-        width: 60%;
-        color: #ababab;
-        min-width : 18rem;
-    }
     div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
         font-family : 'Source Sans Pro';
     }
@@ -99,33 +93,33 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
 
 /*Style for BLOG BEGINNING*/
 div[data-wrapper="blog"] {
-    background-attachment: fixed;
+    background-attachment : fixed;
     background-position : center;
     background-repeat : no-repeat;
     background-size : cover;
 }
     div[data-wrapper="blog"] > div {
-            background-color: rgba(0, 0, 0, 0.15);
-            height: 18rem;
+            background-color : rgba(0, 0, 0, 0.15);
+            height : 18rem;
         }
             div[data-wrapper="blog"] > div > div {
-                height: 98%;
-                margin: 0 auto;
-                padding-top: 1%;
-                width: 90%;
+                height : 98%;
+                margin : 0 auto;
+                padding-top : 1%;
+                width : 90%;
             }
         div[data-wrapper="blog"] a, div[data-wrapper="blog"] a:hover, div[data-wrapper="blog"] a:active, div[data-wrapper="blog"] a:focus {
-            color: black;
-            font-family: 'Source Sans Pro';
+            color : black;
+            font-family : 'Source Sans Pro';
             text-decoration : none;
         }
         div[data-wrapper="blog"] > div > div > a:nth-of-type(1) {
-            float: left;
-            font-size: 1.5rem;
-            margin-right: -1.25rem;
-            margin-top: 2rem;
-            text-orientation: upright;
-            writing-mode: vertical-rl;
+            float : left;
+            font-size : 1.5rem;
+            margin-right : -1.25rem;
+            margin-top : 2rem;
+            text-orientation : upright;
+            writing-mode : vertical-rl;
         }
         div[data-wrapper="blog"] > div > div > a:nth-of-type(2) {
             align-items: center;
