@@ -35,7 +35,7 @@
 		{
 			"postID" : 2,
 			"title" : "Doctor Strange",
-			"url" : "doctor-strange.html",
+			"url" : "doctor-strange",
 			"img_src" : "http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/04/doctor-strange-teaser-poster.jpg",
 			"img_descr" : "A poster of the release of the Doctor Strange movie",
 			"date": "10/31/2016",
