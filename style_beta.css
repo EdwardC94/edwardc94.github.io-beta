@@ -79,10 +79,11 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
     padding : 0 0.5rem 0.25rem 0.5rem;
 }
 .be-header-image {
-    height : 15rem;
+    background-attachment : fixed;
     background-repeat : no-repeat;
     background-position : center center;
     background-size : cover;
+    height : 15rem;
     width : 100%;
 }
     div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
@@ -245,12 +246,14 @@ post-gallery > div.container {
     }
 /*Style for article-thumbnail*/
 .at-card {
-        align-items : flex-end;
-        background-clip : content-box;
-        background-size : cover;
-        display : flex;
-        height : 25rem;
-    }
+    align-items : flex-end;
+    background-clip : content-box;
+    background-size : cover;
+    background-position : center;
+    display : flex;
+    height : 25rem;
+    margin-bottom : 1rem;
+}
     .at-content {
         background-color : rgba(0, 0, 0, 0.83);
         color : white;
