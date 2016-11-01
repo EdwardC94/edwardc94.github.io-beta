@@ -11,6 +11,12 @@
 			"name" : "Money",
 			"color": "gold",
 			"image_src" : "http://img1.meristation.com/files/imagenes/general/pile-of-euro-notes.jpg"
+		},
+		{
+			"categoryID" : 2,
+			"name" : "Movies",
+			"color": "#0073CF",
+			"image_src" : "https://cdn-images-1.medium.com/max/1366/1*lEOjG5403Pg4JOLHr4PtdA.jpeg"
 		}
 	],
 	"Post" : [
@@ -25,6 +31,20 @@
 			"post_tags": ["investment", "eurozone", "finance", "economics", "world"],
 			"categoryID_FK" : 1, 
 			"authorID_FK" : 1
+		},
+		{
+			"postID" : 2,
+			"title" : "Doctor Strange",
+			"url" : "doctor-strange.html",
+			"img_src" : "http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/04/doctor-strange-teaser-poster.jpg",
+			"img_descr" : "A poster of the release of the Doctor Strange movie",
+			"date": "10/31/2016",
+			"description" : "If you, like me, are looking forward to 'Avengers: Infinity War', you should definitely see this movie. Without giving anything away, it is important, because it introduces to the MCU one of the superheroes that The Avengers will need to be able to fight Thanos. But not only that, the movie also confirms a theory that most fans have assumed. Read more about this theory on the article, but be warned, there will be major spoilers there.",
+			"post_tags": ["Marvel", "MCU", "Action", "SciFi", "SuperHeroes"],
+			"categoryID_FK" : 2, 
+			"authorID_FK" : 1
 		}
+		
 	]
 }
+/
