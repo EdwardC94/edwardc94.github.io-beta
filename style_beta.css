@@ -79,7 +79,6 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
     padding : 0 0.5rem 0.25rem 0.5rem;
 }
 .be-header-image {
-    background-attachment : fixed;
     background-repeat : no-repeat;
     background-position : center center;
     background-size : cover;
@@ -122,6 +121,9 @@ div[data-wrapper="blog"] {
             text-orientation : upright;
             writing-mode : vertical-rl;
         }
+            div[data-wrapper="blog"] > div > div > a:nth-of-type(1):hover {
+                border: #c5c5c5 solid 0.0625rem; 
+            }
         div[data-wrapper="blog"] > div > div > a:nth-of-type(2) {
             align-items: center;
             background-color: rgba(242,242,242,0.8);
