@@ -264,8 +264,6 @@ post-gallery > div.container {
     }
         .at-content > h2 {
             font-family : 'Sacramento';
-            text-shadow : none;
-            transition : text-shadow 0.5s,  linear
         }  
         .at-content > p {
             color : #e2e2e2;
@@ -278,9 +276,6 @@ post-gallery > div.container {
         article-thumbnail > a:hover .at-content {
             height : 25rem;
         }
-            article-thumbnail > a:hover .at-content > h2 {
-                 text-shadow: gold 1px 1px 10px;
-            }
             article-thumbnail > a:hover .at-content > p {
                 visibility: visible;
                 opacity: 1;
