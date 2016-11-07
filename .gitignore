@@ -2,3 +2,4 @@
 typings/
 #node modules
 node_modules/
+.vscode/settings.json
