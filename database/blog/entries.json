@@ -41,7 +41,7 @@
 			"background_position" : "top center",
 			"img_descr" : "A poster of the release of the Doctor Strange movie",
 			"date": "10/31/2016",
-			"description" : "If you, like me, are looking forward to 'Avengers: Infinity War', you should definitely see this movie. Without giving anything away, it is important, because it introduces to the MCU one of the superheroes that The Avengers will need to be able to fight Thanos. But not only that, the movie also confirms a theory that most fans have assumed. Read more about this theory on the article, but be warned, there will be major spoilers there.",
+			"description" : "If you, like me, are looking forward to the 'Avengers: Infinity War' movie, you should definitely see this movie. This movie is important because it introduces to the MCU one of the superheroes that The Avengers will need on their side to be able to fight Thanos. But not only that, the movie also confirms a theory that most fans have assumed. Read more about this theory on the article, but be warned, there will be major spoilers there.",
 			"post_tags": ["Marvel", "MCU", "Action", "SciFi", "SuperHeroes"],
 			"categoryID_FK" : 2, 
 			"authorID_FK" : 1
