@@ -10,13 +10,13 @@
 			"categoryID" : 1,
 			"name" : "Money",
 			"color": "gold",
-			"image_src" : "http://img1.meristation.com/files/imagenes/general/pile-of-euro-notes.jpg"
+			"img_src" : "http://img1.meristation.com/files/imagenes/general/pile-of-euro-notes.jpg"
 		},
 		{
 			"categoryID" : 2,
 			"name" : "Movies",
 			"color": "#0073CF",
-			"image_src" : "https://cdn-images-1.medium.com/max/1366/1*lEOjG5403Pg4JOLHr4PtdA.jpeg"
+			"img_src" : "https://cdn-images-1.medium.com/max/1366/1*lEOjG5403Pg4JOLHr4PtdA.jpeg"
 		}
 	],
 	"Post" : [
