@@ -4,7 +4,6 @@
 /*Font-family imports*/
 
 div[data-ng-view] {
-    min-width : 22rem;
     color : black;
 }
 
