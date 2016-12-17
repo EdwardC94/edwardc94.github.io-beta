@@ -10,13 +10,13 @@
 			"categoryID" : 1,
 			"name" : "Money",
 			"color": "gold",
-			"img-src" : "http://blogs.ft.com/the-world/files/2014/11/New-story-of-MAS_ECB.jpg"
+			"img_src" : "http://blogs.ft.com/the-world/files/2014/11/New-story-of-MAS_ECB.jpg"
 		},
 		{
 			"categoryID" : 2,
 			"name" : "Movies",
 			"color": "#0073CF",
-			"img-src" : "http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/04/doctor-strange-teaser-poster.jpg"
+			"img_src" : "http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/04/doctor-strange-teaser-poster.jpg"
 		}
 	],
 	"Post" : [
