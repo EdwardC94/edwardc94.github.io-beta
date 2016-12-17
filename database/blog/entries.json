@@ -10,13 +10,13 @@
 			"categoryID" : 1,
 			"name" : "Money",
 			"color": "gold",
-			"image_src" : "http://img1.meristation.com/files/imagenes/general/pile-of-euro-notes.jpg"
+			"img-src" : "http://blogs.ft.com/the-world/files/2014/11/New-story-of-MAS_ECB.jpg"
 		},
 		{
 			"categoryID" : 2,
 			"name" : "Movies",
 			"color": "#0073CF",
-			"image_src" : "https://cdn-images-1.medium.com/max/1366/1*lEOjG5403Pg4JOLHr4PtdA.jpeg"
+			"img-src" : "http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/04/doctor-strange-teaser-poster.jpg"
 		}
 	],
 	"Post" : [
@@ -25,6 +25,7 @@
 			"title" : "What are negative interest rates?",
 			"url" : "is_negative_always_bad",
 			"img_src" : "http://blogs.ft.com/the-world/files/2014/11/New-story-of-MAS_ECB.jpg",
+			"background_position" : "center center",
 			"img_descr" : "The European Central Bank (ECB) is the central bank for the euro and administers monetary policy of the eurozone, which consists of 19 EU member states and is one of the largest currency areas in the world.",
 			"date": "09/29/2016",
 			"description" : "And more importantly, why should you care.",
@@ -37,6 +38,7 @@
 			"title" : "Doctor Strange",
 			"url" : "doctor-strange",
 			"img_src" : "http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/04/doctor-strange-teaser-poster.jpg",
+			"background_position" : "top center",
 			"img_descr" : "A poster of the release of the Doctor Strange movie",
 			"date": "10/31/2016",
 			"description" : "If you, like me, are looking forward to 'Avengers: Infinity War', you should definitely see this movie. Without giving anything away, it is important, because it introduces to the MCU one of the superheroes that The Avengers will need to be able to fight Thanos. But not only that, the movie also confirms a theory that most fans have assumed. Read more about this theory on the article, but be warned, there will be major spoilers there.",

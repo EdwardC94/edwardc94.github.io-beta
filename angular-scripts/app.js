@@ -48,6 +48,9 @@
                 }]
             }
         }).
+        when('/about', {
+            templateUrl : 'partials/about'
+        }).
         otherwise("/home")
     }])    
 })();

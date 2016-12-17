@@ -76,12 +76,12 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
 }
 .be-header > h1 > span {
     padding : 0 0.5rem 0.25rem 0.5rem;
+    margin-left : -0.5rem; 
 }
 .be-header-image {
     background-repeat : no-repeat;
-    background-position : center center;
     background-size : cover;
-    height : 15rem;
+    height : 18rem;
     width : 100%;
 }
     div[data-wrapper="blog_entry"] > article section, div[data-wrapper="blog_entry"] > article aside {
@@ -263,9 +263,14 @@ post-gallery > div.container {
         width: 100%;
         height : 5rem;
         transition: height 0.5s, linear;
+        text-align : center; 
     }
         .at-content > h2 {
             font-family : 'Sacramento';
+            text-align: center;
+            margin: -.5rem;
+            margin-bottom : 0.5rem; 
+            padding: .5rem 0.25rem;
         }  
         .at-content > p {
             color : #e2e2e2;
@@ -281,6 +286,9 @@ post-gallery > div.container {
             article-thumbnail > a:hover .at-content > p {
                 visibility: visible;
                 opacity: 1;
+            }
+            article-thumbnail > a:hover .at-content > h2 {
+                background-color : black; 
             }
 
 /*Media Queries */
