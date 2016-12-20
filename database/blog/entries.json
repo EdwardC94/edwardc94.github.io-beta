@@ -45,6 +45,19 @@
 			"post_tags": ["Marvel", "MCU", "Action", "SciFi", "SuperHeroes"],
 			"categoryID_FK" : 2, 
 			"authorID_FK" : 1
+		},
+		{
+			"postID" : 3,
+			"title" : "Spider-Man",
+			"url" : "spider-man",
+			"img_src" : "http://wfiles.brothersoft.com/s/spider-man-2-hd_85611-1920x1200.jpg",
+			"background_position" : "top center",
+			"img_descr" : "A poster of the release of the Spider-Man movie",
+			"date": "12/19/2016",
+			"description" : "This article is about the Spider-Man movie released in 2002 starring Tobey Maguire as Peter Parker. This portrayal of our favorite wall-crawler is the best to the eyes of many fans, because it shows us the vulnerable Peter Parker in a very relatable way. At one point of the sequel you will think to yourself that the movie should have been titled \"A series of unfortunate events\" instead. Let me name a few of the things that many fans will be missing in the upcoming adaptation to this beloved comic.",
+			"post_tags": ["Marvel", "MCU", "Action", "SciFi", "SuperHeroes"],
+			"categoryID_FK" : 2, 
+			"authorID_FK" : 1
 		}
 		
 	]
