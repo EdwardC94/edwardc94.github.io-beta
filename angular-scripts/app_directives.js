@@ -19,6 +19,11 @@
         return {
             templateUrl : 'partials/directives/post-section.html'
         }
+    }).    
+    directive("postAside", function(){
+        return {
+            templateUrl : 'partials/directives/post-aside.html'
+        }
     }).
     directive("postGallery", function(){
         return {
