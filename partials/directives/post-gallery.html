@@ -2,17 +2,17 @@
     <div class="row">
         <div class="col-xs-12 cont-header">
             <h2>
-                <button class="btn" data-ng-style="{'background-color' : '{{category.color}}'}" data-ng-disabled="index == 0" data-ng-click="index = index - 1">&#9194;</button>
+                <button class="btn" data-ng-style="{'background-color' : '{{category.colors[0]}}'}" data-ng-disabled="index == 0" data-ng-click="index = index - 1">&#9194;</button>
                 <a data-ng-href="#/blog/{{category.name.toLowerCase()}}"><span>{{category.name}}</span></a>
-                <button data-ng-style="{'background-color' : '{{category.color}}'}" class="btn hidden-sm-down hidden-lg-up" data-ng-click="index = index + 1" data-ng-disabled="(index == posts.length - 2 || posts.length < 3)">&#9193;</button>
-                <button data-ng-style="{'background-color' : '{{category.color}}'}" class="btn hidden-md-down" data-ng-click="index = index + 1" data-ng-disabled="(index == posts.length - 3 || posts.length < 4)">&#9193;</button>
-                <button data-ng-style="{'background-color' : '{{category.color}}'}" class="btn hidden-md-up" data-ng-click="index = index + 1" data-ng-disabled="index == posts.length - 1">&#9193;</button>
+                <button data-ng-style="{'background-color' : '{{category.colors[0]}}'}" class="btn hidden-sm-down hidden-lg-up" data-ng-click="index = index + 1" data-ng-disabled="(index == posts.length - 2 || posts.length < 3)">&#9193;</button>
+                <button data-ng-style="{'background-color' : '{{category.colors[0]}}'}" class="btn hidden-md-down" data-ng-click="index = index + 1" data-ng-disabled="(index == posts.length - 3 || posts.length < 4)">&#9193;</button>
+                <button data-ng-style="{'background-color' : '{{category.colors[0]}}'}" class="btn hidden-md-up" data-ng-click="index = index + 1" data-ng-disabled="index == posts.length - 1">&#9193;</button>
             </h2>
         </div>
         <div class="col-xs-12 cont-series">
             <div class="row">
                 <div class="col-xs-12 col-md-6 col-lg-4 cont-body" data-ng-repeat="post in posts track by post.postID" data-ng-style="{'background-image': 'url({{post.imageBanner}})', 'background-color' : '{{category.color}}'}" data-ng-hide="($index < index || $index > index + 2)">
-                    <h2><a data-ng-href="#/blog/{{category.name.toLowerCase()}}/{{post.url}}" data-ng-style="{'text-shadow' : '1px 1px 10px {{category.color}}'}">{{post.title}}</a></h2>
+                    <h2><a data-ng-href="#/blog/{{category.name.toLowerCase()}}/{{post.url}}" data-ng-style="{'text-shadow' : '1px 1px 10px {{category.colors[0]}}'}">{{post.title}}</a></h2>
                 </div>
             </div>
         </div>

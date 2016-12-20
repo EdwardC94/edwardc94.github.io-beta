@@ -3,7 +3,7 @@
     <div class="be-header-image" data-ng-style="{'background-image' : 'url({{post.imageBanner}})', 'background-position' : '{{post.background_position}}'}"></div>
     <article class="container">
         <header class="row be-header">
-            <h1 class="col-xs-12"><span data-ng-style="{'background-color' : '{{category.color}}'}">{{post.title}}</span></h1>
+            <h1 class="col-xs-12"><span data-ng-style="{'background-color' : '{{category.colors[0]}}', 'color' : '{{category.colors[1]}}'}">{{post.title}}</span></h1>
             <div class="col-xs-12">by {{author.name}}</div>
             <p class="col-xs-12"><small>created on {{post.date}}</small></p>
         </header>

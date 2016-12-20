@@ -1,7 +1,7 @@
 <a data-ng-href="#/blog/{{category.name.toLowerCase()}}/{{post.url}}">
     <div class="col-lg-4 col-md-6 col-xs-12 at-card" ng-style="{'background-image' : 'url({{post.imageBanner}})'}">
         <div class="at-content">
-            <h2 data-ng-style="{ 'text-shadow' : '{{category.color}} 0.0625rem 0.0625rem 0.625rem' }">{{post.title}}</h2>
+            <h2 data-ng-style="{ 'text-shadow' : '{{category.colors[0]}} 0.0625rem 0.0625rem 0.625rem' }">{{post.title}}</h2>
             <p>{{post.description}}</p>
         </div>
     </div>

@@ -9,13 +9,13 @@
 		{
 			"categoryID" : 1,
 			"name" : "Money",
-			"color": "gold",
+			"colors": ["gold", "black"],
 			"imageBanner" : "images/blog/money/img-banner.JPG"
 		},
 		{
 			"categoryID" : 2,
 			"name" : "Movies",
-			"color": "#0073CF",
+			"colors": ["#0073cf", "white"],
 			"imageBanner" : "images/blog/movies/img-banner.JPG"
 		}
 	],

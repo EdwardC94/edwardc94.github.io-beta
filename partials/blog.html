@@ -2,7 +2,7 @@
 <div data-wrapper="blog" class="ng-scope"  data-ng-style="{'background-image' : 'url({{latestPost.post.imageBanner}})'}">
     <div>
         <div>
-            <a data-ng-href="#/blog/{{latestPost.category.name.toLowerCase()}}" data-ng-style="{'background-color' : '{{latestPost.category.color}}'}">{{latestPost.category.name.toLowerCase()}}</a> 
+            <a data-ng-href="#/blog/{{latestPost.category.name.toLowerCase()}}" data-ng-style="{'background-color' : '{{latestPost.category.colors[0]}}', 'color' : '{{latestPost.category.colors[1]}}'}">{{latestPost.category.name.toLowerCase()}}</a>
             <a data-ng-href="#/blog/{{latestPost.category.name.toLowerCase()}}/{{latestPost.post.url}}">{{latestPost.post.title}}</a>
         </div>
     </div>
