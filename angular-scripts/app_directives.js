@@ -5,6 +5,21 @@
             templateUrl : 'partials/directives/navigator.html'
         }
     }).
+    directive("post", function(){
+        return {
+            templateUrl : 'partials/directives/post.html'
+        }
+    }).
+    directive("postHeader", function(){
+        return {
+            templateUrl : 'partials/directives/post-header.html'
+        }
+    }).
+    directive("postSection", function(){
+        return {
+            templateUrl : 'partials/directives/post-section.html'
+        }
+    }).
     directive("postGallery", function(){
         return {
             templateUrl : 'partials/directives/post-gallery.html',
