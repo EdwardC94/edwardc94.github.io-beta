@@ -10,13 +10,13 @@
 			"categoryID" : 1,
 			"name" : "Money",
 			"color": "gold",
-			"imageBanner" : "images/blog/money/img-banner.jpg"
+			"imageBanner" : "images/blog/money/img-banner.JPG"
 		},
 		{
 			"categoryID" : 2,
 			"name" : "Movies",
 			"color": "#0073CF",
-			"imageBanner" : "images/blog/movies/img-banner.jpg"
+			"imageBanner" : "images/blog/movies/img-banner.JPG"
 		}
 	],
 	"Post" : [
@@ -24,7 +24,7 @@
 			"postID" : 1,
 			"title" : "What are negative interest rates?",
 			"url" : "is-negative-always-bad",
-			"imageBanner" : "images/blog/money/is-negative-always-bad/img-banner.jpg",
+			"imageBanner" : "images/blog/money/is-negative-always-bad/img-banner.JPG",
 			"background_position" : "center center",
 			"img_descr" : "The European Central Bank (ECB) is the central bank for the euro and administers monetary policy of the eurozone, which consists of 19 EU member states and is one of the largest currency areas in the world.",
 			"date": "09/29/2016",
@@ -37,7 +37,7 @@
 			"postID" : 2,
 			"title" : "Doctor Strange",
 			"url" : "doctor-strange",
-			"imageBanner" : "images/blog/movies/doctor-strange/img-banner.jpg",
+			"imageBanner" : "images/blog/movies/doctor-strange/img-banner.JPG",
 			"background_position" : "top center",
 			"img_descr" : "A poster of the release of the Doctor Strange movie",
 			"date": "10/31/2016",
@@ -50,7 +50,7 @@
 			"postID" : 3,
 			"title" : "Spider-Man",
 			"url" : "spider-man",
-			"imageBanner" : "images/blog/movies/spider-man/img-banner.jpg",
+			"imageBanner" : "images/blog/movies/spider-man/img-banner.JPG",
 			"background_position" : "top center",
 			"img_descr" : "A poster of the release of the Spider-Man movie",
 			"date": "12/19/2016",
