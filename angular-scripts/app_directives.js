@@ -7,21 +7,29 @@
     }).
     directive("post", function(){
         return {
+            restrict: 'E',
+            transclude: true,
             templateUrl : 'partials/directives/post.html'
         }
     }).
     directive("postSection", function(){
         return {
+            restrict: 'E',
+            transclude: true,
             templateUrl : 'partials/directives/post-section.html'
         }
     }).    
     directive("postAside", function(){
         return {
+            restrict: 'E',
+            transclude: true,
             templateUrl : 'partials/directives/post-aside.html'
         }
     }).   
     directive("postSectionFw", function(){
         return {
+            restrict: 'E',
+            transclude: true,
             templateUrl : 'partials/directives/post-section-fw.html'
         }
     }).
