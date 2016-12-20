@@ -10,11 +10,6 @@
             templateUrl : 'partials/directives/post.html'
         }
     }).
-    directive("postHeader", function(){
-        return {
-            templateUrl : 'partials/directives/post-header.html'
-        }
-    }).
     directive("postSection", function(){
         return {
             templateUrl : 'partials/directives/post-section.html'
@@ -23,6 +18,11 @@
     directive("postAside", function(){
         return {
             templateUrl : 'partials/directives/post-aside.html'
+        }
+    }).   
+    directive("postSectionFw", function(){
+        return {
+            templateUrl : 'partials/directives/post-section-fw.html'
         }
     }).
     directive("postGallery", function(){
