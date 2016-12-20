@@ -72,6 +72,7 @@
             $scope.author = where("authorID", isValid.authorID_FK, theData.Author, false);
             $scope.postsFiltered = where("categoryID_FK", isValid.categoryID_FK, theData.Post, true);
             $scope.contentUrl = 'partials/blog/' + $routeParams.category + '/' + $routeParams.entry + '.html';
+            $scope.imagesUrl = 'images/blog/' + $routeParams.category + '/' + $routeParams.entry + '/';
         }else{
             $scope.contentUrl = 'partials/404.html';
         }
