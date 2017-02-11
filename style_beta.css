@@ -74,15 +74,15 @@ div[data-wrapper="about"]>header {
     width: 100%;
     background-image: url(images/misc/about.PNG);
     background-position: center;
-    background-repeat: no-repeat;
     margin-bottom: 2rem;
-    background-size: cover;
+    background-size: 20rem 10rem;
 }
     div[data-wrapper="about"]>header > div {
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
+        background-image: linear-gradient(141deg, rgba(255, 0, 0, 0.25) 0%, rgba(0, 255, 0, 0.25) 33%, rgba(0, 0, 255, 0.25) 66%);
     }
     div[data-wrapper="about"]>header > div > h1 {
         background-color: #be4036;
