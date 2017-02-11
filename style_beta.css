@@ -72,7 +72,7 @@ div[data-wrapper="home"] > div:nth-of-type(3) {
 div[data-wrapper="about"]>header {
     height: 10rem;
     width: 100%;
-    background-image: url(&quot;images/misc/about.PNG&quot;);
+    background-image: url(images/misc/about.PNG);
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 2rem;
@@ -158,20 +158,20 @@ div[data-wrapper="blog"] {
         }
 /*Style for BLOG END*/
 /*Style for blog_category BEGINS*/
-.bc-header, div[data-wrapper="about"]>header {
+.bc-header {
     height: 10rem;
     margin-bottom: 2rem;    
     background-size: cover;
     background-repeat: no-repeat;
 }
-    .bc-header > div, div[data-wrapper="about"]>header>div {
+    .bc-header > div {
         background-color: rgba(0, 0, 0, 0.15);
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%; 
     }
-    .bc-header > div > h1, div[data-wrapper="about"]>header>div>h1 {
+    .bc-header > div > h1 {
         padding: .5rem 1rem;
     }
 /*Style for blog_category ENDS*/
