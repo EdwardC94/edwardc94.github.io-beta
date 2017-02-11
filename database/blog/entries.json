@@ -17,12 +17,6 @@
 			"name" : "Movies",
 			"colors": ["#0073cf", "white"],
 			"imageBanner" : "images/blog/movies/img-banner.JPG"
-		},
-		{
-			"categoryID" : 3,
-			"name" : "Cities",
-			"colors": ["#ed143d", "white"],
-			"imageBanner" : "images/blog/cities/img-banner.JPG"
 		}
 	],
 	"Post" : [
@@ -64,19 +58,6 @@
 			"post_tags": ["Marvel", "MCU", "Action", "SciFi", "SuperHeroes"],
 			"categoryID_FK" : 2, 
 			"authorID_FK" : 1
-		},
-		{
-			"postID" : 4,
-			"title" : "Mexico City",
-			"url" : "mexico-city",
-			"imageBanner" : "images/blog/movies/spider-man/img-banner.JPG",
-			"background_position" : "center 28%",
-			"img_descr" : "A good view of Bellas Artes",
-			"date": "12/20/2016",
-			"description" : "I can say one thing about Mexico City: This place is unique; it has the perfect combination of diversity, cultural heritage and magnificent views that almost make",
-			"post_tags": ["Mexico", "America", "Travel"],
-			"categoryID_FK" : 3, 
-			"authorID_FK" : 1
-		}		
+		}	
 	]
 }
