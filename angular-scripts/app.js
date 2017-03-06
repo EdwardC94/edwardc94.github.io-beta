@@ -1,56 +1,29 @@
 (function () {
-    var app = angular.module("MyWebsite", ['ngRoute', 'MyWebsiteCtrls', 'MyWebsiteServices', 'MyWebsiteDirectives']);
+    var toggleClosed = $("[data-role='toggleClosed']"),
+        main = $("#main");
+    main.css("height", screen.height-150);
+    toggleClosed.on("click", function() {
+        var parent = $(this).parent(".menu");
+        if(parent.hasClass("closed")){
+            toggleClosed.parent(".menu").addClass("closed");
+            parent.removeClass("closed")
+        }else{
+            parent.addClass("closed");
+        }
+    });
+    var app = angular.module("MyWebsite", ['ngRoute', 'MyWebsiteCtrls', 'MyWebsiteServices']);
 
     app.config(['$routeProvider', function($routeProvider) {
         $routeProvider.
-        when('/home', {
-            templateUrl : 'partials/home.html',
-            controller : 'HomeCtrl'
-        }).
         when('/blog', {
             templateUrl : 'partials/blog.html',
-            controller : 'IMHOCtrl',
+            controller : 'BlogCTRL',
             resolve : {
-                data : ['getEntries', '$q', function (getEntries, $q) {
-                    var deferred = $q.defer();
-                    var success = function (result) {
-                        deferred.resolve(result);
-                    };
-                    getEntries.getEntries({}, success, success);
-                    return deferred.promise;
-                }]
-            }
-        }).when('/blog/:category', {
-            templateUrl : 'partials/blog_category.html',
-            controller : 'CategoryController',
-            resolve : {
-                data : ['getEntries', '$q', function (getEntries, $q) {
-                    var deferred = $q.defer();
-                    var success = function (result) {
-                        deferred.resolve(result);
-                    };
-                    getEntries.getEntries({}, success, success);
-                    return deferred.promise;
+                data : ['getEntries', function(getEntries){
+                    return getEntries.query().$promise;   
                 }]
             }
         }).
-        when('/blog/:category/:entry', {
-            templateUrl : 'partials/blog_entry.html',
-            controller : 'BlogEntryCtrl',
-            resolve : {
-                data : ['getEntries', '$q', function (getEntries, $q) {
-                    var deferred = $q.defer();
-                    var success = function (result) {
-                        deferred.resolve(result);
-                    };
-                    getEntries.getEntries({}, success, success);
-                    return deferred.promise;
-                }]
-            }
-        }).
-        when('/about', {
-            templateUrl : 'partials/about'
-        }).
-        otherwise("/home")
+        otherwise("/blog")
     }])    
 })();
