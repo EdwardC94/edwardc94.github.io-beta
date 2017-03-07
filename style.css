@@ -244,9 +244,11 @@
     overflow : hidden;
     display: inline-block;
     height: 3.2rem;
+    font-weight : bold;
 }
 .thumb-descr {
     display: inline-block;
+    font-weight : bold;
 }
 .thumb-cat-dat {
     text-align : left;
