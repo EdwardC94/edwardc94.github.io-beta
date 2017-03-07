@@ -258,9 +258,6 @@
     background-color : red;
     flex: 1 1 40%;
 }
-.thumb-md .thumb-descr {
-    font-size : 1.1rem;
-}
 .thumb-md, .thumb-sm {
     background-color: purple;
     flex: 1 1 50%;
@@ -274,12 +271,23 @@
 /*Media Queries */
 /* Small devices (landscape phones, 544px and up)*/
 @media (min-width: 544px) {
+    #featured {
+        height : 100%;   
+    } 
+    #featured2 {
+        flex-flow : row nowrap;
+        flex : 2 1 40%;           
+    }
+    #featured3 {
+        flex-flow : row nowrap;
+        height: 40%;
+    }
     .thumb-lg { 
         flex : 3 1 60%;
     }
-    #featured {
-        height : 100%;   
-    }
+    .thumb-lg:hover>.thumb-info-container {
+        max-width: 75%;
+    }  
         .thumb-lg .thumb-info-container {
             height: 4.2rem;
         }
@@ -289,18 +297,10 @@
         } 
         .thumb-lg .thumb-descr {
             font-size : 1.25rem;
-        } 
-    #featured2 {
-        flex-flow : row nowrap;
-        flex : 2 1 40%;           
-    }
-    #featured3 {
-        flex-flow : row nowrap;
-        height: 40%;
-    }
-    .thumb-lg:hover>.thumb-info-container {
-        max-width: 75%;
-    }  
+        }
+        .thumb-md .thumb-descr {
+            font-size : 1.1rem;
+        }
 }
 
 /* Medium devices (tablets, 768px and up)*/
