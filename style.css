@@ -60,7 +60,7 @@
 #main-menu .small-link:hover {
     background-color : #464646;
     color : white !important;
-}    
+}
     #main-menu .small-link>i {
         margin-right: 0.5rem;
         background-color: white;
@@ -91,7 +91,8 @@
 
 /*BLOG MENU BEGINS*/
 #blog-menu {
-    width : 20rem; 
+    width : 20rem;
+    max-width: calc(100% - 2.5rem);
 }
 /*BLOG MENU ENDS*/
 
@@ -101,7 +102,7 @@
     height : 100%;
     background-color : white;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.46);
-    transition : all 0.75s, linear;
+    transition: all 0.4s, linear;
     position: fixed;
     border-right: 0.0625rem solid lightgray;
     z-index: 3;
