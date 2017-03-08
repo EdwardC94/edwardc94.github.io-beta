@@ -14,7 +14,8 @@
             return element.category = category;
         });
         return res.length > 0 ? res : false;
-    }
+    };
+    
     angular.module('MyWebsiteCtrls', ['ngRoute']).
     controller('HomeCtrl', ['$scope', function ($scope) {
     }]).
@@ -41,7 +42,7 @@
                 "category": "error"
             };
     }]).
-    controller('404CTRL', ['$scope', 'data', function($scope, data) {
+    controller('404CTRL', ['$scope', function($scope) {
     }]).
     controller('BlogMenuCTRL', ['$scope', '$http', function($scope, $http) {
     }]);
