@@ -23,7 +23,7 @@
         }).
         when('/projects', {
             templateUrl : 'partials/projects.html'
-        })
+        }).
         when('/blog', {
             templateUrl : 'partials/blog.html',
             controller : 'BlogCTRL',
