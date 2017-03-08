@@ -2,7 +2,7 @@
     {
         "postID": 1,
         "title": "Rockabye",
-        "url": "#/blog/listen/rockabye",
+        "url": "/blog/listen/rockabye",
         "image": {
             "url": "images/blog/LIS0001-rockabye.jpg",
             "source": "Wikipedia - Warner Bros. Music"
@@ -15,7 +15,7 @@
     {
         "postID": 2,
         "title": "Web Dev",
-        "url": "#/blog/sci-tech/web-dev",
+        "url": "/blog/sci-tech/web-dev",
         "image": {
             "url": "images/blog/SCT0001-web-dev.jpg",
             "source": "https://makeawebsitehub.com/"
@@ -28,7 +28,7 @@
     {
         "postID": 3,
         "title": "Being Single",
-        "url": "#/blog/live/being-single",
+        "url": "/blog/live/being-single",
         "image": {
             "url": "images/blog/LIV0001-being-single.jpg",
             "source": "Universal Pictures"
@@ -41,7 +41,7 @@
     {
         "postID": 4,
         "title": "Building a Wall",
-        "url": "#/blog/eco-pol/building-a-wall",
+        "url": "/blog/eco-pol/building-a-wall",
         "image": {
             "url": "images/blog/ECP0001-building-a-wall.jpg",
             "source": "By Gage Skidmore from Peoria, AZ, United States of America (Donald Trump) [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons"
@@ -54,7 +54,7 @@
     {
         "postID": 5,
         "title": "Resident Evil 6",
-        "url": "#/blog/watch/resident-evil-six",
+        "url": "/blog/watch/resident-evil-six",
         "image": {
             "url": "images/blog/WAT0001-resident-evil-six.jpg",
             "source": ""
@@ -67,7 +67,7 @@
     {
         "postID": 6,
         "title": "Discrimination - Part I",
-        "url": "#/blog/society/discrimination-part-1",
+        "url": "/blog/society/discrimination-part-1",
         "image": {
             "url": "images/blog/SOC0001-discr-part-1.PNG",
             "source": "By Ford Motor Company [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons"
@@ -80,7 +80,7 @@
     {
         "postID": 7,
         "title": "The Hobbit",
-        "url": "#/blog/read/the-hobbit",
+        "url": "/blog/read/the-hobbit",
         "image": {
             "url": "images/blog/REA0001-the-hobbit.png",
             "source": "via Wikimedia Commons"
