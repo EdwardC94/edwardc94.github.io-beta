@@ -1,0 +1,18 @@
+#brand-bar {
+    height : 2.375rem;    
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, white, rgba(255, 255, 255, 0) 70% );
+    z-index: 2;
+
+    &>span{
+        background-image : url(images/icons/android-icon-36x36.png);
+        border-radius : 2rem;
+        height: 2rem;
+        width: 2rem;
+        display: inline-block;
+        margin-top: 0.187rem;
+    }
+}

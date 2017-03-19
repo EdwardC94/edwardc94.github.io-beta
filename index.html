@@ -7,9 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <link rel="icon" href="images/icons/favicon.ico">       
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/icons/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-reboot.min.css" integrity="sha256-f5pPUePiefaggF4rDeeUCm0Qb/DA3YY+jSP3ffWJAOU=" crossorigin="anonymous" />     
+        <link rel="stylesheet" href="style.min.css">
+        <script src="https://use.fontawesome.com/2f255e5ee6.js"></script>
     </head>
     <body>
 
@@ -17,15 +18,15 @@
             <div id="main-menu" class="menu closed">
                 <div class="menu-btn" data-role="toggleClosed"><i class="fa fa-bars" aria-hidden="true"></i></div>
                 <div class="menu-content">
-                    <a class="link big-link" href="#/about"><span>About</span></a>
-                    <a class="link big-link" href="#/blog"><span>Blog</span></a>
-                    <a class="link big-link" href="#/projects"><span>Projects</span></a>
+                    <a class="link link-big" href="#/about"><span>About</span></a>
+                    <a class="link link-big" href="#/blog"><span>Blog</span></a>
+                    <a class="link link-big" href="#/projects"><span>Projects</span></a>
                     <hr />
-                    <a class="link small-link" href="http://stackoverflow.com/users/2917873/edward"><i class="fa fa-stack-overflow" aria-hidden="true" style="color : orangered"></i> StackOverflow</a>
-                    <a class="link small-link" href="https://www.linkedin.com/in/edwardc94/"><i class="fa fa-linkedin" aria-hidden="true" style="color : #0177b5"></i> LinkedIn</a>
-                    <a class="link small-link" href="https://twitter.com/EdwardC94"><i class="fa fa-twitter" aria-hidden="true" style="color : #1da1f2"></i> Twitter</a>
-                    <a class="link small-link" href="https://www.instagram.com/lol_ed94/"><i class="fa fa-instagram" aria-hidden="true" style="color : saddlebrown"></i><span> Instagram</span></a>
-                    <a class="link small-link" href="https://github.com/EdwardC94"><i class="fa fa-github" aria-hidden="true" style="color : purple"></i><span> GitHub</span></a>
+                    <a class="link link-small" href="http://stackoverflow.com/users/2917873/edward"><i class="fa fa-stack-overflow" aria-hidden="true" style="color : orangered"></i> StackOverflow</a>
+                    <a class="link link-small" href="https://www.linkedin.com/in/edwardc94/"><i class="fa fa-linkedin" aria-hidden="true" style="color : #0177b5"></i> LinkedIn</a>
+                    <a class="link link-small" href="https://twitter.com/EdwardC94"><i class="fa fa-twitter" aria-hidden="true" style="color : #1da1f2"></i> Twitter</a>
+                    <a class="link link-small" href="https://www.instagram.com/lol_ed94/"><i class="fa fa-instagram" aria-hidden="true" style="color : saddlebrown"></i><span> Instagram</span></a>
+                    <a class="link link-small" href="https://github.com/EdwardC94"><i class="fa fa-github" aria-hidden="true" style="color : purple"></i><span> GitHub</span></a>
                 </div>
             </div>
             <div id="blog-menu" class="menu menu-right closed" data-ng-controller="BlogMenuCTRL">
@@ -37,7 +38,6 @@
             <div id="content" data-ng-view></div>
         </div>
 
-        <script src="https://use.fontawesome.com/2f255e5ee6.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.min.js"></script>

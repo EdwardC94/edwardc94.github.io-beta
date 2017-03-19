@@ -3,3 +3,5 @@ typings/
 #node modules
 node_modules/
 .vscode/settings.json
+#.sass-cache
+.sass-cache/

@@ -1,0 +1,159 @@
+.thumb {
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center;
+    background-size: 0 100%,cover;
+    color: #fff!important; 
+    display: flex;
+    filter: contrast(120%);
+    font-family: 'Josefin Sans',sans-serif; 
+    justify-content: flex-end;
+    padding: .25rem;
+    text-align: right;
+    text-decoration: none;
+
+    &:hover {
+        background-size: 100%,cover;
+
+        &>.thumb-info {
+            &>.thumb-title, &>.thumb-details {
+                display: inline-block;
+                width: 100%
+            }
+        }        
+    }
+
+    &-sm {
+        background-color: aquamarine;
+        flex: 1 1 50%;
+
+        &>.thumb-info {
+            height: 2.5rem;
+
+            &>.thumb-title {
+                font-size: 1.5rem
+            }
+        }
+    }
+
+    &-md {
+        background-color: purple;
+        flex: 1 1 50%;
+    }
+
+    &-lg {
+        background-color: red;
+        flex: 1 1 40%;
+    }
+
+    &-md, &-lg {  
+        &:hover {
+           filter: grayscale(100%) contrast(90%); 
+
+           &>.thumb-info {
+                height: calc(100% - .5rem);
+                background-color: transparent
+            }
+        }        
+    }
+
+    &-info {
+        margin: .25rem;
+        padding: 0 1rem;
+        height: 3.4rem;
+        transition: all .1s linear;
+
+        &[data-category=listen] {
+            background-color: $listen-color;
+        }
+        &[data-category=sci-tech] {
+            background-color: $sci_tech-color
+        }
+        
+        &[data-category=live] {
+            background-color: $live-color
+        }
+        
+        &[data-category=eco-pol] {
+            background-color: $eco_pol-color
+        }
+
+        &[data-category=watch] {
+            background-color: $watch-color
+        }
+
+        &[data-category=society] {
+            background-color: $society-color
+        }
+
+        &[data-category=read] {
+            background-color: $read-color
+        }
+    }
+
+    &-title {
+        font-size: 2.5rem;
+        overflow: hidden;
+        height: 3.2rem;
+    }
+
+    &-title, &-descr {
+        display: inline-block;
+        font-weight: 700;
+    }
+
+    &-details {
+        display: none;
+
+        &>hr {
+            border-color: #fff;
+            margin: 0 0 1rem            
+        }
+    }
+
+    &-cat_dat {
+        text-align: left;
+        text-transform: uppercase
+    }
+}
+
+@media (min-width: 544px) {
+    .thumb-lg {
+        flex: 3 1 60%;
+
+        :hover>.thumb-info {
+            max-width: 75%
+        }
+
+        .thumb-info {
+            height: 4.2rem;
+        }
+
+        .thumb-title {
+            font-size: 3rem;
+            height: 4.2rem
+        }
+
+        .thumb-descr {
+            font-size: 1.25rem
+        }
+    }
+
+    .thumb-md .thumb-descr {
+        font-size: 1.1rem
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .thumb-lg:hover>.thumb-info {
+        max-width: 100%
+    }
+}
+
+@media (min-width: 992px) {
+    .thumb-lg:hover>.thumb-info {
+        max-width:75%
+    }
+}

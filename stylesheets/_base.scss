@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Monoton|Sacramento|Source+Sans+Pro|Permanent+Marker|Josefin+Sans:300);
+
+#main {
+    min-height: 100vh;
+    min-width: 21rem
+}
+
+#content {
+    height: 100%;
+    padding-top: 2.375rem
+}
+
+.flex-box {
+    display : flex;
+    flex-flow: column nowrap
+}
+
+@media (min-width: 1200px) {
+    #content {
+        padding-right:calc(50% - 37.5rem);
+        padding-left: calc(50% - 37.5rem)
+    }
+}
