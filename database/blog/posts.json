@@ -8,7 +8,6 @@
             "source": "Wikipedia - Warner Bros. Music"
         },
         "date": "02/20/2017",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie ante lacus, vitae posuere nisl semper vel. Praesent accumsan sem id vulputate elementum.",
         "tags": ["foo", "bar", "largerTag", "small"],
         "category": "listen"
     },
@@ -21,7 +20,6 @@
             "source": "https://makeawebsitehub.com/"
         },
         "date": "02/21/2017",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie ante lacus, vitae posuere nisl semper vel. Praesent accumsan sem id vulputate elementum.",
         "tags": ["foo", "bar", "largerTag", "small"],
         "category": "sci-tech"
     },
@@ -34,7 +32,6 @@
             "source": "Universal Pictures"
         },
         "date": "02/22/2017",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie ante lacus, vitae posuere nisl semper vel. Praesent accumsan sem id vulputate elementum.",
         "tags": ["foo", "bar", "largerTag", "small"],
         "category": "live"
     },
@@ -47,7 +44,6 @@
             "source": "By Gage Skidmore from Peoria, AZ, United States of America (Donald Trump) [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons"
         },
         "date": "02/23/2017",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie ante lacus, vitae posuere nisl semper vel. Praesent accumsan sem id vulputate elementum.",
         "tags": ["foo", "bar", "largerTag", "small"],
         "category": "eco-pol"
     },
@@ -60,7 +56,6 @@
             "source": ""
         },
         "date": "02/24/2017",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie ante lacus, vitae posuere nisl semper vel. Praesent accumsan sem id vulputate elementum.",
         "tags": ["foo", "bar", "largerTag", "small"],
         "category": "watch"
     },
@@ -73,7 +68,6 @@
             "source": "By Ford Motor Company [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons"
         },
         "date": "02/25/2017",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie ante lacus, vitae posuere nisl semper vel. Praesent accumsan sem id vulputate elementum.",
         "tags": ["foo", "bar", "largerTag", "small"],
         "category": "society"
     },
@@ -86,7 +80,6 @@
             "source": "via Wikimedia Commons"
         },
         "date": "02/26/2017",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie ante lacus, vitae posuere nisl semper vel. Praesent accumsan sem id vulputate elementum.",
         "tags": ["foo", "bar", "largerTag", "small"],
         "category": "read"
     }

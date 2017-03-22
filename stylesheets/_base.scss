@@ -15,9 +15,9 @@
     flex-flow: column nowrap
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
     #content {
-        padding-right:calc(50% - 37.5rem);
-        padding-left: calc(50% - 37.5rem)
+        padding-right:calc(50% - 40rem);
+        padding-left: calc(50% - 40rem)
     }
 }

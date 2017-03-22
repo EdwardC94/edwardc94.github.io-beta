@@ -37,7 +37,6 @@
                     "source": "Wikipedia - Warner Bros. Music"
                 },
                 "date": new Date(Date.now).toLocaleDateString(),
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie ante lacus, vitae posuere nisl semper vel. Praesent accumsan sem id vulputate elementum.",
                 "tags": ["foo", "bar", "largerTag", "small"],
                 "category": "error"
             };

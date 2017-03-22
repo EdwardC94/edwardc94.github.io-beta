@@ -11,10 +11,10 @@
   display: flex;
   flex-flow: column nowrap; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   #content {
-    padding-right: calc(50% - 37.5rem);
-    padding-left: calc(50% - 37.5rem); } }
+    padding-right: calc(50% - 40rem);
+    padding-left: calc(50% - 40rem); } }
 #brand-bar {
   height: 2.375rem;
   text-align: center;
@@ -124,7 +124,6 @@
   background-clip: content-box;
   background-position: center;
   background-size: 0 100%,cover;
-  color: #fff !important;
   display: flex;
   filter: contrast(120%);
   font-family: 'Josefin Sans',sans-serif;
@@ -133,59 +132,49 @@
   text-align: right;
   text-decoration: none; }
   .thumb:hover {
-    background-size: 100%,cover; }
-    .thumb:hover > .thumb-info > .thumb-title, .thumb:hover > .thumb-info > .thumb-details {
-      display: inline-block;
-      width: 100%; }
+    background-size: 100%,cover;
+    filter: grayscale(100%) contrast(90%); }
+    .thumb:hover > .thumb-info {
+      color: white;
+      height: calc(100% - .5rem);
+      background-color: transparent; }
+      .thumb:hover > .thumb-info > .thumb-title, .thumb:hover > .thumb-info > .thumb-details {
+        display: inline-block;
+        width: 100%; }
   .thumb-sm {
     background-color: aquamarine;
     flex: 1 1 50%; }
     .thumb-sm > .thumb-info {
       height: 2.5rem; }
       .thumb-sm > .thumb-info > .thumb-title {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        height: 2.5rem; }
+      .thumb-sm > .thumb-info hr {
+        margin: 0 0 0.5rem 0; }
   .thumb-md {
     background-color: purple;
     flex: 1 1 50%; }
   .thumb-lg {
     background-color: red;
     flex: 1 1 40%; }
-  .thumb-md:hover, .thumb-lg:hover {
-    filter: grayscale(100%) contrast(90%); }
-    .thumb-md:hover > .thumb-info, .thumb-lg:hover > .thumb-info {
-      height: calc(100% - .5rem);
-      background-color: transparent; }
   .thumb-info {
     margin: .25rem;
     padding: 0 1rem;
     height: 3.4rem;
-    transition: all .1s linear; }
-    .thumb-info[data-category=listen] {
-      background-color: #a326e6; }
-    .thumb-info[data-category=sci-tech] {
-      background-color: #18bfc5; }
-    .thumb-info[data-category=live] {
-      background-color: #ff1f8f; }
-    .thumb-info[data-category=eco-pol] {
-      background-color: #55d800; }
-    .thumb-info[data-category=watch] {
-      background-color: #efb508; }
-    .thumb-info[data-category=society] {
-      background-color: #FF5722; }
-    .thumb-info[data-category=read] {
-      background-color: #00dc62; }
+    transition: all .1s linear;
+    color: black;
+    background-color: white; }
   .thumb-title {
     font-size: 2.5rem;
     overflow: hidden;
-    height: 3.2rem; }
-  .thumb-title, .thumb-descr {
-    display: inline-block;
-    font-weight: 700; }
+    height: 3rem;
+    font-weight: 700;
+    display: inline-block; }
   .thumb-details {
     display: none; }
     .thumb-details > hr {
       border-color: #fff;
-      margin: 0 0 1rem; }
+      margin: 0 0 1rem 0; }
   .thumb-cat_dat {
     text-align: left;
     text-transform: uppercase; }
@@ -199,12 +188,7 @@
       height: 4.2rem; }
     .thumb-lg .thumb-title {
       font-size: 3rem;
-      height: 4.2rem; }
-    .thumb-lg .thumb-descr {
-      font-size: 1.25rem; }
-
-  .thumb-md .thumb-descr {
-    font-size: 1.1rem; } }
+      height: 4.2rem; } }
 @media (min-width: 768px) {
   .thumb-lg:hover > .thumb-info {
     max-width: 100%; } }
