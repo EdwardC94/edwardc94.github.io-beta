@@ -6,26 +6,26 @@
         text-decoration: none!important;
         
         &[href="#/about"] {
-            background-image: linear-gradient(141deg,rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 100%),url(images/gral/img/about.PNG);
+            background-image: linear-gradient(141deg,rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 100%),url(../images/gral/img/about.PNG);
 
             &:hover {
-                background-image: linear-gradient(141deg,rgba(255,0,0,.25) 0,rgba(0,255,0,.25) 70%,rgba(0,0,255,.25) 90%),url(images/gral/img/about.gif)
+                background-image: linear-gradient(141deg,rgba(255,0,0,.25) 0,rgba(0,255,0,.25) 70%,rgba(0,0,255,.25) 90%),url(../images/gral/img/about.gif)
             }
         }
 
         &[href="#/projects"] {
-            background-image: linear-gradient(141deg,rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 100%),url(images/gral/img/projects.PNG);
+            background-image: linear-gradient(141deg,rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 100%),url(../images/gral/img/projects.PNG);
 
             &:hover {
-                background-image: linear-gradient(141deg,rgba(255,0,0,.25) 0,rgba(0,255,0,.25) 70%,rgba(0,0,255,.25) 90%),url(images/gral/img/projects.gif)
+                background-image: linear-gradient(141deg,rgba(255,0,0,.25) 0,rgba(0,255,0,.25) 70%,rgba(0,0,255,.25) 90%),url(../images/gral/img/projects.gif)
             }
         }
 
         &[href="#/blog"] {
-            background-image: linear-gradient(141deg,rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 100%),url(images/gral/img/blog.PNG);
+            background-image: linear-gradient(141deg,rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 100%),url(../images/gral/img/blog.PNG);
 
             &:hover {
-                background-image: linear-gradient(141deg,rgba(255,0,0,.25) 0,rgba(0,255,0,.25) 70%,rgba(0,0,255,.25) 90%),url(images/gral/img/blog.gif)
+                background-image: linear-gradient(141deg,rgba(255,0,0,.25) 0,rgba(0,255,0,.25) 70%,rgba(0,0,255,.25) 90%),url(../images/gral/img/blog.gif)
             }
         }
 
