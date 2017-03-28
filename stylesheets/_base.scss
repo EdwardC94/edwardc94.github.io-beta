@@ -10,10 +10,6 @@
     padding-top: 2.375rem
 }
 
-aside {
-    padding : 0.25rem;
-}
-
 .flex-box {
     display : flex;
     flex-flow: column nowrap
@@ -23,5 +19,17 @@ aside {
     #content {
         padding-right:calc(50% - 40rem);
         padding-left: calc(50% - 40rem)
+    }
+}
+
+//BLOG
+#what-is-this {
+    padding-left: 1rem;
+    margin: 0.25rem;
+    border-left: 0.25rem solid;
+    color: #424242;
+
+    &>h2 {
+        color : #4990f7;
     }
 }

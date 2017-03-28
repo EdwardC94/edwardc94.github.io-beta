@@ -7,6 +7,9 @@
   height: 100%;
   padding-top: 2.375rem; }
 
+aside {
+  padding: 0.25rem; }
+
 .flex-box {
   display: flex;
   flex-flow: column nowrap; }
@@ -24,7 +27,7 @@
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, white, rgba(255, 255, 255, 0) 70%);
   z-index: 2; }
   #brand-bar > span {
-    background-image: url(images/icons/android-icon-36x36.png);
+    background-image: url(../images/icons/android-icon-36x36.png);
     border-radius: 2rem;
     height: 2rem;
     width: 2rem;
@@ -78,17 +81,17 @@
   margin: .25rem;
   text-decoration: none !important; }
   #main-menu .link[href="#/about"] {
-    background-image: linear-gradient(141deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url(images/gral/img/about.PNG); }
+    background-image: linear-gradient(141deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url(../images/gral/img/about.PNG); }
     #main-menu .link[href="#/about"]:hover {
-      background-image: linear-gradient(141deg, rgba(255, 0, 0, 0.25) 0, rgba(0, 255, 0, 0.25) 70%, rgba(0, 0, 255, 0.25) 90%), url(images/gral/img/about.gif); }
+      background-image: linear-gradient(141deg, rgba(255, 0, 0, 0.25) 0, rgba(0, 255, 0, 0.25) 70%, rgba(0, 0, 255, 0.25) 90%), url(../images/gral/img/about.gif); }
   #main-menu .link[href="#/projects"] {
-    background-image: linear-gradient(141deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url(images/gral/img/projects.PNG); }
+    background-image: linear-gradient(141deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url(../images/gral/img/projects.PNG); }
     #main-menu .link[href="#/projects"]:hover {
-      background-image: linear-gradient(141deg, rgba(255, 0, 0, 0.25) 0, rgba(0, 255, 0, 0.25) 70%, rgba(0, 0, 255, 0.25) 90%), url(images/gral/img/projects.gif); }
+      background-image: linear-gradient(141deg, rgba(255, 0, 0, 0.25) 0, rgba(0, 255, 0, 0.25) 70%, rgba(0, 0, 255, 0.25) 90%), url(../images/gral/img/projects.gif); }
   #main-menu .link[href="#/blog"] {
-    background-image: linear-gradient(141deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url(images/gral/img/blog.PNG); }
+    background-image: linear-gradient(141deg, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url(../images/gral/img/blog.PNG); }
     #main-menu .link[href="#/blog"]:hover {
-      background-image: linear-gradient(141deg, rgba(255, 0, 0, 0.25) 0, rgba(0, 255, 0, 0.25) 70%, rgba(0, 0, 255, 0.25) 90%), url(images/gral/img/blog.gif); }
+      background-image: linear-gradient(141deg, rgba(255, 0, 0, 0.25) 0, rgba(0, 255, 0, 0.25) 70%, rgba(0, 0, 255, 0.25) 90%), url(../images/gral/img/blog.gif); }
   #main-menu .link.link-big {
     background-position: center,center;
     background-repeat: no-repeat;
