@@ -8,9 +8,12 @@
         font-family: 'Josefin Sans';
         padding : 0 3rem;
 
+        &>h1 {
+            font-weight: normal;
+        }
+
         &>p {
             font-size: 0.9rem;
-            font-weight : bold;
             color: #444
         }
 
@@ -37,21 +40,37 @@
 
 #about-myname {
     padding : 0 calc(50% - 12.5rem);
+
+    p {
+        font-weight: bold;
+    }
 }
 
 #about-mypassion{
-    background-color: #444;
+    background-image: url(../images/about/about-mypassion-pic.jpg);
+    background-size: 100% 50%; 
+    background-position: top;
     
     &>.flex-box-reverse{
         flex-flow: column nowrap;
-    }
 
-    h1 {
-        color: #f8f8ff
-    }
+        &>.about-section {
+            &.flex-box {
+                background-color: #444;
+            }
+        
+            &>article {
+                background-color: #444;
 
-    p {
-        color: #d3d3d3 !important
+                &>h1 {
+                    color: #f8f8ff
+                }
+
+                &>p {
+                    color: #d3d3d3 !important
+                }
+            }
+        }
     }
 }
 
@@ -70,10 +89,6 @@
 
 #about-myname-pic {
     background-image: url(../images/about/about-myname-pic.jpg);
-}
-
-#about-mypassion-pic {
-    background-image: url(../images/about/about-mypassion-pic.jpg);
 }
 
 #about-mydreams-pic {
@@ -113,6 +128,16 @@
 
         &>.flex-box {
             flex: 4 1 40%;
+        }
+    }
+
+    #about-mypassion{
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-position: center; 
+
+        &>.flex-box-reverse>.flex-box {
+            background-color:  transparent !important
         }
     }
     
