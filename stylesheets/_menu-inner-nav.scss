@@ -1,0 +1,57 @@
+.menu-inner-nav {
+    background-color: transparent;
+    box-shadow: none;
+    border: 0;
+
+    &>.menu-content {
+        height : 100%;
+
+        &>.link-group {
+            color: black;
+            list-style: none;
+            padding: 10rem 0;
+            margin: 0;            
+
+            &>.link {
+                    color: black;
+                    flex: 1 1 20%;
+                    justify-content: flex-end;
+                    align-items: center;
+                    display: flex;
+                    padding-right: .5rem;
+                    font-size: 0.75rem;
+
+                &>a {
+                    text-decoration: none;
+                    padding: 0.2rem 0.5rem; 
+                
+                    &>.link-title {
+                        color: black;
+                        padding-right: 1rem;
+                        display: none;
+                        font-family: "Josefin Sans";
+                        font-weight: bold;
+                        background-color: white
+                    }
+
+                    &>.fa {
+                            border: 0.0625rem solid gold;
+                            padding: 0.25rem;
+                            background-color: white;
+                            border-radius: 50%;
+                            color: darkgray
+                    }
+
+                    &:hover {
+                        background-color: white;
+                        border: 0.0625rem dotted gold;
+
+                        &>.link-title {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

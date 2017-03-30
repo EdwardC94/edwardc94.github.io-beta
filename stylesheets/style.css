@@ -3,19 +3,27 @@
   min-height: 100vh;
   min-width: 21rem; }
 
-#content {
-  height: 100%;
-  padding-top: 2.375rem; }
+div[data-ng-view] {
+  height: 100%; }
 
-aside {
-  padding: 0.25rem; }
+.container, .container-fluid {
+  height: 100%; }
 
-.flex-box {
+.background-cover {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(110%); }
+
+.flex-box, .flex-box-reverse {
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  height: 100%; }
+  .flex-box-reverse {
+    flex-flow: column-reverse nowrap; }
 
 @media (min-width: 1280px) {
-  #content {
+  .container {
     padding-right: calc(50% - 40rem);
     padding-left: calc(50% - 40rem); } }
 #brand-bar {
@@ -47,11 +55,13 @@ aside {
     right: 0;
     border-right: 0;
     border-left: .0625rem solid #d3d3d3; }
+    .menu-right > .menu-btn {
+      text-align: left; }
   .menu-btn {
     background-color: #5c0f5b;
     color: #edff00;
     text-align: right;
-    padding: .25rem .65rem .25rem 0;
+    padding: .25rem .65rem;
     cursor: pointer;
     font-size: 1.25rem; }
   .menu-content {
@@ -69,8 +79,12 @@ aside {
     box-shadow: none;
     border: 0; }
     .menu.closed > .menu-btn {
-      background-color: rgba(255, 255, 255, 0);
-      color: #000; }
+      background-color: #2b2b2b;
+      color: #c1c1c1;
+      text-align: center;
+      padding: .25rem 0; }
+      .menu.closed > .menu-btn:hover {
+        color: white; }
     .menu.closed > .menu-content {
       width: 0;
       overflow: hidden; }
@@ -120,6 +134,57 @@ aside {
       border-radius: .25rem;
       width: 1.5rem;
       text-align: center; }
+      #main-menu .link.link-small > i.fa-stack-overflow {
+        color: orangered; }
+      #main-menu .link.link-small > i.fa-linkedin {
+        color: #0177b5; }
+      #main-menu .link.link-small > i.fa-twitter {
+        color: #1da1f2; }
+      #main-menu .link.link-small > i.fa-instagram {
+        color: saddlebrown; }
+      #main-menu .link.link-small > i.fa-github {
+        color: purple; }
+
+.menu-inner-nav {
+  background-color: transparent;
+  box-shadow: none;
+  border: 0; }
+  .menu-inner-nav > .menu-content {
+    height: 100%; }
+    .menu-inner-nav > .menu-content > .link-group {
+      color: black;
+      list-style: none;
+      padding: 10rem 0;
+      margin: 0; }
+      .menu-inner-nav > .menu-content > .link-group > .link {
+        color: black;
+        flex: 1 1 20%;
+        justify-content: flex-end;
+        align-items: center;
+        display: flex;
+        padding-right: .5rem;
+        font-size: 0.75rem; }
+        .menu-inner-nav > .menu-content > .link-group > .link > a {
+          text-decoration: none;
+          padding: 0.2rem 0.5rem; }
+          .menu-inner-nav > .menu-content > .link-group > .link > a > .link-title {
+            color: black;
+            padding-right: 1rem;
+            display: none;
+            font-family: "Josefin Sans";
+            font-weight: bold;
+            background-color: white; }
+          .menu-inner-nav > .menu-content > .link-group > .link > a > .fa {
+            border: 0.0625rem solid gold;
+            padding: 0.25rem;
+            background-color: white;
+            border-radius: 50%;
+            color: darkgray; }
+          .menu-inner-nav > .menu-content > .link-group > .link > a:hover {
+            background-color: white;
+            border: 0.0625rem dotted gold; }
+            .menu-inner-nav > .menu-content > .link-group > .link > a:hover > .link-title {
+              display: inline-block; }
 
 .thumb {
   align-items: flex-end;
@@ -201,11 +266,10 @@ aside {
 .featured-first {
   height: 125%; }
 .featured-second {
-  height: 100%;
   flex: 3 1 60%; }
 .featured-third {
   height: 75%; }
-  .featured-third > .flex-box {
+  .featured-third > .flex-box, .featured-third > .flex-box-reverse {
     flex: 1 1 50%; }
 
 @media (min-width: 544px) {
@@ -225,7 +289,95 @@ aside {
     flex-flow: column nowrap; }
   .featured-third {
     height: 25%; }
-    .featured-third > .flex-box {
+    .featured-third > .flex-box, .featured-third > .flex-box-reverse {
       flex-flow: row nowrap; } }
+.about-section {
+  flex: 1 1 50%;
+  justify-content: center;
+  align-items: center; }
+  .about-section > article {
+    font-family: 'Josefin Sans';
+    padding: 0 3rem; }
+    .about-section > article > p {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #444; }
+
+#about-cover {
+  background-image: url(../images/about/about-cover-pic.jpg);
+  justify-content: center; }
+  #about-cover > h1 {
+    color: black;
+    font-family: "Josefin Sans";
+    font-size: 3.5rem;
+    text-align: center; }
+    #about-cover > h1 > span {
+      padding: 1rem 2rem;
+      background-color: white; }
+
+#about-myname {
+  padding: 0 calc(50% - 12.5rem); }
+
+#about-mypassion {
+  background-color: #444; }
+  #about-mypassion > .flex-box-reverse {
+    flex-flow: column nowrap; }
+  #about-mypassion h1 {
+    color: #f8f8ff; }
+  #about-mypassion p {
+    color: #d3d3d3 !important; }
+
+#about-mydreams {
+  background-color: black; }
+  #about-mydreams h1 {
+    color: white; }
+  #about-mydreams p {
+    color: lightgray !important; }
+
+#about-myname-pic {
+  background-image: url(../images/about/about-myname-pic.jpg); }
+
+#about-mypassion-pic {
+  background-image: url(../images/about/about-mypassion-pic.jpg); }
+
+#about-mydreams-pic {
+  background-image: url(../images/about/about-mydreams-pic.jpg); }
+
+@media (min-width: 544px) {
+  .about-section > article {
+    padding: 0 3rem; }
+    .about-section > article > p {
+      font-size: 1rem; } }
+@media (min-width: 768px) {
+  .container[data-location="about"] {
+    padding: 0 !important; }
+    .container[data-location="about"] > .flex-box, .container[data-location="about"] > .flex-box-reverse {
+      flex-flow: row nowrap; }
+      .container[data-location="about"] > .flex-box-reverse {
+        flex-flow: row-reverse nowrap !important; }
+
+  #about-mydreams > .flex-box, #about-mydreams > .flex-box-reverse {
+    flex-flow: column !important; }
+    #about-mydreams > .flex-box > .background-cover, #about-mydreams > .flex-box-reverse > .background-cover {
+      flex: 6 1 60%; }
+    #about-mydreams > .flex-box > .flex-box, #about-mydreams > .flex-box-reverse > .flex-box, #about-mydreams > .flex-box > .flex-box-reverse, #about-mydreams > .flex-box-reverse > .flex-box-reverse {
+      flex: 4 1 40%; }
+
+  .about-section > article {
+    padding: 0 4rem; }
+    .about-section > article > h1 {
+      font-size: 2rem; }
+    .about-section > article > p {
+      font-size: 1.1rem; } }
+@media (min-width: 992px) {
+  .about-section > article {
+    padding: 0 5rem; }
+    .about-section > article > h1 {
+      font-size: 2.2rem; }
+    .about-section > article > p {
+      font-size: 1.2rem; } }
+@media (min-width: 1200px) {
+  .about-section > article {
+    padding: 0 7rem; } }
 
 /*# sourceMappingURL=style.css.map */

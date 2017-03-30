@@ -63,7 +63,27 @@
                 padding: .25rem;
                 border-radius: .25rem;
                 width: 1.5rem;
-                text-align: center
+                text-align: center;
+                
+                &.fa-stack-overflow {
+                    color : orangered
+                }
+
+                &.fa-linkedin {
+                    color : #0177b5
+                }
+
+                &.fa-twitter {
+                    color : #1da1f2
+                }
+
+                &.fa-instagram {
+                    color : saddlebrown
+                }
+
+                &.fa-github {
+                    color : purple
+                }
             }
         }
     }  

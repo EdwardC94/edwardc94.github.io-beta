@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app="MyWebsite">
-    <head>
-        <title>Eduardo Aguilar</title>    
-        <meta name="theme-color" content="#ffffff">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <link rel="icon" href="images/icons/favicon.ico">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-reboot.min.css" integrity="sha256-f5pPUePiefaggF4rDeeUCm0Qb/DA3YY+jSP3ffWJAOU=" crossorigin="anonymous" />
-        <link rel="stylesheet" href="stylesheets/style.min.css"> 
-        <script src="https://use.fontawesome.com/2f255e5ee6.js"></script>
-    </head>
-    <body>
+<head>
+    <title>Eduardo Aguilar</title>
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <div id="main">
-            <div id="main-menu" class="menu closed">
-                <div class="menu-btn" data-role="toggleClosed"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                <div class="menu-content">
-                    <a class="link link-big" href="#/about"><span>About</span></a>
-                    <a class="link link-big" href="#/blog"><span>Blog</span></a>
-                    <a class="link link-big" href="#/projects"><span>Projects</span></a>
-                    <hr />
-                    <a class="link link-small" href="http://stackoverflow.com/users/2917873/edward"><i class="fa fa-stack-overflow" aria-hidden="true" style="color : orangered"></i> StackOverflow</a>
-                    <a class="link link-small" href="https://www.linkedin.com/in/edwardc94/"><i class="fa fa-linkedin" aria-hidden="true" style="color : #0177b5"></i> LinkedIn</a>
-                    <a class="link link-small" href="https://twitter.com/EdwardC94"><i class="fa fa-twitter" aria-hidden="true" style="color : #1da1f2"></i> Twitter</a>
-                    <a class="link link-small" href="https://www.instagram.com/lol_ed94/"><i class="fa fa-instagram" aria-hidden="true" style="color : saddlebrown"></i><span> Instagram</span></a>
-                    <a class="link link-small" href="https://github.com/EdwardC94"><i class="fa fa-github" aria-hidden="true" style="color : purple"></i><span> GitHub</span></a>
-                </div>
+    <link rel="icon" href="images/icons/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-reboot.min.css"
+        integrity="sha256-f5pPUePiefaggF4rDeeUCm0Qb/DA3YY+jSP3ffWJAOU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="stylesheets/style.min.css">
+    <script src="https://use.fontawesome.com/2f255e5ee6.js"></script>
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="main-menu" class="menu closed">
+            <div class="menu-btn" data-role="toggleClosed"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div class="menu-content">
+                <a class="link link-big" href="#/about"><span>About</span></a>
+                <a class="link link-big" href="#/blog"><span>Blog</span></a>
+                <a class="link link-big" href="#/projects"><span>Projects</span></a>
+                <hr />
+                <a class="link link-small" href="http://stackoverflow.com/users/2917873/edward"><i class="fa fa-stack-overflow" aria-hidden="true"></i> StackOverflow</a>
+                <a class="link link-small" href="https://www.linkedin.com/in/edwardc94/"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                <a class="link link-small" href="https://twitter.com/EdwardC94"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                <a class="link link-small" href="https://www.instagram.com/lol_ed94/"><i class="fa fa-instagram" aria-hidden="true"></i><span> Instagram</span></a>
+                <a class="link link-small" href="https://github.com/EdwardC94"><i class="fa fa-github" aria-hidden="true"></i><span> GitHub</span></a>
             </div>
-            <div id="blog-menu" class="menu menu-right closed" data-ng-controller="BlogMenuCTRL">
-                <div class="menu-btn" data-role="toggleClosed"><i class="fa fa-search" aria-hidden="true"></i></div>
-                <div class="menu-content">
-                </div>
-            </div>
-            <div id="brand-bar"><span></span></div>
-            <div id="content" data-ng-view></div>
         </div>
+        <div id="blog-menu" class="menu menu-right closed" data-ng-controller="MenuCTRL" data-ng-show="show('/blog')">
+            <div class="menu-btn" data-role="toggleClosed"><i class="fa fa-search" aria-hidden="true"></i></div>
+            <div class="menu-content">
+            </div>
+        </div>
+        <div data-ng-view></div>
+    </div>
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="angular-scripts/app.js"></script> 
-        <script type="text/javascript" src="angular-scripts/app-services.js"></script>      
-        <script type="text/javascript" src="angular-scripts/app-controllers.js"></script>   
-    </body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="angular-scripts/_app-config.js"></script>
+    <script type="text/javascript" src="angular-scripts/_app-services.js"></script>
+    <script type="text/javascript" src="angular-scripts/_app-controllers.js"></script>
+</body>
+
 </html>

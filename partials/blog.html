@@ -1,77 +1,86 @@
-<section class="flex-box featured-first">
-    <a data-ng-href="#{{posts.featured[0].url}}" class="thumb thumb-lg" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url({{posts.featured[0].image.url}})'}">
-        <span class="thumb-info" data-category="{{posts.featured[0].category}}">
+<!--<div id="blog-menu" class="menu menu-right closed" data-ng-controller="BlogMenuCTRL">
+    <div class="menu-btn" data-role="toggleClosed"><i class="fa fa-search" aria-hidden="true"></i></div>
+    <div class="menu-content">
+    </div>
+</div>-->
+<div class="container">
+    <section class="flex-box featured-first">
+        <a data-ng-href="#{{posts.featured[0].url}}" class="thumb thumb-lg" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url({{posts.featured[0].image.url}})'}">
+            <span class="thumb-info" data-category="{{posts.featured[0].category}}">
             <span class="thumb-title">{{posts.featured[0].title}}</span>
             <span class="thumb-details">
                 <hr>
-                <span class="thumb-cat_dat">{{posts.featured[0].category}} - {{posts.featured[0].date}}</span> 
+                <span class="thumb-cat_dat">{{posts.featured[0].category}} - {{posts.featured[0].date}}</span>
             </span>
-        </span>
-    </a>
-    <section class="flex-box featured-second">
-        <a data-ng-href="#{{posts.featured[1].url}}" class="thumb thumb-md" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url({{posts.featured[1].image.url}})'}">
-            <span class="thumb-info" data-category="{{posts.featured[1].category}}">
+            </span>
+        </a>
+        <section class="flex-box featured-second">
+            <a data-ng-href="#{{posts.featured[1].url}}" class="thumb thumb-md" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url({{posts.featured[1].image.url}})'}">
+                <span class="thumb-info" data-category="{{posts.featured[1].category}}">
                 <span class="thumb-title">{{posts.featured[1].title}}</span>
                 <span class="thumb-details">
                     <hr>
                     <span class="thumb-cat_dat">{{posts.featured[1].category}} - {{posts.featured[1].date}}</span>
                 </span>
-            </span>
-        </a>
-        <a data-ng-href="#{{posts.featured[2].url}}" class="thumb thumb-md" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url({{posts.featured[2].image.url}})'}">
-            <span class="thumb-info" data-category="{{posts.featured[2].category}}">
+                </span>
+            </a>
+            <a data-ng-href="#{{posts.featured[2].url}}" class="thumb thumb-md" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url({{posts.featured[2].image.url}})'}">
+                <span class="thumb-info" data-category="{{posts.featured[2].category}}">
                 <span class="thumb-title">{{posts.featured[2].title}}</span>
                 <span class="thumb-details">
                     <hr>
                     <span class="thumb-cat_dat">{{posts.featured[2].category}} - {{posts.featured[2].date}}</span>
                 </span>
-            </span>
-        </a>
+                </span>
+            </a>
+        </section>
     </section>
-</section>
-<section class="flex-box featured-third">
-    <section class="flex-box">
-        <a data-ng-href="#{{posts.featured[3].url}}" class="thumb thumb-sm" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{posts.featured[3].image.url}})'}">
-            <span class="thumb-info" data-category="{{posts.featured[3].category}}">
+    <section class="flex-box featured-third">
+        <section class="flex-box">
+            <a data-ng-href="#{{posts.featured[3].url}}" class="thumb thumb-sm" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{posts.featured[3].image.url}})'}">
+                <span class="thumb-info" data-category="{{posts.featured[3].category}}">
                 <span class="thumb-title">{{posts.featured[3].title}}</span>
                 <span class="thumb-details">
                     <hr>
                     <span class="thumb-cat_dat">{{posts.featured[3].category}} - {{posts.featured[3].date}}</span>
                 </span>
-            </span>
-        </a>
-        <a data-ng-href="#{{posts.featured[4].url}}" class="thumb thumb-sm" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{posts.featured[4].image.url}})'}">
-            <span class="thumb-info" data-category="{{posts.featured[4].category}}">
+                </span>
+            </a>
+            <a data-ng-href="#{{posts.featured[4].url}}" class="thumb thumb-sm" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{posts.featured[4].image.url}})'}">
+                <span class="thumb-info" data-category="{{posts.featured[4].category}}">
                 <span class="thumb-title">{{posts.featured[4].title}}</span>
                 <span class="thumb-details">
                     <hr>
                     <span class="thumb-cat_dat">{{posts.featured[4].category}} - {{posts.featured[4].date}}</span>
                 </span>
-            </span>
-        </a>
-    </section>
-    <section class="flex-box">
-        <a data-ng-href="#{{posts.featured[5].url}}" class="thumb thumb-sm" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{posts.featured[5].image.url}})'}">
-            <span class="thumb-info" data-category="{{posts.featured[5].category}}">
+                </span>
+            </a>
+        </section>
+        <section class="flex-box">
+            <a data-ng-href="#{{posts.featured[5].url}}" class="thumb thumb-sm" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{posts.featured[5].image.url}})'}">
+                <span class="thumb-info" data-category="{{posts.featured[5].category}}">
                 <span class="thumb-title">{{posts.featured[5].title}}</span>
                 <span class="thumb-details">
                     <hr>
                     <span class="thumb-cat_dat">{{posts.featured[5].category}} - {{posts.featured[5].date}}</span>
                 </span>
-            </span>
-        </a>
-        <a data-ng-href="#{{posts.featured[6].url}}" class="thumb thumb-sm" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{posts.featured[6].image.url}})'}">
-            <span class="thumb-info" data-category="{{posts.featured[6].category}}">
+                </span>
+            </a>
+            <a data-ng-href="#{{posts.featured[6].url}}" class="thumb thumb-sm" ng-style="{'background-image' : 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{posts.featured[6].image.url}})'}">
+                <span class="thumb-info" data-category="{{posts.featured[6].category}}">
                 <span class="thumb-title">{{posts.featured[6].title}}</span>
                 <span class="thumb-details">
                     <hr>
                     <span class="thumb-cat_dat">{{posts.featured[6].category}} - {{posts.featured[6].date}}</span>
                 </span>
-            </span>
-        </a>
+                </span>
+            </a>
+        </section>
     </section>
-</section>
-<aside id="what-is-this">
-    <h2>What is this?</h2>
-    <h5>A collection of essays about things on which I happen to have an opinion. It might not be the best, but I will try my hardest so that it is always sincere, informed and responsible. SIR, if you are into acronyms as much I am. Above you will always see the last 7 posts, and below the posts that are older. Please enjoy!</h5>
-</aside>
+    <aside id="what-is-this">
+        <h2>What is this?</h2>
+        <h5>A collection of essays about things on which I happen to have an opinion. It might not be the best, but I will try
+            my hardest so that it is always sincere, informed and responsible. SIR, if you are into acronyms as much I am.
+            Above you will always see the last 7 posts, and below the posts that are older. Please enjoy!</h5>
+    </aside>
+</div>
